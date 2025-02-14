@@ -1,0 +1,11 @@
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\bin\Debug\net8.0\Framework.deps.json
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\bin\Debug\net8.0\Framework.dll
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\bin\Debug\net8.0\Framework.pdb
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\Framework.AssemblyInfoInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\Framework.AssemblyInfo.cs
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\Framework.csproj.CoreCompileInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\Framework.dll
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\refint\Framework.dll
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\Framework.pdb
+C:\Users\ARYA\source\repos\EndProject\src\0.Framework\ClassLibrary1\obj\Debug\net8.0\ref\Framework.dll

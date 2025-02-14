@@ -1,0 +1,15 @@
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\bin\Debug\net8.0\Achareh.Domain.Core.deps.json
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\bin\Debug\net8.0\Achareh.Domain.Core.dll
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\bin\Debug\net8.0\Achareh.Domain.Core.pdb
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\bin\Debug\net8.0\Framework.dll
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\bin\Debug\net8.0\Framework.pdb
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.csproj.AssemblyReference.cache
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.AssemblyInfo.cs
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh..91FA9A2E.Up2Date
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.dll
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\refint\Achareh.Domain.Core.dll
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Core.pdb
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Core\ClassLibrary1\obj\Debug\net8.0\ref\Achareh.Domain.Core.dll
