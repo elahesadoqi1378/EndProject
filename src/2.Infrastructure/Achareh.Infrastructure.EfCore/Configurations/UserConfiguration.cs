@@ -30,7 +30,8 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                     SecurityStamp = "Guid.NewGuid().ToString()",
                     CreatedAt=new DateTime(2025,2,2),
                     Inventory = 50000,
-                    CityId = 1
+                    CityId = 1,
+                    //Admin = new Admin { Id = 1, UserId = 1 }  // مقداردهی Admin
                 },
                 //customer
                 new User
@@ -46,7 +47,8 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                     Address = "Tehran, Iran",
                     Inventory = 5000,
                     CreatedAt=new DateTime(2025,2,2),
-                    CityId = 1
+                    CityId = 1,
+                    //Customer = new Customer { Id = 1, UserId = 2 }
                 },
 
                 //expert
@@ -63,7 +65,8 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                     Address = "Tehran, Iran",
                     Inventory = 5000,
                     CreatedAt=new DateTime(2025,2,2),
-                    CityId = 1
+                    CityId = 1,
+                    
                 }
 
             };

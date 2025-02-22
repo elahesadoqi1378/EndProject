@@ -60,7 +60,5 @@ namespace Achareh.Infrastructure.EfCore.Common
         public DbSet<Expert> Experts { get; set; }
         public DbSet<Admin> Admins { get; set; }
 
-       
-
     }
 }

@@ -1,0 +1,43 @@
+﻿@using Achareh.Domain.Core.Entities.Request
+@model List<Review>
+<!doctype html>
+
+@{
+    ViewData["Title"] = "مدیریت کامنت ها";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">مدیریت کامنت ها</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>شناسه</th>
+                <th>عنوان</th>
+                <th>کامنت</th>
+                <th>امتیاز</th>
+                <th>نام کارشناس</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var review in Model)
+            {
+                <tr>
+                    <td>@review.Id</td>
+                    <td>@review.Title</td>
+                    <td>@review.Comment</td>
+                    <td>@review.Rating</td>
+                    <td><span>@($"{review.Expert.User.FirstName} {review.Expert.User.LastName}")</span></td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                        <a asp-action="Accept" asp-route-id="@review.Id" class="btn btn-primary btn-sm">قبول</a>
+                        <a asp-action="Reject" asp-route-id="@review.Id" class="btn btn-danger btn-sm">رد</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

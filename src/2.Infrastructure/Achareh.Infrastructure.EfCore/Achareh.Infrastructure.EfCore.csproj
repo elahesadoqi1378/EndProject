@@ -7,14 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.12" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\0.Framework\ClassLibrary1\Framework.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Core\AChareh.Domain.Core\AChareh.Domain.Core.csproj" />
     <ProjectReference Include="..\..\1.Domain\Core\ClassLibrary1\Achareh.Domain.Core.csproj" />
   </ItemGroup>
 

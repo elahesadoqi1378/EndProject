@@ -1,0 +1,70 @@
+﻿@model List<Achareh.Domain.Core.Entities.Request.Category>
+
+<section class="content category">
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>مدیریت دسته‌بندی‌ها</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> آئرو</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">برنامه</a></li>
+                        <li class="breadcrumb-item active">مدیریت دسته‌بندی‌ها</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <a asp-action="Create" class="btn btn-success btn-icon float-right">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0 c_list c_table">
+                                <thead>
+                                    <tr>
+                                        <th>شناسه</th>
+                                        <th>عنوان</th>
+                                        <th>تاریخ ایجاد</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null && Model.Any())
+                                    {
+                                        @foreach (var category in Model)
+                                        {
+                                            <tr>
+                                                <td>@category.Id</td>
+                                                <td>@category.Title</td>
+                                                <td>@category.CreatedAt.ToString("yyyy/MM/dd")</td>
+                                                <td>
+                                                    <a asp-action="Edit" asp-route-id="@category.Id" class="btn btn-primary btn-sm">
+                                                        <i class="zmdi zmdi-edit"></i> ویرایش
+                                                    </a>
+                                                    <a asp-action="Delete" asp-route-id="@category.Id" class="btn btn-danger btn-sm">
+                                                        <i class="zmdi zmdi-delete"></i> حذف
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="4" class="text-center">هیچ دسته‌بندی یافت نشد</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -30,7 +30,6 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                  {
                      Id = 1,
                      UserId=2
-                     
                  }
                 
             ); 

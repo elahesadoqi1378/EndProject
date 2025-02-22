@@ -1,0 +1,20 @@
+﻿@model Achareh.Domain.Core.Entities.Request.HomeService
+
+@{
+    ViewData["Title"] = "حذف سرویس خانگی";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" style="width: 30rem;">
+        <h2 class="text-center text-danger mb-4">حذف سرویس خانگی</h2>
+        <p class="text-center">آیا مطمئن هستید که می‌خواهید سرویس <strong>@Model.Title</strong> را حذف کنید؟</p>
+
+        <div class="text-center mt-4">
+            <form asp-action="DeleteConfirmed" method="post">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <button type="submit" class="btn btn-danger w-100">بله، حذف شود</button>
+            </form>
+            <a asp-action="HomeServiceIndex" class="btn btn-secondary w-100 mt-2">لغو</a>
+        </div>
+    </div>
+</div>

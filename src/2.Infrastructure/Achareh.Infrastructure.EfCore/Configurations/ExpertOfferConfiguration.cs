@@ -1,11 +1,6 @@
 ﻿using Achareh.Domain.Core.Entities.Request;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Achareh.Domain.Core.Enums;
 
 namespace Achareh.Infrastructure.EfCore.Configurations

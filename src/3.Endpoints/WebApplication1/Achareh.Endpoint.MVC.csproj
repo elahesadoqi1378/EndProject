@@ -7,14 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\0.Framework\ClassLibrary1\Framework.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Core\Achareh.Domain.Core\Achareh.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Core\ClassLibrary1\Achareh.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Services\Achareh.Domain.AppServices\Achareh.Domain.AppServices.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Services\ClassLibrary1\Achareh.Domain.Services.csproj" />
     <ProjectReference Include="..\..\2.Infrastructure\Achareh.Infrastructure.EfCore\Achareh.Infrastructure.EfCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\Admin\Admin\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

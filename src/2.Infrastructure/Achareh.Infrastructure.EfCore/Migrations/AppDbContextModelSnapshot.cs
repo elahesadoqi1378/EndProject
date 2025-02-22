@@ -321,7 +321,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "من این خانه را به خوبی نظافت می کنم",
                             ExpertId = 1,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 2, 17, 13, 15, 19, 785, DateTimeKind.Local).AddTicks(5112),
+                            OfferDate = new DateTime(2025, 2, 23, 16, 15, 9, 672, DateTimeKind.Local).AddTicks(5969),
                             OfferStatusEnum = 4,
                             RequestId = 1,
                             SuggestedPrice = 500000
@@ -333,7 +333,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "پیشنهاد برای تعمیر کولر",
                             ExpertId = 1,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 2, 16, 13, 15, 19, 785, DateTimeKind.Local).AddTicks(5122),
+                            OfferDate = new DateTime(2025, 2, 22, 16, 15, 9, 672, DateTimeKind.Local).AddTicks(5980),
                             OfferStatusEnum = 1,
                             RequestId = 2,
                             SuggestedPrice = 750000
@@ -350,6 +350,10 @@ namespace Achareh.Infrastructure.EfCore.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
                         .HasColumnType("nvarchar(max)");
@@ -382,6 +386,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 1,
@@ -392,6 +397,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 1,
@@ -402,6 +408,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 3,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 2,
@@ -412,6 +419,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 4,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 2,
@@ -422,6 +430,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 5,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 3,
@@ -432,6 +441,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 3,
@@ -442,6 +452,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 7,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 4,
@@ -452,6 +463,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 4,
@@ -462,6 +474,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 9,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 4,
@@ -472,6 +485,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 10,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -482,6 +496,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 11,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -492,6 +507,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 12,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -502,6 +518,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 13,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -512,6 +529,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 14,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 6,
@@ -522,6 +540,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 15,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 6,
@@ -532,6 +551,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 16,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 6,
@@ -542,6 +562,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 17,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 7,
@@ -552,6 +573,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 18,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 7,
@@ -562,6 +584,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 19,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 8,
@@ -572,6 +595,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 20,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 8,
@@ -582,6 +606,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 21,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 9,
@@ -592,6 +617,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 22,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 9,
@@ -602,6 +628,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 23,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 10,
@@ -612,6 +639,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 24,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 10,
@@ -622,6 +650,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 25,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 11,
@@ -632,6 +661,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 26,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 11,
@@ -642,6 +672,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 27,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 12,
@@ -652,6 +683,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 28,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 12,
@@ -662,6 +694,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 29,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 12,
@@ -672,6 +705,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 30,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 13,
@@ -682,6 +716,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 31,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 13,
@@ -692,6 +727,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 32,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 13,
@@ -702,6 +738,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 33,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -712,6 +749,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 34,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -722,6 +760,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 35,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -732,6 +771,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 36,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -742,6 +782,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 37,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 15,
@@ -752,6 +793,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 38,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 15,
@@ -762,6 +804,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 39,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 15,
@@ -772,6 +815,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 40,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 16,
@@ -782,6 +826,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 41,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 16,
@@ -792,6 +837,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 42,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 16,
@@ -802,6 +848,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 43,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 17,
@@ -812,6 +859,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 44,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 17,
@@ -822,6 +870,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 45,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 18,
@@ -832,6 +881,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 46,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 18,
@@ -842,6 +892,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 47,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 19,
@@ -852,6 +903,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 48,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 20,
@@ -862,6 +914,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 49,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 21,
@@ -872,6 +925,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 50,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 21,
@@ -882,6 +936,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 51,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 21,
@@ -892,6 +947,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 52,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -902,6 +958,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 53,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -912,6 +969,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 54,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -922,6 +980,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 55,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -932,6 +991,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 56,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 23,
@@ -942,6 +1002,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 57,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 23,
@@ -952,6 +1013,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 58,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 24,
@@ -962,6 +1024,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 59,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 24,
@@ -1006,6 +1069,9 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     b.Property<int>("RequestStatus")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ReviewId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -1017,6 +1083,10 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     b.HasIndex("CustomerId");
 
                     b.HasIndex("HomeServiceId");
+
+                    b.HasIndex("ReviewId")
+                        .IsUnique()
+                        .HasFilter("[ReviewId] IS NOT NULL");
 
                     b.ToTable("Requests");
 
@@ -1031,7 +1101,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             HomeServiceId = 1,
                             IsDeleted = false,
                             RequestForTime = new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            RequestStatus = 2,
+                            RequestStatus = 6,
+                            ReviewId = 1,
                             Title = "نظافت"
                         },
                         new
@@ -1040,12 +1111,12 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             CityId = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CustomerId = 1,
-                            Description = "سلامت و زیبایی ",
-                            HomeServiceId = 1,
+                            Description = "کودک ",
+                            HomeServiceId = 59,
                             IsDeleted = false,
                             RequestForTime = new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestStatus = 2,
-                            Title = "زیبایی بانوان"
+                            Title = "طراحی اتاق کودک"
                         });
                 });
 
@@ -1058,6 +1129,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Comment")
+                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -1079,6 +1151,10 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
@@ -1097,7 +1173,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             ExpertId = 1,
                             IsAccept = false,
                             IsDeleted = false,
-                            Rating = 4
+                            Rating = 4,
+                            Title = "عالی"
                         });
                 });
 
@@ -1502,7 +1579,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "663d5303-9ca8-4445-9a9a-f367997c6a03",
+                            ConcurrencyStamp = "85649339-61d0-4e5c-bac8-573a800c1722",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ela@gmail.com",
                             EmailConfirmed = false,
@@ -1512,7 +1589,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ELA@GMAIL.COM",
                             NormalizedUserName = "ELA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPlBxCZhPVvlIVsUUrhDlLUVGVC7eglVk5Emfhb2Jum6cL9U+yH0JoCk4E6LVU7L0w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEI8DUUI8rWHOe/PHVQ8OXBolY70qZVMGLghxbEZN6O4LdbwONjpRxEv/m27Aw7Y/ZQ==",
                             PhoneNumber = "093689162292",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1525,7 +1602,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "da87f6ce-94ae-47c1-8a82-8e166a67920d",
+                            ConcurrencyStamp = "63f095c1-7514-46bd-8047-c3aa9e849639",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "sara@gmail.com",
                             EmailConfirmed = false,
@@ -1535,7 +1612,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA@GMAIL.COM",
                             NormalizedUserName = "SARA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHiCLa8oVbF3QqzVk0hDJ6OPFJEGQ2MrsN3GwWXGLDCDJE0xRnbTfFFbHVK7eIRRpQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPn9mUZ9/WBHY2JFnxhelsQqgm0RwQb2OWpzGNKOIaW3K7iN8dWkmUidvrhm5Yc/Pw==",
                             PhoneNumber = "09124361938",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
@@ -1547,7 +1624,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "ecca45ab-4420-47a3-8b34-e5ce2ea2f314",
+                            ConcurrencyStamp = "9324da09-77c4-4454-a600-bf913d01753b",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "amir@gmail.com",
                             EmailConfirmed = false,
@@ -1557,7 +1634,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "AMIR@GMAIL.COM",
                             NormalizedUserName = "AMIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPF5DsSYdZjYFyaY4ygmm9Dy7ZgEh7kRRAAcTwbBTj7sUG0upkDvbsTUGL04dyGq9Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDp3VLrpsBzWgavv1VgSusFS0uyWZ4X56aOhmMfdbOuLKkiApOCEHbuociSS1WdtJw==",
                             PhoneNumber = "09016308704",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
@@ -1823,11 +1900,18 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Achareh.Domain.Core.Entities.Request.Review", "Review")
+                        .WithOne("Request")
+                        .HasForeignKey("Achareh.Domain.Core.Entities.Request.Request", "ReviewId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
                     b.Navigation("City");
 
                     b.Navigation("Customer");
 
                     b.Navigation("HomeService");
+
+                    b.Navigation("Review");
                 });
 
             modelBuilder.Entity("Achareh.Domain.Core.Entities.Request.Review", b =>
@@ -1992,6 +2076,12 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     b.Navigation("ExpertOffers");
 
                     b.Navigation("Images");
+                });
+
+            modelBuilder.Entity("Achareh.Domain.Core.Entities.Request.Review", b =>
+                {
+                    b.Navigation("Request")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Achareh.Domain.Core.Entities.Request.SubCategory", b =>

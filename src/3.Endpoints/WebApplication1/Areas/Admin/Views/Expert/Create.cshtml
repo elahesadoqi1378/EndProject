@@ -1,0 +1,77 @@
+﻿@model CreateUserViewModel
+
+<section class="content user-registration">
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>فرم ثبت نام کاربر جدید</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> آئرو</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">مدیریت کاربران</a></li>
+                        <li class="breadcrumb-item active">ثبت نام کاربر</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+                    <div class="card">
+                        <div class="body">
+                            <form asp-action="Create" asp-controller="Expert" method="post">
+                                <div class="form-group">
+                                    <label asp-for="Email" class="form-label">ایمیل</label>
+                                    <input asp-for="Email" class="form-control" placeholder="ایمیل خود را وارد کنید" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Password" class="form-label">کلمه عبور</label>
+                                    <input asp-for="Password" type="password" class="form-control" placeholder="کلمه عبور خود را وارد کنید" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ConfirmPassword" class="form-label">تکرار کلمه عبور</label>
+                                    <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="کلمه عبور خود را دوباره وارد کنید" />
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="FirstName" class="form-label">نام</label>
+                                    <input asp-for="FirstName" class="form-control" placeholder="نام خود را وارد کنید" />
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="LastName" class="form-label">نام خانوادگی</label>
+                                    <input asp-for="LastName" class="form-control" placeholder="نام خانوادگی خود را وارد کنید" />
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="CityId" class="form-label">شهر</label>
+                                    <select id="CityId" name="CityId" class="form-control" required>
+                                        <option value="">لطفا یک شهر انتخاب کنید</option>
+                                        @foreach (var city in (List<SelectListItem>)ViewData["Cities"])
+                                        {
+                                            <option value="@city.Value">@city.Text</option>
+                                        }
+                                    </select>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-success">
+                                        <i class="zmdi zmdi-check"></i> ثبت نام
+                                    </button>
+                                    <a asp-action="CustomerIndex" class="btn btn-secondary">
+                                        <i class="zmdi zmdi-arrow-left"></i> بازگشت
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,9 +1,73 @@
+using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Infrastructure.EfCore.Common;
+using Achareh.Infrastructure.EfCore.Repository;
 using Microsoft.AspNetCore.Identity;
+using Serilog;
+using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Achareh.Domain.AppServices;
+using Achareh.Domain.Core.Contracts.Service;
+using Achareh.Domain.Services;
+using Achareh.Domain.Core.Contracts.AppService;
+using Achareh.Domain.Core.Contracts.Repositroy;
+
+
+Log.Logger = new LoggerConfiguration()
+.WriteTo.Console()
+.CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.ConfigureLogging(x =>
+{
+    x.ClearProviders();
+    x.AddSerilog();
+}).UseSerilog((context, config) =>
+{
+    config.WriteTo.Console();
+    config.WriteTo.Seq("http://localhost:5341", apiKey: "Bd4vhPAlo0XnCylPydEQ");
+});
+
+
+builder.Services.AddScoped<IAdminRepository, AdminRepository>();
+builder.Services.AddScoped<ICategoryRepositroy, CategoryRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IExpertRepository, ExpertRepository>();
+builder.Services.AddScoped<IExpertOfferRepository, ExpertOfferRepository>();
+builder.Services.AddScoped<IHomeServiceRepository, HomeServiceRepository>();
+builder.Services.AddScoped<IRequestRepository, RequestRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
+//builder.Services.AddScoped<IImageRepository, ImageRepository>();
+;
+
+builder.Services.AddScoped<IHomeServiceService, HomeServiceService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IExpertService, ExpertService>();
+builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IRequestService, RequestService>();
+builder.Services.AddScoped<IExpertOfferService, ExpertOfferService>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
+//builder.Services.AddScoped<IImageService, ImageService>();
+
+
+//appservice
+builder.Services.AddScoped<IHomeServiceAppService, HomeServiceAppService>();
+builder.Services.AddScoped<IAdminAppService, AdminAppService>();
+builder.Services.AddScoped<ICustomerAppService, CustomerAppService>();
+builder.Services.AddScoped<IExpertAppService, ExpertAppService>();
+builder.Services.AddScoped<ICityAppService, CityAppService>();
+builder.Services.AddScoped<ISubCategoryAppService, SubCategoryAppService>();
+builder.Services.AddScoped<ICategoryAppService, CategoryAppService>();
+builder.Services.AddScoped<IExpertOfferAppService, ExpertOfferAppService>();
+builder.Services.AddScoped<IRequestAppService, RequestAppService>();
+builder.Services.AddScoped<IReviewAppService, ReviewAppService>();
+//builder.Services.AddScoped<IImageAppService, ImageAppService>();
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -12,7 +76,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation();
+
+
+
 
 builder.Services.AddIdentity<User, IdentityRole<int>>
 (options =>
@@ -24,8 +92,8 @@ builder.Services.AddIdentity<User, IdentityRole<int>>
     options.Password.RequireUppercase = false;
     options.Password.RequireLowercase = false;
 })
-.AddRoles<IdentityRole<int>>()
-.AddEntityFrameworkStores<AppDbContext>();
+.AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultTokenProviders();
 
 
 
@@ -47,8 +115,37 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//app.MapAreaControllerRoute(
+//    name: "admin",
+//    areaName: "Admin",
+//    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+
+//app.MapAreaControllerRoute(
+//    name: "areas",
+//    areaName = "Admin",
+//    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+
+app.MapAreaControllerRoute(
+name: "areas",
+areaName: "Admin",
+pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+
+//app.MapAreaControllerRoute(
+//    name: "admin",
+//    areaName: "Admin",
+//    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+
+//app.MapAreaControllerRoute(
+//    name: "admin",
+//    areaName: "Admin",
+//    pattern: "Admin/{controller=Admin}/{action=Login}/{id?}");
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+
+

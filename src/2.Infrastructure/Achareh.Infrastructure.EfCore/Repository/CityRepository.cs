@@ -20,8 +20,14 @@ namespace Achareh.Infrastructure.EfCore.Repository
         }
 
         public async Task<List<City>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            var cities = await _context.Cities.ToListAsync(cancellationToken);
+            return cities;
 
-         => await _context.Cities.ToListAsync(cancellationToken);
+        }
+
+         
+         
 
         public async Task<bool> CreateAsync(City city, CancellationToken cancellationToken)
         {
@@ -39,38 +45,24 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
-            try
-            {
-                var city = await _context.Cities.FirstOrDefaultAsync(x=>x.Id==id, cancellationToken);
-                if (city == null)
-                    return false;
+            var city = await _context.Cities.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-                _context.Cities.Remove(city);
-                await _context.SaveChangesAsync(cancellationToken);
-                return true;
-            }
-            catch
-            {
+            if (city == null)
                 return false;
-            }
+
+            _context.Cities.Remove(city);
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
         }
 
         public async Task<bool> UpdateAsync(City city, CancellationToken cancellationToken)
         {
-            try
-            {
-                var existingCity = await _context.Cities.FirstOrDefaultAsync(c => c.Id == city.Id, cancellationToken);
-                if (existingCity == null)
-                    return false;
+            var existingCity = await _context.Cities.FirstOrDefaultAsync(c => c.Id == city.Id, cancellationToken);
 
-                existingCity.Title = city.Title;
-                await _context.SaveChangesAsync(cancellationToken);
-                return true;
-            }
-            catch
-            {
+            if (existingCity == null)
                 return false;
-            }
+
+            existingCity.Title = city.Title;
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
         }
     }
 }

@@ -1,0 +1,14 @@
+﻿@model Achareh.Domain.Core.Entities.Request.Review
+
+
+@{
+    ViewData["Title"] = "تایید کامنت";
+}
+
+<h2 class="text-center">آیا میخواهید این کامنت را تایید کنید</h2>
+
+<form asp-controller="Review" asp-action="AcceptConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-primary">تایید</button>
+    <a asp-action="ReviewIndex" class="btn btn-secondary">بازگشت</a>
+</form>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/tLgCQP3p8Q=",
+  "dgSpecHash": "Mb+Yc5guHsc=",
   "success": true,
   "projectFilePath": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,9 @@
     "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.2\\microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\microsoft.extensions.diagnostics.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.12\\microsoft.extensions.identity.core.8.0.12.nupkg.sha512",
     "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.12\\microsoft.extensions.identity.stores.8.0.12.nupkg.sha512",
     "C:\\Users\\ARYA\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",

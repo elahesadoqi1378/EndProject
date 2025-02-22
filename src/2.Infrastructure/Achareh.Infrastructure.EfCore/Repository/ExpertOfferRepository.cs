@@ -13,19 +13,19 @@ namespace Achareh.Infrastructure.EfCore.Repository
         {
             _context = context;
         }
-        public async Task<List<ExpertOffer>> GetAllAsync()
+        public async Task<List<ExpertOffer>> GetAllAsync(CancellationToken cancellationToken)
 
-            => await _context.ExpertOffers.ToListAsync();
-        public async Task<ExpertOffer> GetByIdAsync(int id)
+            => await _context.ExpertOffers.ToListAsync(cancellationToken);
+        public async Task<ExpertOffer> GetByIdAsync(int id , CancellationToken cancellationToken)
 
-            => await _context.ExpertOffers.FirstOrDefaultAsync(x => x.Id == id);
+            => await _context.ExpertOffers.FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
 
-        public async Task CreateAsync(ExpertOffer expertOffer)
+        public async Task CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
         {
-            await _context.ExpertOffers.AddAsync(expertOffer);
-            await _context.SaveChangesAsync();
+            await _context.ExpertOffers.AddAsync(expertOffer ,cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
         }
-        public async Task UpdateAsync(ExpertOffer expertOffer)
+        public async Task UpdateAsync(ExpertOffer expertOffer,CancellationToken cancellationToken)
         {
             var existingOffer = await _context.ExpertOffers.FirstOrDefaultAsync(x => x.Id == expertOffer.Id);
             if (existingOffer != null)
@@ -36,15 +36,23 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 await _context.SaveChangesAsync();
             }
         }
-        public async Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id,CancellationToken cancellationToken)
         {
             var expertOffer = await _context.ExpertOffers.FirstOrDefaultAsync(x => x.Id == id);
             if (expertOffer != null)
             {
                 _context.ExpertOffers.Remove(expertOffer);
-                expertOffer.IsDeleted = true;
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(cancellationToken);
             }
         }
+
+        public async Task<List<ExpertOffer>> OffersOfRequest(int requestId, CancellationToken cancellationToken)
+
+           => await _context.ExpertOffers
+                            .Include(c => c.Request)
+                            .Include(c => c.Expert) 
+                            .ThenInclude(c => c.User)
+                            .Where(r => r.Request.Id == requestId)
+                            .ToListAsync(cancellationToken);
     }
 }

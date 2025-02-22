@@ -17,7 +17,7 @@ namespace Achareh.Infrastructure.EfCore.Configurations
 
             builder.HasOne(x => x.User)
             .WithOne(x => x.Admin)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.Cascade); //noaction
 
             builder.HasData
            (

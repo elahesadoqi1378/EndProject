@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Achareh.Infrastructure.EfCore.Repository
 {
-    
     public class CustomerRepository : ICustomerRepository
     {
         private readonly AppDbContext _context;
@@ -31,26 +30,20 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
-            try
-            {
-                var customer = await _context.Customers.FirstOrDefaultAsync(x => x.Id == id);
+            var customer = await _context.Customers.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-                if (customer == null)
-                    return false;
+            if (customer == null)
+                return false;
 
-                _context.Customers.Remove(customer);
-                await _context.SaveChangesAsync(cancellationToken);
-                return true;
-            }
-            catch 
-            {
-                throw new Exception("something is wrong in delete");
-            }
+            _context.Customers.Remove(customer);
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
+
         }
 
         public async Task<List<Customer>> GetAllAsync(CancellationToken cancellationToken)
         
-            => await _context.Customers.ToListAsync(cancellationToken);
+            => await _context.Customers.Include(x=>x.User)
+                                       .ToListAsync(cancellationToken);
         
 
         public async Task<Customer?> GetByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
@@ -65,35 +58,32 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<Customer?> GetrByIdAsync(int id, CancellationToken cancellationToken)
         
-            => await _context.Customers.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
-        
+            => await _context.Customers.Include(x=>x.User)
+                                       .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
+       
         public async Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken)
         {
-            try
-            {
-                var existingCustomer = await _context.Customers
-                                                     .Include(c => c.User)
-                                                     .FirstOrDefaultAsync(x => x.Id ==customer.Id , cancellationToken);
-                if (existingCustomer == null )
-                    return false;
+            var existingCustomer = await _context.Customers
+            .Include(x => x.User)
+            .FirstOrDefaultAsync(x => x.Id == customer.Id, cancellationToken);
 
-                existingCustomer.User.FirstName = customer.User.FirstName;
-                existingCustomer.User.LastName = customer.User.LastName;
-                existingCustomer.User.Email = customer.User.Email;
-                existingCustomer.User.PhoneNumber = customer.User.PhoneNumber;
-                existingCustomer.User.Address = customer.User.Address;
-                existingCustomer.User.CityId = customer.User.CityId;
-                existingCustomer.User.ImagePath = customer.User.ImagePath;
+            if (existingCustomer == null)
+                return false;
 
-                await _context.SaveChangesAsync(cancellationToken);
-                return true;
-            }
-            catch 
-            {
-                throw new Exception("something is wrong in update");
-            }
+            existingCustomer.User.FirstName = customer.User.FirstName;
+            existingCustomer.User.LastName = customer.User.LastName;
+            existingCustomer.User.Email = customer.User.Email;
+            existingCustomer.User.PhoneNumber = customer.User.PhoneNumber;
+            existingCustomer.User.Address = customer.User.Address;
+            existingCustomer.User.CityId = customer.User.CityId;
+            existingCustomer.User.ImagePath = customer.User.ImagePath;
 
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
         }
+        public async Task<int> GetCount(CancellationToken cancellationToken) 
+
+            => await  _context.Customers.AsNoTracking()
+                                        .CountAsync(cancellationToken);
     }
 }

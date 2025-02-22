@@ -16,7 +16,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
             _context = context;
         }
         public async Task<List<Request>> GetAllAsync(CancellationToken cancellationToken)
-        
+
             => await _context.Requests.ToListAsync(cancellationToken);
 
         public async Task<Request> GetByIdAsync(int id)
@@ -50,12 +50,11 @@ namespace Achareh.Infrastructure.EfCore.Repository
             var request = await _context.Requests.FirstOrDefaultAsync(x => x.Id == id);
             if (request != null)
             {
-                _context.Requests.Remove(request);
                 await _context.SaveChangesAsync();
             }
         }
 
-       
+
 
         public Task<Request> GetByIdAsync(int Id, CancellationToken cancellationToken)
         {
@@ -69,7 +68,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
             => await _context.Requests.Where(x => x.CustomerId == customerId).ToListAsync(cancellationToken);
 
-        public async Task<List<Request>> GetWithDetailsAsync(int requestId , CancellationToken cancellationToken)
+        public async Task<List<Request>> GetWithDetailsAsync(int requestId, CancellationToken cancellationToken)
 
            => await _context
                     .Requests
@@ -85,7 +84,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
              => await _context
                .Requests
-               .Where(r => r.CustomerId == customerId)
+               .Where(r => r.CustomerId == customerId) //eager loading select
                .Include(r => r.HomeService)
                .Include(r => r.City)
                .Include(r => r.Images)
@@ -120,51 +119,35 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)
         {
-            try
-            {
-                var existRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == request.Id);
-                if (existRequest == null)
-                    return false;
+            var existRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
 
-                existRequest.Title = request.Title;
-                existRequest.Description = request.Description;
-                existRequest.RequestForTime = request.RequestForTime;
-                existRequest.ApprovedAt = request.ApprovedAt;
-                existRequest.RequestStatus = request.RequestStatus;
-                existRequest.CityId = request.CityId;
+            if (existRequest == null)
+                return false;
 
-                await _context.SaveChangesAsync(cancellationToken);
-                return true;
-            }
-            catch
-            {
-                throw new Exception(" Error  in update");
-            }
+            existRequest.Title = request.Title;
+            existRequest.Description = request.Description;
+            existRequest.RequestForTime = request.RequestForTime;
+            existRequest.ApprovedAt = request.ApprovedAt;
+            existRequest.RequestStatus = request.RequestStatus;
+            existRequest.CityId = request.CityId;
 
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
 
         }
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
-            try
-            {
-                var request = await _context.Requests
-                .Include(x => x.Images)
-                .Include(x => x.ExpertOffers)
-                .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+            var request = await _context.Requests
+                                 .Include(x => x.Images)
+                                 .Include(x => x.ExpertOffers)
+                                 .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-                if (request == null)
-                    return false;
+            if (request == null)
+                return false;
 
-                _context.Requests.Remove(request);
-                request.IsDeleted = true;
-                await _context.SaveChangesAsync();
-                return true;
-            }
-            catch
-            {
-                throw new Exception(" Errorr in delete");
-            }
+            request.IsDeleted = true;
+
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
 
         }
 
@@ -176,5 +159,14 @@ namespace Achareh.Infrastructure.EfCore.Repository
             await _context.SaveChangesAsync(cancellationToken);
             return true;
         }
+        public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
+
+             => await _context.Requests
+            .Include(c => c.Customer)
+            .ThenInclude(c => c.User)
+            .Include(h => h.HomeService)
+            .ToListAsync(cancellationToken);
+
+       
     }
 }

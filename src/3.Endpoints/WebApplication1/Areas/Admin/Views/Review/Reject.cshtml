@@ -1,0 +1,14 @@
+﻿@model Achareh.Domain.Core.Entities.Request.Review
+
+
+@{
+    ViewData["Title"] = "رد کامنت";
+}
+
+<h2 class="text-center">آیا میخواهید این کامنت را کنید</h2>
+
+<form asp-controller="Review" asp-action="RejectConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-primary">رد</button>
+    <a asp-action="ReviewIndex" class="btn btn-secondary">بازگشت</a>
+</form>

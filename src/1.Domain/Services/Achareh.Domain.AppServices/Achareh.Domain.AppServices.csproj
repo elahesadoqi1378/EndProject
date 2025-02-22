@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\AChareh.Domain.Core\AChareh.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Core\ClassLibrary1\Achareh.Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>

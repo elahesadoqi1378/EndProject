@@ -1,7 +1,10 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
+using Achareh.Domain.Core.Dtos.HomeService;
+using Achareh.Domain.Core.Dtos.SubCategory;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using System.Threading;
 
 
 namespace Achareh.Infrastructure.EfCore.Repository
@@ -14,24 +17,24 @@ namespace Achareh.Infrastructure.EfCore.Repository
         {
             _context = context;
         }
-        public async Task<List<SubCategory>> GetAllAsync()
+        public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
 
             => await _context.SubCategories
                             .Include(x => x.HomeServices)
-                            .ToListAsync();
+                            .ToListAsync(cancellationToken);
 
-        public async Task<SubCategory> GetByIdAsync(int id)
+        public async Task<SubCategory> GetByIdAsync(int id , CancellationToken cancellationToken)
 
             => await _context.SubCategories
                              .Include(x => x.HomeServices)
-                             .FirstOrDefaultAsync(x => x.Id == id);
+                             .FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
 
-        public async Task<bool> CreateAsync(SubCategory subCategory)
+        public async Task<bool> CreateAsync(SubCategory subCategory , CancellationToken cancellationToken)
         {
             try
             {
-                await _context.SubCategories.AddAsync(subCategory);
-                await _context.SaveChangesAsync();
+                await _context.SubCategories.AddAsync(subCategory,cancellationToken);
+                await _context.SaveChangesAsync(cancellationToken);
                 return true;
             }
             catch
@@ -40,11 +43,11 @@ namespace Achareh.Infrastructure.EfCore.Repository
             }
 
         }
-        public async Task<bool> UpdateAsync(SubCategory subCategory)
+        public async Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken)
         {
             try
             {
-                var existingSubCategory = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == subCategory.Id);
+                var existingSubCategory = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == subCategory.Id,cancellationToken);
 
                 if (existingSubCategory != null)
                     return false;
@@ -52,7 +55,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 existingSubCategory.Title = subCategory.Title;
                 existingSubCategory.CategoryId = subCategory.CategoryId;
                 existingSubCategory.ImagePath = subCategory.ImagePath;
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(cancellationToken);
                 return true;
             }
             catch
@@ -63,28 +66,54 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> SubCategoryUpdate(UpdateSubCategoryDto updateSubCategoryDto, CancellationToken cancellationToken)
         {
-            try
-            {
-                var subCategory = await _context.SubCategories
-                                       .Include(x => x.HomeServices)
-                                       .FirstOrDefaultAsync(x => x.Id == id);
+            var existingModel = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == updateSubCategoryDto.Id, cancellationToken);
 
-                if (subCategory == null)
-                    return false;
+            existingModel.Title = updateSubCategoryDto.Title;
+            existingModel.ImagePath = updateSubCategoryDto.ImagePath;
+            existingModel.CategoryId = updateSubCategoryDto.CategoryId;
 
-                _context.SubCategories.Remove(subCategory);
-                subCategory.IsDeleted = true;
-                await _context.SaveChangesAsync();
-                return true;
-            }
-            catch
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return true;
+        }
+
+        public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
+        {
+            var newModel = new SubCategory()
             {
-                throw new Exception("something wrong in delete");
-            }
+                Title = creasteSubCategoryDto.Title,
+                ImagePath = creasteSubCategoryDto.ImagePath,
+                CategoryId = creasteSubCategoryDto.CategoryId
+                
+            };
+            await _context.SubCategories.AddAsync(newModel, cancellationToken);
+
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return true;
 
         }
+
+        public async Task<bool> DeleteAsync(int id , CancellationToken cancellationToken)
+        {
+            var subCategory = await _context.SubCategories
+                                      .Include(x => x.HomeServices)
+                                      .FirstOrDefaultAsync(x => x.Id == id ,  cancellationToken);
+
+            if (subCategory == null)
+                return false;
+
+            _context.SubCategories.Remove(subCategory);
+            return await _context.SaveChangesAsync(cancellationToken) > 0;
+
+        }
+
+        public async Task<List<SubCategory>> GetAllSubCategoriesAsync(CancellationToken cancellationToken)
+
+            => await _context.SubCategories.ToListAsync(cancellationToken);
+
     }
 }
 

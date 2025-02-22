@@ -10,11 +10,16 @@ namespace Achareh.Infrastructure.EfCore.Configurations
     {
         public void Configure(EntityTypeBuilder<Request> builder)
         {
-
             builder.HasOne(x => x.Customer)
             .WithMany(x => x.Requests)
             .HasForeignKey(x => x.CustomerId)
             .OnDelete(DeleteBehavior.NoAction);
+
+            builder.HasOne(x => x.Review)
+                 .WithOne(x => x.Request)
+                 .OnDelete(DeleteBehavior.NoAction);
+                
+
 
             builder.HasData
            (
@@ -30,7 +35,8 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                HomeServiceId = 1,
                Title = "نظافت",
                CityId = 1,
-               RequestStatus = StatusEnum.WatingForChoosingExpert
+               RequestStatus = StatusEnum.WorkPaidByCustomer,
+               ReviewId = 1
             },
 
               new Request
@@ -39,12 +45,13 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                   CreatedAt = new DateTime(2025, 2, 2),
                   CustomerId = 1,
                   IsDeleted = false,
-                  Description = "سلامت و زیبایی ",
+                  Description = "کودک ",
                   RequestForTime = new DateTime(2025, 3, 5),
-                  HomeServiceId = 1,
-                  Title = "زیبایی بانوان",
+                  HomeServiceId = 59,
+                  Title = "طراحی اتاق کودک",
                   CityId = 1,
-                  RequestStatus = StatusEnum.WatingForChoosingExpert
+                  RequestStatus = StatusEnum.WatingForChoosingExpert,
+                 
               }
            );
         }
