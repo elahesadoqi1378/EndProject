@@ -1,5 +1,8 @@
 ﻿@using Achareh.Domain.Core.Entities.Request
+@using Achareh.Domain.Core.Enums
+@using Framework
 @model List<Request>
+
 <!doctype html>
 <html class="no-js " lang="en">
 
@@ -61,7 +64,7 @@
 											<th data-breakpoints="xs">وضعیت</th>
 											<th data-breakpoints="xs">پیشنهاد</th>
 											<th data-breakpoints="xs">عملیات</th>
-											@* <th data-breakpoints="xs">جزئیات سفارش</th> *@
+											
 										</tr>
 									</thead>
 									<tbody>
@@ -86,8 +89,17 @@
 													<td>
 														<span>@request.RequestForTime</span>
 													</td>
+													@* <td>@Model.Id</td> *@
 													<td>
-														<span>@request.RequestStatus</span>
+														<span class="badge
+                                    @(request.RequestStatus == StatusEnum.WatingExpertOffer ? "badge-warning" :
+                                      request.RequestStatus == StatusEnum.WatingForChoosingExpert ? "badge-warning" :
+                                      request.RequestStatus == StatusEnum.WatingExpertComeToYourPlace ? "badge-warning" :
+                                      request.RequestStatus == StatusEnum.WorkStarted ? "badge-info" :
+                                      request.RequestStatus == StatusEnum.WorkDoneByExpert ? "badge-primary" :
+                                      request.RequestStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+															@request.RequestStatus.GetEnumDisplayName()
+														</span>
 													</td>
 													<td>
 														<a class="btn btn-primary" asp-area="Admin" asp-controller="Request" asp-action="RequestOffers" asp-route-requestId=@request.Id>
@@ -95,22 +107,23 @@
 														</a>
 
 													</td>
-													<td>
-														<a class="btn btn-danger" asp-area="Admin" asp-controller="Request" asp-action="DeleteRequest" asp-route-requestId=@request.Id>
 
-															حذف
-														</a>
-														@* <a class="btn btn-warning" asp-area="Admin" asp-controller="Admin" asp-action="UpdateRequest" asp-route-requestId=@request.Id>
-															آپدیت<i class="zmdi zmdi-edit"></i>
-														</a> *@
+
+													<td>
+														<form method="post" asp-action="ChangeStatus" asp-controller="Request">
+															<input type="hidden" name="requestId" value="@request.Id" />
+															<select name="newStatus" class="form-control status-dropdown" onchange="this.form.submit()">
+																@foreach (StatusEnum status in Enum.GetValues(typeof(StatusEnum)))
+																{
+																	<option value="@((int)status)" selected="@(request.RequestStatus == status ? "selected" : null)">
+																		@status.GetEnumDisplayName()
+																	</option>
+																}
+															</select>
+														</form>
 													</td>
 
-												@* 	<td> *@
-														@* <a class="btn btn-primary" asp-area="Admin" asp-controller="Admin" asp-action="RequestsSuggestions" asp-route-suggestionId=@request.Id>
-															جزئیات
-														</a> *@
-
-													@* </td> *@
+												
 												</tr>
 											}
 										}

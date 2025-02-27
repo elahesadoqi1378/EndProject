@@ -12,6 +12,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Serilog" Version="4.2.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
@@ -30,6 +31,7 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Views\Admin\Admin\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 
 </Project>

@@ -49,7 +49,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 var existingSubCategory = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == subCategory.Id,cancellationToken);
 
-                if (existingSubCategory != null)
+                if (existingSubCategory == null)
                     return false;
 
                 existingSubCategory.Title = subCategory.Title;
@@ -79,22 +79,22 @@ namespace Achareh.Infrastructure.EfCore.Repository
             return true;
         }
 
-        public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
-        {
-            var newModel = new SubCategory()
-            {
-                Title = creasteSubCategoryDto.Title,
-                ImagePath = creasteSubCategoryDto.ImagePath,
-                CategoryId = creasteSubCategoryDto.CategoryId
+        //public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
+        //{
+        //    var newModel = new SubCategory()
+        //    {
+        //        Title = creasteSubCategoryDto.Title,
+        //        ImagePath = creasteSubCategoryDto.ImagePath,
+        //        CategoryId = creasteSubCategoryDto.CategoryId
                 
-            };
-            await _context.SubCategories.AddAsync(newModel, cancellationToken);
+        //    };
+        //    await _context.SubCategories.AddAsync(newModel, cancellationToken);
 
-            await _context.SaveChangesAsync(cancellationToken);
+        //    await _context.SaveChangesAsync(cancellationToken);
 
-            return true;
+        //    return true;
 
-        }
+        //}
 
         public async Task<bool> DeleteAsync(int id , CancellationToken cancellationToken)
         {

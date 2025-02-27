@@ -17,7 +17,7 @@ namespace Achareh.Domain.Services
 
         }
 
-        public async Task<bool> ChangeStatus(StatusEnum status, int orderId, CancellationToken cancellationToken)
+        public async Task<bool> ChangeStatus(int status, int orderId, CancellationToken cancellationToken)
 
             => await _requestRepository.ChangeStatus(status, orderId, cancellationToken);
 

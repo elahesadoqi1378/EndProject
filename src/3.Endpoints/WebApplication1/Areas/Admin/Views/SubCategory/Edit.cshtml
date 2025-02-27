@@ -1,7 +1,6 @@
-﻿@using Achareh.Domain.Core.Entities.Request
-@using Achareh.Domain.Core.Dtos.SubCategory
-
-@model UpdateSubCategoryDto
+﻿@using Achareh.Endpoint.MVC.Models
+@using Achareh.Domain.Core.Entities.Request
+@model EditSubCategoryViewModel
 
 @{
     ViewData["Title"] = "ویرایش زیردسته";
@@ -13,6 +12,7 @@
 
     <form asp-action="Edit" method="post" enctype="multipart/form-data">
         <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ImagePath" /> <!-- نگه‌داشتن مسیر تصویر قبلی -->
 
         <div class="mb-3">
             <label asp-for="Title" class="form-label">نام زیردسته</label>
@@ -39,15 +39,22 @@
 
         <div class="mb-3">
             <label class="form-label">تصویر فعلی</label>
-            <div>
-                <img src="@Model.ImagePath" class="img-thumbnail" style="max-width: 150px;" />
-            </div>
+            @if (!string.IsNullOrEmpty(Model.ImagePath))
+            {
+                <div>
+                    <img src="@Model.ImagePath" class="img-thumbnail" style="max-width: 150px;" />
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">تصویری وجود ندارد.</p>
+            }
         </div>
 
         <div class="mb-3">
-            <label asp-for="ImagePath" class="form-label">مسیر تصویر (استرینگ)</label>
-            <input asp-for="ImagePath" class="form-control" />
-            <span asp-validation-for="ImagePath" class="text-danger"></span>
+            <label class="form-label">آپلود تصویر جدید (اختیاری)</label>
+            <input type="file" asp-for="ImageFile" class="form-control" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
         </div>
 
         <button type="submit" class="btn btn-success w-100">ذخیره تغییرات</button>

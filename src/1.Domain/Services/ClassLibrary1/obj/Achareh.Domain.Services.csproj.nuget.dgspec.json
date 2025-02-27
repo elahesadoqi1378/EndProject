@@ -96,11 +96,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\0.Framework\\ClassLibrary1\\Framework.csproj": {
-                "projectPath": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\0.Framework\\ClassLibrary1\\Framework.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -119,11 +115,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "Microsoft.AspNet.Identity.EntityFramework": {
               "target": "Package",
-              "version": "[8.0.12, )"
+              "version": "[2.2.4, )"
             },
-            "Microsoft.Extensions.Identity.Core": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[8.0.12, )"
             }

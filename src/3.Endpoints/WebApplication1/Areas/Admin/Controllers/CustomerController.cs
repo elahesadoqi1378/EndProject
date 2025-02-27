@@ -34,7 +34,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 users.Add(new CustomerExpertViewModel()
                 {
                     Id = customer.Id,
-                    Email = customer.User.Email  ,
+                    Email = customer.User.Email,
                     FirstName = customer.User.FirstName,
                     LastName = customer.User.LastName
                 });
@@ -42,14 +42,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             return  View(users);
         }
 
-        public async Task<IActionResult> Details(int id , CancellationToken cancellationToken)
-        {
-            var customer = _customerAppService.GetByIdWithDetailsAsync(id, cancellationToken);
-            if (customer == null)
-                return NotFound();
-
-            return View(customer);
-        }
+       
 
         public async Task<IActionResult> Create(CancellationToken cancellationToken)
         {
@@ -63,7 +56,6 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             }).ToList();
 
             return View();
-
            
         }
 

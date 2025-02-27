@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Achareh.Endpoint.MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Achareh.Endpoint.MVC.04ey5dbewc.bundle.scp.css"
+      "PackagePath": "staticwebassets\\Achareh.Endpoint.MVC.g9bamtq08f.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\AdminTemplate\\bundles\\c3.bundle.js",
@@ -55,6 +55,10 @@
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\AdminTemplate\\bundles\\vendorscripts.bundle.js",
       "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\vendorscripts.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\AdminTemplate\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\all.min.css"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\AdminTemplate\\css\\style.min.css",
@@ -873,12 +877,1652 @@
       "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\sweetalert\\sweetalert.min.js"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\font-awesome\\5.14.0\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\font-awesome\\5.14.0\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\popper.js\\1.12.9\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\popper.js\\1.12.9\\umd\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\404.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\404.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\about.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\ad-post.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\ad-post.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\blog-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\blog-details.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\blog-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\blog-list.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\bookmark.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\bookmark.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\category-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\category-details.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\category-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\category-list.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\cities.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\cities.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\compare.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\compare.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\contact.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\dashboard.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Regular.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Regular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Regular.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Regular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\aviny\\ttf\\aviny.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\aviny\\ttf\\aviny.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-black.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-blackitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-blackitalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bolditalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibolditalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabolditalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralight.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralightitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralightitalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-light.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-lightitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-lightitalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-mediumitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-mediumitalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regular.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regularitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regularitalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thin.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thinitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thinitalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabolditalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-blackitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-blackitalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bolditalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibolditalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabolditalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralightitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralightitalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-lightitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-lightitalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-mediumitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-mediumitalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regular.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regularitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regularitalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thin.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thinitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thinitalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabolditalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-black.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-blackitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-blackitalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bolditalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibolditalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabolditalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralight.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralightitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralightitalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-light.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-lightitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-lightitalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-mediumitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-mediumitalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regularitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regularitalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thin.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thinitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thinitalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabolditalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\eot\\DastNevis.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\eot\\DastNevis.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\ttf\\DastNevis.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\ttf\\DastNevis.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\woff\\DastNevis.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\woff\\DastNevis.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\index.php",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\index.php"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Black.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_UltraLight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_UltraLight.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Black.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Medium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_UltraLight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_UltraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_UltraLight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_UltraLight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_UltraLight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_UltraLight.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdn.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdn.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnbold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnbold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnlight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnlight.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdn.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdn.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnbold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnbold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnlight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnlight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdn.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdn.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnbold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnbold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnlight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnlight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdn.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdn.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnbold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnbold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnlight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnlight.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum).eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum).eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Black.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_UltraLight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_UltraLight.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum).ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum).ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Black.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Medium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_UltraLight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_UltraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum).woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum).woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_UltraLight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_UltraLight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum).woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum).woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_UltraLight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_UltraLight.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebblack.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebblack.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebbold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebbold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrablack.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrablack.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrabold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrabold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanweblight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanweblight.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebmedium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebmedium.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebregular.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebregular.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebthin.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebthin.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebblack.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebblack.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebbold.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebbold.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrablack.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrablack.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrabold.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrabold.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanweblight.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanweblight.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebmedium.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebmedium.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebregular.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebregular.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebthin.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebthin.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebblack.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebblack.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebbold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebbold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrablack.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrablack.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrabold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrabold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanweblight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanweblight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebmedium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebmedium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebregular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebregular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebthin.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebthin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebblack.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebblack.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebbold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebbold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrablack.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrablack.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrabold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrabold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanweblight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanweblight.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebmedium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebmedium.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebregular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebregular.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebthin.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebthin.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebblackfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebblackfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebboldfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebboldfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextrablackfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextrablackfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextraboldfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextraboldfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanweblightfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanweblightfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebmediumfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebmediumfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebregularfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebregularfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebthinfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebthinfanum.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebblackfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebblackfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebboldfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebboldfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextrablackfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextrablackfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextraboldfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextraboldfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanweblightfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanweblightfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebmediumfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebmediumfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebregularfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebregularfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebthinfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebthinfanum.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebblackfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebblackfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebboldfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebboldfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextrablackfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextrablackfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextraboldfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextraboldfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanweblightfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanweblightfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebmediumfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebmediumfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebregularfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebregularfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebthinfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebthinfanum.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebblackfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebblackfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebboldfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebboldfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextrablackfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextrablackfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextraboldfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextraboldfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanweblightfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanweblightfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebmediumfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebmediumfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebregularfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebregularfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebthinfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebthinfanum.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\grid-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\grid-details.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\grid-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\grid-list.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\index.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\leftbar-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\leftbar-details.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\leftbar-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\leftbar-list.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\main.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\my-ads.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\my-ads.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\price.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\price.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\profile.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\profile.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\rightbar-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\rightbar-details.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\rightbar-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\rightbar-list.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\setting.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\setting.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\custom\\user-form.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\user-form.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_444444_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_444444_256x240.html"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_555555_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_555555_256x240.html"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_777620_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_777620_256x240.html"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_777777_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_777777_256x240.html"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_cc0000_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_cc0000_256x240.html"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_ffffff_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_ffffff_256x240.html"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\css\\vendor\\slick.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\slick.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticond41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\fonts\\flaticon\\flaticon.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\about\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\about\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\about\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\about\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\app-store.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\app-store.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\avatar\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\avatar\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\avatar\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\avatar\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\bg\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\bg\\02.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\bg\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\bg\\04.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog-suggest\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog-suggest\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog-suggest\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog-suggest\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog-suggest\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog-suggest\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\blog\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\agriculture.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\agriculture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\animals.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\animals.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\automobiles.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\automobiles.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\bussiness.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\bussiness.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\education.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\education.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\electronics.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\electronics.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\fashions.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\fashions.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\furnitures.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\furnitures.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\gadgets.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\gadgets.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\hospitality.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\hospitality.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\motorbikes.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\motorbikes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\category\\properties.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\properties.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\cities\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\cities\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\cities\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\cities\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\cities\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\cities\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\counter\\ads.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\counter\\ads.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\counter\\review.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\counter\\review.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\counter\\user.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\counter\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\logo.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\pay-card\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\pay-card\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\pay-card\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\pay-card\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\play-store.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\play-store.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\07.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\08.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\09.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\10.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\11.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\12.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\13.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\14.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\15.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\product\\16.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\animals.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\animals.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\automobile.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\automobile.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\education.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\education.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\electronics.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\electronics.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\fashion.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\fashion.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\food.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\food.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\furniture.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\furniture.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\gadgets.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\gadgets.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\hospitality.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\hospitality.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\properties.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\properties.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\services.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\services.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\suggest\\software.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\software.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\team\\07.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\custom\\main.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\custom\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\custom\\price-range.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\custom\\price-range.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\custom\\slick.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\custom\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\vendor\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\vendor\\popper.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\js\\vendor\\slick.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\slick.min.js"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\038bdfa8-36c2-4373-9540-0ef8443d8f4b.jpg",
+      "PackagePath": "staticwebassets\\images\\038bdfa8-36c2-4373-9540-0ef8443d8f4b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\03e43ed8-ec18-4fab-af97-41c66d69b737.jpg",
+      "PackagePath": "staticwebassets\\images\\03e43ed8-ec18-4fab-af97-41c66d69b737.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\18847d41-5e29-40f1-846a-655589f84b00.jpg",
+      "PackagePath": "staticwebassets\\images\\18847d41-5e29-40f1-846a-655589f84b00.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\1e55b977-fa86-43ea-8d38-5fe7d08af08c.jpg",
+      "PackagePath": "staticwebassets\\images\\1e55b977-fa86-43ea-8d38-5fe7d08af08c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\28d157c1-ee15-4c16-9fa1-2fea19f699e0.jpg",
+      "PackagePath": "staticwebassets\\images\\28d157c1-ee15-4c16-9fa1-2fea19f699e0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\7920fd2b-7b62-4802-ae76-4b55a14120c4.jpg",
+      "PackagePath": "staticwebassets\\images\\7920fd2b-7b62-4802-ae76-4b55a14120c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\c7971e17-a03b-4675-84f6-168e8ed684cc.jpg",
+      "PackagePath": "staticwebassets\\images\\c7971e17-a03b-4675-84f6-168e8ed684cc.jpg"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\js\\site.js",
@@ -1111,6 +2755,70 @@
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\0c60285a-2267-4d27-8e34-8ef03e60c85d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0c60285a-2267-4d27-8e34-8ef03e60c85d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\33c2553d-de09-4d7f-a2ba-fc516644c8fa.jpg",
+      "PackagePath": "staticwebassets\\uploads\\33c2553d-de09-4d7f-a2ba-fc516644c8fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\44eed0b9-02d5-4d2e-b45d-fb6cbc728615.png",
+      "PackagePath": "staticwebassets\\uploads\\44eed0b9-02d5-4d2e-b45d-fb6cbc728615.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\59fa3781-2667-4c26-829b-e20d46456765.jpg",
+      "PackagePath": "staticwebassets\\uploads\\59fa3781-2667-4c26-829b-e20d46456765.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\5e1627e2-5d5c-4db7-b287-7eea8acf00dc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5e1627e2-5d5c-4db7-b287-7eea8acf00dc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\632ff47f-dc2f-4530-ada5-fa823f98423a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\632ff47f-dc2f-4530-ada5-fa823f98423a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\92fe19a2-beea-4736-8e04-bb70ff15c76b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\92fe19a2-beea-4736-8e04-bb70ff15c76b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\94eaf70f-1843-44f7-8503-a6585bbb03e6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\94eaf70f-1843-44f7-8503-a6585bbb03e6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\b950fd12-0c04-4583-857d-6f5a39af5fb3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b950fd12-0c04-4583-857d-6f5a39af5fb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\c5698fe0-43bb-4f1d-9c0b-cae6e77b81f6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c5698fe0-43bb-4f1d-9c0b-cae6e77b81f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\c764f89f-4302-4176-88f9-a031870d917b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c764f89f-4302-4176-88f9-a031870d917b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\eb89b4bb-3a0a-469b-bd3a-0a9c67352d1b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eb89b4bb-3a0a-469b-bd3a-0a9c67352d1b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\ec716520-30cf-4523-a522-af52bdcbce11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ec716520-30cf-4523-a522-af52bdcbce11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\ef3fba4d-1a92-45b6-800c-705f53c3c7e3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ef3fba4d-1a92-45b6-800c-705f53c3c7e3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\f54cf221-f2b6-48b6-b3af-bfc60ae492f0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f54cf221-f2b6-48b6-b3af-bfc60ae492f0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\uploads\\f5c05346-083d-4891-a5cc-c3f230377b08.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f5c05346-083d-4891-a5cc-c3f230377b08.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Achareh.Endpoint.MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

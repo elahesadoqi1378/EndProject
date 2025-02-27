@@ -14,7 +14,7 @@ namespace Achareh.Domain.AppServices
         {
             _requestService = requestService; 
         }
-        public async Task<bool> ChangeStatus(StatusEnum status, int orderId, CancellationToken cancellationToken)
+        public async Task<bool> ChangeStatus(int status, int orderId, CancellationToken cancellationToken)
 
             => await _requestService.ChangeStatus(status, orderId, cancellationToken);
         

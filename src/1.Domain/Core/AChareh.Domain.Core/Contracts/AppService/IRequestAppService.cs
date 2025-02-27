@@ -16,7 +16,7 @@ namespace Achareh.Domain.Core.Contracts.AppService
         Task<List<Request>?> GetCustomerRequestsAsync(int customerId, CancellationToken cancellationToken);
         Task<List<Request>> GetCustomerRequestsWithDetailsAsync(int customerId, CancellationToken cancellationToken);
         Task<Request?> GetByIdWithDetailsAsync(int requestId, CancellationToken cancellationToken);
-        Task<bool> ChangeStatus(StatusEnum status, int orderId, CancellationToken cancellationToken);
+        Task<bool> ChangeStatus(int status, int orderId, CancellationToken cancellationToken);
         Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken);
         Task<bool> CreateAsync(Request request, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken);

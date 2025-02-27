@@ -9,6 +9,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
     public class CategoryController : Controller
     {
         private readonly ICategoryAppService _categoryAppService;
+      
 
         public CategoryController(ICategoryAppService categoryAppService)
         {

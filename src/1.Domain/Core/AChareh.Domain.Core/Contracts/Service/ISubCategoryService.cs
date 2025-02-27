@@ -14,7 +14,7 @@ namespace Achareh.Domain.Core.Contracts.Service
         Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken);
         Task<bool> SubCategoryUpdate(UpdateSubCategoryDto updateSubCategoryDto, CancellationToken cancellationToken);
-        Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken);
+        //Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
       
     }

@@ -1,0 +1,104 @@
+﻿@* @using Achareh.Domain.Core.Enums
+@using Framework
+@model RequestStatusViewModel
+
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>تغییر وضعیت درخواست</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/AdminTemplate/css/style.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'IRANSans', sans-serif;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .table thead {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        .btn {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .badge {
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body class="theme-blush container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <h2 class="text-center mb-4">جزئیات درخواست</h2>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>شناسه سفارش</th>
+                            <th>وضعیت فعلی</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Model.RequestId</td>
+                            <td>
+                                <span class="badge
+                                    @(Model.CurrentStatus == StatusEnum.WatingExpertOffer ? "badge-warning" :
+                                      Model.CurrentStatus == StatusEnum.WatingForChoosingExpert ? "badge-warning" :
+                                      Model.CurrentStatus == StatusEnum.WatingExpertComeToYourPlace ? "badge-warning" :
+                                      Model.CurrentStatus == StatusEnum.WorkStarted ? "badge-info" :
+                                      Model.CurrentStatus == StatusEnum.WorkDoneByExpert ? "badge-primary" :
+                                      Model.CurrentStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+                                    @Model.CurrentStatus.GetEnumDisplayName()
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="mt-4">تغییر وضعیت درخواست</h3>
+                <form asp-action="ChangeStatus" method="post">
+                    <input type="hidden" asp-for="RequestId" />
+
+                    <div class="form-group mb-3">
+                        <label for="NewStatus">وضعیت جدید</label>
+                        <select asp-for="NewStatus" class="form-control" asp-items="@(new SelectList(Model.AvailableStatuses))">
+                            <option value="">انتخاب وضعیت جدید</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">ذخیره تغییرات</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ *@

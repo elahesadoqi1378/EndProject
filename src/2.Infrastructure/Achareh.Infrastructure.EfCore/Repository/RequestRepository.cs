@@ -56,10 +56,10 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
 
 
-        public Task<Request> GetByIdAsync(int Id, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Request> GetByIdAsync(int Id, CancellationToken cancellationToken)
+
+         => await _context.Requests.FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
+
 
         public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
 
@@ -151,12 +151,16 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         }
 
-        public async Task<bool> ChangeStatus(StatusEnum status, int id, CancellationToken cancellationToken)
+        public async Task<bool> ChangeStatus(int status, int orderId, CancellationToken cancellationToken)
         {
-            var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == id);
-            existingRequest.RequestStatus = status;
+            var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == orderId, cancellationToken);
 
-            await _context.SaveChangesAsync(cancellationToken);
+            if (existingRequest == null)
+                return false; 
+
+            existingRequest.RequestStatus = (StatusEnum)status; 
+
+            await _context.SaveChangesAsync(cancellationToken); 
             return true;
         }
         public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)

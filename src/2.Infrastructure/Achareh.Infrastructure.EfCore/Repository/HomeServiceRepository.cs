@@ -42,6 +42,8 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 throw new Exception("something is wrong in create");
             }
+
+
         }
 
         public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)

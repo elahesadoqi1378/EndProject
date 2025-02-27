@@ -11,6 +11,8 @@ using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Services;
 using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Repositroy;
+using Achareh.Domain.Core.Contracts.Repository;
+using Microsoft.AspNetCore.Http.Features;
 
 
 Log.Logger = new LoggerConfiguration()
@@ -40,7 +42,7 @@ builder.Services.AddScoped<IHomeServiceRepository, HomeServiceRepository>();
 builder.Services.AddScoped<IRequestRepository, RequestRepository>();
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
-//builder.Services.AddScoped<IImageRepository, ImageRepository>();
+
 ;
 
 builder.Services.AddScoped<IHomeServiceService, HomeServiceService>();
@@ -53,7 +55,7 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IRequestService, RequestService>();
 builder.Services.AddScoped<IExpertOfferService, ExpertOfferService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
-//builder.Services.AddScoped<IImageService, ImageService>();
+
 
 
 //appservice
@@ -67,7 +69,7 @@ builder.Services.AddScoped<ICategoryAppService, CategoryAppService>();
 builder.Services.AddScoped<IExpertOfferAppService, ExpertOfferAppService>();
 builder.Services.AddScoped<IRequestAppService, RequestAppService>();
 builder.Services.AddScoped<IReviewAppService, ReviewAppService>();
-//builder.Services.AddScoped<IImageAppService, ImageAppService>();
+
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -79,6 +81,10 @@ builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnC
 builder.Services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation();
 
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 10 * 1024 * 1024; // ?????? ?? ???????
+});
 
 
 
@@ -115,30 +121,30 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-//app.MapAreaControllerRoute(
-//    name: "admin",
-//    areaName: "Admin",
-//    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
-
-//app.MapAreaControllerRoute(
-//    name: "areas",
-//    areaName = "Admin",
-//    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+app.MapAreaControllerRoute(
+    name: "admin",
+    areaName: "Admin",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
 
 app.MapAreaControllerRoute(
-name: "areas",
-areaName: "Admin",
-pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+    name: "users",
+    areaName: "Users",
+    pattern: "Users/{controller=Home}/{action=Index}/{id?}");
+
+
 
 //app.MapAreaControllerRoute(
-//    name: "admin",
-//    areaName: "Admin",
-//    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+//name: "areas",
+//areaName: "Customer",
+//pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
 
 //app.MapAreaControllerRoute(
-//    name: "admin",
-//    areaName: "Admin",
-//    pattern: "Admin/{controller=Admin}/{action=Login}/{id?}");
+//name: "areas",
+//areaName: "Admin",
+//pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+
 
 app.MapControllerRoute(
     name: "default",
@@ -146,6 +152,7 @@ app.MapControllerRoute(
 
 app.Run();
 
+app.UseStaticFiles();
 
 
 

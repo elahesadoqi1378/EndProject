@@ -1,5 +1,5 @@
-﻿@using Achareh.Domain.Core.Dtos.HomeService
-@model UpdateHomeServiceDto
+﻿@using Achareh.Endpoint.MVC.Models
+@model EditHomeServiceViewModel
 
 @{
     ViewData["Title"] = "ویرایش سرویس";
@@ -9,7 +9,8 @@
     <div class="card shadow-lg p-4" style="width: 40rem;">
         <h2 class="text-center mb-4">ویرایش سرویس</h2>
 
-        <form asp-action="Edit" method="post">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
             <input type="hidden" asp-for="Id" />
 
             <div class="mb-3">
@@ -22,18 +23,28 @@
                 <label asp-for="SubCategoryId" class="form-label">دسته‌بندی</label>
                 <select asp-for="SubCategoryId" class="form-select">
                     <option value="">انتخاب کنید...</option>
-                    @foreach (var item in ViewData["SubCategories"] as List<SelectListItem>)
+                    @foreach (var item in ViewBag.SubCategories as List<SelectListItem>)
                     {
-                        <option value="@item.Value" selected="@(item.Value == Model.SubCategoryId.ToString())">@item.Text</option>
+                        <option value="@item.Value">@item.Text</option>
                     }
                 </select>
                 <span asp-validation-for="SubCategoryId" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="ImagePath" class="form-label">تصویر</label>
-                <input asp-for="ImagePath" type="file" class="form-control" />
-                <span asp-validation-for="ImagePath" class="text-danger"></span>
+                <label class="form-label">تصویر فعلی</label>
+                @if (!string.IsNullOrEmpty(Model.ImagePath))
+                {
+                    <div>
+                        <img src="@Model.ImagePath" alt="تصویر سرویس" class="img-fluid rounded" style="max-height: 150px;" />
+                    </div>
+                }
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">آپلود تصویر جدید</label>
+                <input type="file" name="ImageFile" class="form-control" />
+                <input type="hidden" asp-for="ImagePath" />
             </div>
 
             <div class="mb-3">
@@ -49,12 +60,14 @@
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary w-100">به‌روزرسانی</button>
-                <a asp-action="Index" class="btn btn-secondary w-100 mt-2">بازگشت</a>
+                <button class="btn btn-success w-100" type="submit">ذخیره تغییرات</button>
+                <a asp-action="HomeServiceIndex" class="btn btn-secondary w-100 mt-2">بازگشت</a>
             </div>
         </form>
     </div>
 </div>
+
+
 
 @section Scripts {
     @{

@@ -42,10 +42,10 @@ namespace Achareh.Domain.Services
 
           => await _subCategoryRepository.GetByIdAsync(id, cancellationToken);
 
-        public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
+        //public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
 
 
-          => await _subCategoryRepository.SubCategoryCreate(creasteSubCategoryDto, cancellationToken);
+        //  => await _subCategoryRepository.SubCategoryCreate(creasteSubCategoryDto, cancellationToken);
 
         public async Task<bool> SubCategoryUpdate(UpdateSubCategoryDto updateSubCategoryDto, CancellationToken cancellationToken)
 

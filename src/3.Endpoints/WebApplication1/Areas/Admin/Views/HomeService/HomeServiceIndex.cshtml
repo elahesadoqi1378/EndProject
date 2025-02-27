@@ -54,11 +54,15 @@
                                                 <tr>
                                                     <td>@service.Id</td>
                                                     <td>
-                                                       
                                                         @if (!string.IsNullOrEmpty(service.ImagePath))
                                                         {
-                                                            <img src="@service.ImagePath" alt="تصویر" style="width: 200px; height: 200px; border-radius: 10px;">
+                                                            <img src="@service.ImagePath" class="avatar w30" alt="User Image">
                                                         }
+                                                        else
+                                                        {
+                                                            <img src="~/AdminTemplate/images/xs/avatar1.jpg" class="avatar w30" alt="Default Avatar">
+                                                        }
+                                                       
                                                     </td>
                                                     <td style="white-space: nowrap; padding-right: 40px;">@service.Title</td>
                                                     <td>@service.SubCategory.Title</td>
