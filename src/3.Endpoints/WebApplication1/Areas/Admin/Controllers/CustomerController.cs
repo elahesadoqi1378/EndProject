@@ -1,7 +1,9 @@
 ﻿using Achareh.Domain.AppServices;
 using Achareh.Domain.Core.Contracts.AppService;
+using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Endpoint.MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -10,18 +12,21 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class CustomerController : Controller
     {
         
         private readonly UserManager<User> _userManager;
         private readonly ICustomerAppService _customerAppService;
         private readonly ICityAppService _cityAppService;
+        private readonly IImageService _imageService;
 
-        public CustomerController(UserManager<User> userManager, ICustomerAppService customerAppService, ICityAppService cityAppService)
+        public CustomerController(UserManager<User> userManager, ICustomerAppService customerAppService, ICityAppService cityAppService, IImageService imageService)
         {
             _userManager = userManager;
             _customerAppService = customerAppService;
             _cityAppService = cityAppService;
+            _imageService = imageService;
         }
         public async Task<IActionResult> CustomerIndex(CancellationToken cancellationToken)
         {
@@ -36,13 +41,12 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                     Id = customer.Id,
                     Email = customer.User.Email,
                     FirstName = customer.User.FirstName,
-                    LastName = customer.User.LastName
+                    LastName = customer.User.LastName,
+                    ImagePath = customer.User.ImagePath
                 });
             }
             return  View(users);
         }
-
-       
 
         public async Task<IActionResult> Create(CancellationToken cancellationToken)
         {
@@ -89,6 +93,10 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 
                 return View(model);
             }
+            if (model.ImageFile is not null)
+            {
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "customer", cancellationToken);
+            }
 
             var user = new User
             {
@@ -96,16 +104,17 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 UserName = model.Email,
                 CityId = model.CityId,
                 FirstName = model.FirstName,
-                LastName = model.LastName
+                LastName = model.LastName,
+                ImagePath = model.ImagePath
             };
 
-            var result = await _userManager.CreateAsync(user, model.Password);
+            var result = await _customerAppService.RegisterAsync(user, model.Password);
 
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError("", error.Description);
+                    ModelState.AddModelError("", "something is wrong");
                 }
 
              
@@ -136,7 +145,8 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 Id = customer.Id,
                 Email = customer.User.Email,
                 FirstName = customer.User.FirstName,
-                LastName = customer.User.LastName
+                LastName = customer.User.LastName,
+                ImagePath = customer.User.ImagePath
 
             };
             return View(model);
@@ -152,17 +162,23 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             if (user == null)
                 return NotFound();
 
+            if (model.ImageFile is not null)
+            {
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "customer", cancellationToken);
+            }
+
             user.UserName = model.Email;
             user.Email = model.Email;
             user.FirstName = model.FirstName;
             user.LastName = model.LastName;
+            user.ImagePath = model.ImagePath;
 
-            var result = await _userManager.UpdateAsync(user);
+            var result = await _customerAppService.UpdateAsync(user);
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError("", error.Description);
+                    ModelState.AddModelError("", "Something is wrong ");
                 }
                 return View(model);
             }

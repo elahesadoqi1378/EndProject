@@ -8,6 +8,8 @@
 
   <ItemGroup>
 	 
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.4" />
+	 
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.0" />
   </ItemGroup>
 

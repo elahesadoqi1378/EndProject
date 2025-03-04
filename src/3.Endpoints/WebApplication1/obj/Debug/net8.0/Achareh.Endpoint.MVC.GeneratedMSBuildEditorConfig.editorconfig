@@ -180,8 +180,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/CustomerDashboard/EditCustomerInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcRWRpdEN1c3RvbWVySW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/CustomerDashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/CustomerDashboard/OfferList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcT2ZmZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/CustomerDashboard/RequestList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcUmVxdWVzdExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/HomeService/Index.cshtml]
@@ -192,8 +208,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/Request/AddRequest.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVxdWVzdFxBZGRSZXF1ZXN0LmNzaHRtbA==
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/Request/RequestIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVxdWVzdFxSZXF1ZXN0SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/Shared/Error.cshtml]

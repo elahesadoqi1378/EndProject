@@ -28,7 +28,7 @@ namespace Achareh.Domain.Core.Entities.Request
         public HomeService HomeService { get; set; }
         public City City { get; set; }
         public Customer Customer { get; set; }
-        public List<Image>? Images { get; set; }
+        public string? RequestImages { get; set; }
         public List<ExpertOffer>? ExpertOffers { get; set; }
       
         #endregion

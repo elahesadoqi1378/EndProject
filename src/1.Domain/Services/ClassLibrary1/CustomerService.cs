@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,13 @@ namespace Achareh.Domain.Services
     public class CustomerService : ICustomerService
     {
         private readonly ICustomerRepository _customerRepository;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public CustomerService(ICustomerRepository customerRepository)
+        public CustomerService(ICustomerRepository customerRepository, UserManager<User> userManager)
         {
             _customerRepository = customerRepository;
+            _userManager = userManager;
         }
 
         public async Task<bool> CreateAsync(Customer customer, CancellationToken cancellationToken)
@@ -45,7 +49,17 @@ namespace Achareh.Domain.Services
         public async Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken)
 
         => await _customerRepository.UpdateAsync(customer, cancellationToken);
-          
-           
+
+        public Task<IdentityResult> RegisterAsync(User user, string pass)
+        {
+            return _userManager.CreateAsync(user, pass);
+        }
+        public Task<IdentityResult> UpdateAsync(User user)
+        {
+            return _userManager.UpdateAsync(user);
+        }
+       
+
+
     }
 }

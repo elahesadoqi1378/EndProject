@@ -1,9 +1,9 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Dtos.HomeService;
-using Achareh.Domain.Core.Dtos.SubCategory;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Threading;
 
 
@@ -12,16 +12,17 @@ namespace Achareh.Infrastructure.EfCore.Repository
     public class SubCategoryRepository : ISubCategoryRepository
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<SubCategoryRepository> _logger;
 
-        public SubCategoryRepository(AppDbContext context)
+        public SubCategoryRepository(AppDbContext context, ILogger<SubCategoryRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
 
-            => await _context.SubCategories
-                            .Include(x => x.HomeServices)
-                            .ToListAsync(cancellationToken);
+            => await _context.SubCategories.Where(x=>x.IsDeleted == false)
+                                           .ToListAsync(cancellationToken);
 
         public async Task<SubCategory> GetByIdAsync(int id , CancellationToken cancellationToken)
 
@@ -35,11 +36,13 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 await _context.SubCategories.AddAsync(subCategory,cancellationToken);
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("subcategory created Succesfully");
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("something is wrong in create");
+                _logger.LogError("something is wrong in create subcategory", ex.Message);
+                return false;
             }
 
         }
@@ -56,57 +59,40 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 existingSubCategory.CategoryId = subCategory.CategoryId;
                 existingSubCategory.ImagePath = subCategory.ImagePath;
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("subcategory updated Succesfully");
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("something wrong in update");
+                _logger.LogError("something is wrong in update subcategory", ex.Message);
+                return false;
             }
 
 
         }
 
-        public async Task<bool> SubCategoryUpdate(UpdateSubCategoryDto updateSubCategoryDto, CancellationToken cancellationToken)
-        {
-            var existingModel = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == updateSubCategoryDto.Id, cancellationToken);
-
-            existingModel.Title = updateSubCategoryDto.Title;
-            existingModel.ImagePath = updateSubCategoryDto.ImagePath;
-            existingModel.CategoryId = updateSubCategoryDto.CategoryId;
-
-            await _context.SaveChangesAsync(cancellationToken);
-
-            return true;
-        }
-
-        //public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
-        //{
-        //    var newModel = new SubCategory()
-        //    {
-        //        Title = creasteSubCategoryDto.Title,
-        //        ImagePath = creasteSubCategoryDto.ImagePath,
-        //        CategoryId = creasteSubCategoryDto.CategoryId
-                
-        //    };
-        //    await _context.SubCategories.AddAsync(newModel, cancellationToken);
-
-        //    await _context.SaveChangesAsync(cancellationToken);
-
-        //    return true;
-
-        //}
-
+     
         public async Task<bool> DeleteAsync(int id , CancellationToken cancellationToken)
         {
-            var subCategory = await _context.SubCategories
-                                      .Include(x => x.HomeServices)
-                                      .FirstOrDefaultAsync(x => x.Id == id ,  cancellationToken);
+            try
+            {
+                var subCategory = await _context.SubCategories
+                                                .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-            if (subCategory == null)
+                if (subCategory == null)
+                    return false;
+
+                subCategory.IsDeleted = true;
+                _logger.LogInformation("subcategory deleted Succesfully");
+                await _context.SaveChangesAsync(cancellationToken);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in delete subcategory", ex.Message);
                 return false;
+            }
 
-            _context.SubCategories.Remove(subCategory);
-            return await _context.SaveChangesAsync(cancellationToken) > 0;
 
         }
 
@@ -114,6 +100,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
             => await _context.SubCategories.ToListAsync(cancellationToken);
 
+      
     }
 }
 

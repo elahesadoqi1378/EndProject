@@ -30,7 +30,9 @@ namespace Achareh.Endpoint.MVC.Models
         [Required(ErrorMessage = "لطفا یک شهر انتخاب کنید")]
         public int CityId { get; set; }
 
+        public string? ImagePath { get; set; } = null;
 
+        public IFormFile? ImageFile { get; set; }
     }
    
 }

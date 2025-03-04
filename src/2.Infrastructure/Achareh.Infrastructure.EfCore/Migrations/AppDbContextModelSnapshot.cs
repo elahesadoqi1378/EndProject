@@ -185,8 +185,6 @@ namespace Achareh.Infrastructure.EfCore.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RequestId");
-
                     b.ToTable("Images", (string)null);
                 });
 
@@ -200,6 +198,9 @@ namespace Achareh.Infrastructure.EfCore.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -218,6 +219,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/tamizkari.jpg",
                             IsDeleted = false,
                             Title = "تمیزکاری"
                         },
@@ -225,6 +227,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/sakhteman.jpg",
                             IsDeleted = false,
                             Title = "ساختمان"
                         },
@@ -232,6 +235,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 3,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/tamirat_ashya.jpg",
                             IsDeleted = false,
                             Title = "تعمیرات اشیا"
                         },
@@ -239,6 +243,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 4,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/asbabkeshi.jpg",
                             IsDeleted = false,
                             Title = "اسباب کشی و حمل بار"
                         },
@@ -246,6 +251,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 5,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/khodro.jpg",
                             IsDeleted = false,
                             Title = "خودرو"
                         },
@@ -253,6 +259,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/salamat_zibayi.jpg",
                             IsDeleted = false,
                             Title = "سلامت و زیبایی"
                         },
@@ -260,6 +267,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 7,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/sazmanha_va_mojtamha.jpg",
                             IsDeleted = false,
                             Title = "سازمان ها و مجتمع ها"
                         },
@@ -267,6 +275,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/category/sayer.jpg",
                             IsDeleted = false,
                             Title = "سایر"
                         });
@@ -321,7 +330,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "من این خانه را به خوبی نظافت می کنم",
                             ExpertId = 1,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 2, 23, 16, 15, 9, 672, DateTimeKind.Local).AddTicks(5969),
+                            OfferDate = new DateTime(2025, 3, 7, 0, 30, 28, 837, DateTimeKind.Local).AddTicks(8633),
                             OfferStatusEnum = 4,
                             RequestId = 1,
                             SuggestedPrice = 500000
@@ -333,7 +342,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "پیشنهاد برای تعمیر کولر",
                             ExpertId = 1,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 2, 22, 16, 15, 9, 672, DateTimeKind.Local).AddTicks(5980),
+                            OfferDate = new DateTime(2025, 3, 6, 0, 30, 28, 837, DateTimeKind.Local).AddTicks(8639),
                             OfferStatusEnum = 1,
                             RequestId = 2,
                             SuggestedPrice = 750000
@@ -386,7 +395,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/nezafat_manzel.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 1,
@@ -397,7 +407,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/nezafat_rahpele.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 1,
@@ -408,7 +419,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 3,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/ghalishoyi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 2,
@@ -419,7 +431,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 4,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/pardeshoyi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 2,
@@ -430,7 +443,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 5,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/seramik_khodro.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 3,
@@ -441,7 +455,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/sefrshoyi_khodro.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 3,
@@ -452,7 +467,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 7,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamir_coolerabi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 4,
@@ -463,7 +479,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kanalsazi_cooler.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 4,
@@ -474,7 +491,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 9,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamir_motorkhane.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 4,
@@ -485,7 +503,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 10,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/sangkari.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -496,7 +515,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 11,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/banayi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -507,7 +527,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 12,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/klidsazi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -518,7 +539,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 13,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kafsabi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 5,
@@ -529,7 +551,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 14,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/lolekeshi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 6,
@@ -540,7 +563,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 15,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/lolebazkoni.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 6,
@@ -551,7 +575,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 16,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/lolekeshi_fazelab.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 6,
@@ -562,7 +587,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 17,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/moshavere_bazsazi_sakhteman.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 7,
@@ -573,7 +599,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 18,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/dekorasion_sakhteman.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 7,
@@ -584,7 +611,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 19,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/khadamat_baqbani.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 8,
@@ -595,7 +623,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 20,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kasht_goldan.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 8,
@@ -606,7 +635,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 21,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamirat_mobleman.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 9,
@@ -617,7 +647,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 22,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamirat_mobleman_edari.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 9,
@@ -628,7 +659,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 23,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamir_panke.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 10,
@@ -639,7 +671,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 24,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/nasb_va_tamir_fer.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 10,
@@ -650,7 +683,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 25,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamir_laptop.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 11,
@@ -661,7 +695,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 26,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/modem_va_internet.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 11,
@@ -672,7 +707,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 27,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamirat_mobile.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 12,
@@ -683,7 +719,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 28,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/khadamt_kharid_mobile.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 12,
@@ -694,7 +731,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 29,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/khadamat_dorbin.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 12,
@@ -705,7 +743,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 30,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/asbabkeshi_ba_khavar.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 13,
@@ -716,7 +755,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 31,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/asabkeshi_ba_neysan.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 13,
@@ -727,7 +767,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 32,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kargar_jabejayi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 13,
@@ -738,7 +779,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 33,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/taviz_batri_khodro.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -749,7 +791,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 34,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/batri_be_batri.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -760,7 +803,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 35,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/haml_khodro.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -771,7 +815,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 36,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/taviz_vayer_sham_khodro.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 14,
@@ -782,7 +827,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 37,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/berashing_moye_banovan.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 15,
@@ -793,7 +839,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 38,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kotahi_moye_banovan.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 15,
@@ -804,7 +851,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 39,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/baft_moye_banovan.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 15,
@@ -815,7 +863,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 40,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/moraqebat_negahdari.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 16,
@@ -826,7 +875,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 41,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/moayene_pezeshki.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 16,
@@ -837,7 +887,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 42,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/pirapezeshki.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 16,
@@ -848,7 +899,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 43,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/petshop.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 17,
@@ -859,7 +911,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 44,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/khadamat_dampezshki.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 17,
@@ -870,7 +923,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 45,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/khadamt_yoga.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 18,
@@ -881,7 +935,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 46,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kelas_polates.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 18,
@@ -892,7 +947,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 47,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/khadamat_achare.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 19,
@@ -903,7 +959,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 48,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/estekhdam_niroye_khedmatkar.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 20,
@@ -914,7 +971,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 49,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamirat_lebas.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 21,
@@ -925,7 +983,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 50,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/dokht_lebas_zanane.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 21,
@@ -936,7 +995,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 51,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tamir_kifokafsh.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 21,
@@ -947,7 +1007,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 52,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/keyko_shirini.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -958,7 +1019,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 53,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/dekor_tavalod.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -969,7 +1031,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 54,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/gol_arayi.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -980,7 +1043,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 55,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/finger_food.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 22,
@@ -991,7 +1055,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 56,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/amozesh_zaban_khareji.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 23,
@@ -1002,7 +1067,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 57,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/ebtedayi_motevasete.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 23,
@@ -1013,7 +1079,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 58,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/kotahi_moye_kodak.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 24,
@@ -1024,7 +1091,8 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         {
                             Id = 59,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "",
+                            Description = " به هزینه سفارش بعد از ساعت 21، مبلغ 150.000 تومان کمک هزینه رفت و آمد افزوده خواهد شد.",
+                            ImagePath = "/images/homeservice/tarahi_otaq_kodak.jpg",
                             IsDeleted = false,
                             Price = 2000,
                             SubCategoryId = 24,
@@ -1065,6 +1133,9 @@ namespace Achareh.Infrastructure.EfCore.Migrations
 
                     b.Property<DateTime>("RequestForTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("RequestImages")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RequestStatus")
                         .HasColumnType("int");
@@ -1215,6 +1286,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 1,
                             CategoryId = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/nezafat_pazirayi.jpg",
                             IsDeleted = false,
                             Title = "نظافت و پذیرایی"
                         },
@@ -1223,6 +1295,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 2,
                             CategoryId = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/shostosho.jpg",
                             IsDeleted = false,
                             Title = "شستشو"
                         },
@@ -1231,6 +1304,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 3,
                             CategoryId = 1,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/karvash_detailing",
                             IsDeleted = false,
                             Title = "کارواش و دیتیلینگ"
                         },
@@ -1239,6 +1313,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 4,
                             CategoryId = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/sarmayesh_garmayesh",
                             IsDeleted = false,
                             Title = "سرمایش و گرمایش"
                         },
@@ -1247,6 +1322,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 5,
                             CategoryId = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/tamirat_sakhteman",
                             IsDeleted = false,
                             Title = "تعمیرات ساختمان"
                         },
@@ -1255,6 +1331,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 6,
                             CategoryId = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/lolekeshi",
                             IsDeleted = false,
                             Title = "لوله کشی"
                         },
@@ -1263,6 +1340,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 7,
                             CategoryId = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/tarahi_bazsazi.jpg",
                             IsDeleted = false,
                             Title = "طراحی و بازسازی ساختمان"
                         },
@@ -1271,6 +1349,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 8,
                             CategoryId = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/baqbani_fazayesabz.jpg",
                             IsDeleted = false,
                             Title = "باغبانی و فضای سبز"
                         },
@@ -1279,6 +1358,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 9,
                             CategoryId = 2,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/choob_kabinet.jpg",
                             IsDeleted = false,
                             Title = "چوب و کابینت"
                         },
@@ -1287,6 +1367,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 10,
                             CategoryId = 3,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/nasab_tamir_lavazem.jpg",
                             IsDeleted = false,
                             Title = "نصب و تعمیر لوازم خانگی"
                         },
@@ -1295,6 +1376,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 11,
                             CategoryId = 3,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/khadamt_cp.jpg",
                             IsDeleted = false,
                             Title = "خدمات کامپیوتری"
                         },
@@ -1303,6 +1385,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 12,
                             CategoryId = 3,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/tamirat_mobile.jpg",
                             IsDeleted = false,
                             Title = "تعمیرات موبایل"
                         },
@@ -1311,6 +1394,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 13,
                             CategoryId = 4,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/barbari_jabejayi.jpg",
                             IsDeleted = false,
                             Title = "باربری و جابجایی"
                         },
@@ -1319,6 +1403,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 14,
                             CategoryId = 5,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/khadamat_khodro.jpg",
                             IsDeleted = false,
                             Title = "خدمات و تعمیرات خودرو"
                         },
@@ -1327,6 +1412,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 15,
                             CategoryId = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/zibayi_banovan.jpg",
                             IsDeleted = false,
                             Title = "زیبایی بانوان"
                         },
@@ -1335,6 +1421,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 16,
                             CategoryId = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/pezeshki_parastari.jpg",
                             IsDeleted = false,
                             Title = "پزشکی و پرستاری"
                         },
@@ -1343,6 +1430,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 17,
                             CategoryId = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/heyvanat_khanegi.jpg",
                             IsDeleted = false,
                             Title = "حیوانات خانگی"
                         },
@@ -1351,6 +1439,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 18,
                             CategoryId = 6,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/tandorosti_varzesh.jpg",
                             IsDeleted = false,
                             Title = "تندرستی و ورزش"
                         },
@@ -1359,6 +1448,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 19,
                             CategoryId = 7,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/khadamat_sherkati.jpg",
                             IsDeleted = false,
                             Title = "خدمات شرکتی"
                         },
@@ -1367,6 +1457,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 20,
                             CategoryId = 7,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/tamin_niroye_ensani.jpg",
                             IsDeleted = false,
                             Title = "تامین نیروی انسانی"
                         },
@@ -1375,6 +1466,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 21,
                             CategoryId = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/khayati_tamirat.jpg",
                             IsDeleted = false,
                             Title = "خیاطی و تعمیرات لباس"
                         },
@@ -1383,6 +1475,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 22,
                             CategoryId = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/majales_roydad.jpg",
                             IsDeleted = false,
                             Title = "مجالس و رویدادها"
                         },
@@ -1391,6 +1484,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 23,
                             CategoryId = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/amozesh.jpg",
                             IsDeleted = false,
                             Title = "آموزش"
                         },
@@ -1399,6 +1493,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Id = 24,
                             CategoryId = 8,
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ImagePath = "/images/subcategory/kodak.jpg",
                             IsDeleted = false,
                             Title = "کودک"
                         });
@@ -1579,7 +1674,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "85649339-61d0-4e5c-bac8-573a800c1722",
+                            ConcurrencyStamp = "9549b479-3097-41b6-978f-858149d1c60d",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ela@gmail.com",
                             EmailConfirmed = false,
@@ -1589,7 +1684,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ELA@GMAIL.COM",
                             NormalizedUserName = "ELA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEI8DUUI8rWHOe/PHVQ8OXBolY70qZVMGLghxbEZN6O4LdbwONjpRxEv/m27Aw7Y/ZQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECRMgXJCTjUu2B0LmmCWk9+Wkt9L0zsrv6NJE8VxxjYjP9mHZ4IzIzBLG6pVH4wgRA==",
                             PhoneNumber = "093689162292",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1602,7 +1697,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "63f095c1-7514-46bd-8047-c3aa9e849639",
+                            ConcurrencyStamp = "d91e54f0-cc06-4f04-b92b-dc15123c038b",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "sara@gmail.com",
                             EmailConfirmed = false,
@@ -1612,9 +1707,10 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA@GMAIL.COM",
                             NormalizedUserName = "SARA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPn9mUZ9/WBHY2JFnxhelsQqgm0RwQb2OWpzGNKOIaW3K7iN8dWkmUidvrhm5Yc/Pw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBLic1hRGmhudECfbBwn368vGhpgqib5mnv87aqcytagZTc84gOIjrU2U3IIVf7LgQ==",
                             PhoneNumber = "09124361938",
                             PhoneNumberConfirmed = false,
+                            SecurityStamp = "Guid.NewGuid().ToString()",
                             TwoFactorEnabled = false,
                             UserName = "sara"
                         },
@@ -1624,7 +1720,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "9324da09-77c4-4454-a600-bf913d01753b",
+                            ConcurrencyStamp = "93519495-6b90-4ba1-8ad1-44e67300e8b1",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "amir@gmail.com",
                             EmailConfirmed = false,
@@ -1634,9 +1730,10 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "AMIR@GMAIL.COM",
                             NormalizedUserName = "AMIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDp3VLrpsBzWgavv1VgSusFS0uyWZ4X56aOhmMfdbOuLKkiApOCEHbuociSS1WdtJw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDT3lvcCw8zhpEuq9PLKn60tExWdggf05c5pREnubs1XDIr/b9dr05/2M2ioOinkYA==",
                             PhoneNumber = "09016308704",
                             PhoneNumberConfirmed = false,
+                            SecurityStamp = "Guid.NewGuid().ToString()",
                             TwoFactorEnabled = false,
                             UserName = "amir"
                         });
@@ -1837,17 +1934,6 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("Achareh.Domain.Core.Entities.BaseEntities.Image", b =>
-                {
-                    b.HasOne("Achareh.Domain.Core.Entities.Request.Request", "Request")
-                        .WithMany("Images")
-                        .HasForeignKey("RequestId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Request");
                 });
 
             modelBuilder.Entity("Achareh.Domain.Core.Entities.Request.ExpertOffer", b =>
@@ -2074,8 +2160,6 @@ namespace Achareh.Infrastructure.EfCore.Migrations
             modelBuilder.Entity("Achareh.Domain.Core.Entities.Request.Request", b =>
                 {
                     b.Navigation("ExpertOffers");
-
-                    b.Navigation("Images");
                 });
 
             modelBuilder.Entity("Achareh.Domain.Core.Entities.Request.Review", b =>

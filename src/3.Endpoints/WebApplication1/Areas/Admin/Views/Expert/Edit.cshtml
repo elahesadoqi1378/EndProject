@@ -41,6 +41,27 @@
                                     <span asp-validation-for="LastName" class="text-danger"></span>
                                 </div>
 
+                                <div class="mb-3">
+                                    <label class="form-label">تصویر فعلی</label>
+                                    @if (!string.IsNullOrEmpty(Model.ImagePath))
+                                    {
+                                        <div>
+                                            <img src="@Model.ImagePath" class="img-thumbnail" style="max-width: 150px;" />
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted">تصویری وجود ندارد.</p>
+                                    }
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">آپلود تصویر جدید (اختیاری)</label>
+                                    <input type="file" asp-for="ImageFile" class="form-control" />
+                                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                                </div>
+
+
                                 <div class="d-flex justify-content-between">
                                     <button type="submit" class="btn btn-success">
                                         <i class="zmdi zmdi-check"></i> ذخیره تغییرات

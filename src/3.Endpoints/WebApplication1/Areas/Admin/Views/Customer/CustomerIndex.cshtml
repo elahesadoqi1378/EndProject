@@ -1,22 +1,7 @@
 ﻿
 @model List<CustomerExpertViewModel>
 
-<!doctype html>
-<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<title>:: Aero Bootstrap4 Admin ::</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="~/AdminTemplate/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="~/AdminTemplate/plugins/footable-bootstrap/css/footable.bootstrap.min.css">
-	<link rel="stylesheet" href="~/AdminTemplate/plugins/footable-bootstrap/css/footable.standalone.min.css">
-	<link rel="stylesheet" href="~/AdminTemplate/css/style.min.css">
-</head>
-
-<body class="theme-blush">
 	<!-- Page Loader -->
 	<div class="page-loader-wrapper">
 		<div class="loader">
@@ -60,6 +45,7 @@
 											<th>نوع کاربر</th>
 											<th>نام</th>
 											<th>نام خانوادگی</th>
+											<th>تصویر</th>
 											<th>اقدام</th>
 										</tr>
 									</thead>
@@ -87,6 +73,17 @@
 													</td>
 													<td>
 														<span class="lastname">@user.LastName</span>
+													</td>
+
+													<td>
+														@if (!string.IsNullOrEmpty(user.ImagePath))
+														{
+															<img src="@user.ImagePath" class="avatar w30" alt="Category Image">
+														}
+														else
+														{
+															<p>بدون تصویر </p>
+														}
 													</td>
 													<td>
 														<a asp-action="Edit" asp-controller="Customer" asp-route-id="@user.Id" class="btn btn-primary btn-sm">
@@ -117,12 +114,4 @@
 		</div>
 	</section>
 
-	<!-- Jquery Core Js -->
-	<script src="~/AdminTemplate/bundles/libscripts.bundle.js"></script>
-	<script src="~/AdminTemplate/bundles/vendorscripts.bundle.js"></script>
-	<script src="~/AdminTemplate/bundles/footable.bundle.js"></script>
-	<script src="~/AdminTemplate/bundles/mainscripts.bundle.js"></script>
-	<script src="~/AdminTemplate/js/pages/tables/footable.js"></script>
-</body>
 
-</html>

@@ -20,30 +20,29 @@ namespace Achareh.Domain.AppServices
         }
         public async Task<bool> CreateAsync(HomeService homeService, CancellationToken cancellationToken)
 
-          => await _homeServiceService.CreateAsync(homeService, cancellationToken);
+           => await _homeServiceService.CreateAsync(homeService, cancellationToken);
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
 
-          => await _homeServiceService.DeleteAsync(id, cancellationToken);
+           => await _homeServiceService.DeleteAsync(id, cancellationToken);
 
         public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
 
-          => await _homeServiceService.GetAllAsync(cancellationToken);
+           => await _homeServiceService.GetAllAsync(cancellationToken);
 
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
 
-         => await _homeServiceService.GetByIdAsync(id, cancellationToken);
-
-        public async Task<bool> HomeServiceCreate(CreateHomeServiceDto createHomeServiceDto, CancellationToken cancellationToken)
-
-         => await _homeServiceService.HomeServiceCreate(createHomeServiceDto, cancellationToken);
-
-        public async Task<bool> HomeServiceUpdate(UpdateHomeServiceDto updateHomeServiceDto, CancellationToken cancellationToken)
-
-         => await _homeServiceService.HomeServiceUpdate(updateHomeServiceDto, cancellationToken);
+          => await _homeServiceService.GetByIdAsync(id, cancellationToken);
 
         public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
 
-        => await _homeServiceService.UpdateAsync(homeService, cancellationToken);
+          => await _homeServiceService.UpdateAsync(homeService, cancellationToken);
+
+        public async Task<List<HomeService>> GetAllWithSubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+
+          => await _homeServiceService.GetAllWithSubCategoryId(subCategoryId, cancellationToken);
+
+
+
     }
 }

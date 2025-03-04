@@ -1,13 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Achareh.Domain.Core.Contracts.AppService;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 {
     [Area("Users")]
     public class HomeServiceController : Controller
     {
-        public IActionResult Index()
+        private readonly IHomeServiceAppService _homeServiceAppService;
+
+        public HomeServiceController(IHomeServiceAppService homeServiceAppService)
         {
-            return View();
+            _homeServiceAppService = homeServiceAppService;
+        }
+        public async Task<IActionResult> Index(int subCategoryId, CancellationToken cancellationToken)
+        {
+
+            var homeServices = await _homeServiceAppService.GetAllWithSubCategoryId(subCategoryId, cancellationToken);
+
+            if (homeServices == null || !homeServices.Any())
+            {
+                return NotFound();
+            }
+
+            return View(homeServices);
+
         }
     }
 }

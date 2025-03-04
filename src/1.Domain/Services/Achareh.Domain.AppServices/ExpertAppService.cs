@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,8 +39,21 @@ namespace Achareh.Domain.AppServices
 
              => await _expertService.GetCount(cancellationToken);
 
+        public  Task<IdentityResult> RegisterAsync(User user, string pass)
+        {
+            return _expertService.RegisterAsync(user, pass);
+        }
+        
+            
+
         public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
 
              => await _expertService.UpdateAsync(expert, cancellationToken);
+
+        public Task<IdentityResult> UpdateAsync(User user)
+        {
+            return _expertService.UpdateAsync(user);
+        }
+
     }
 }

@@ -40,6 +40,7 @@ namespace Achareh.Domain.Services
         {
             await _signInManager.SignOutAsync();
         }
+      
     }
 }
 //var result = await _signInManager.PasswordSignInAsync(userName, pass, false, false);

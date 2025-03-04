@@ -15,13 +15,6 @@ namespace Achareh.Domain.Services
             _categoryRepositroy = categoryRepositroy;
         }
 
-        public async Task<bool> CategoryCreate(CreateCategoryDto createCategoryDto, CancellationToken cancellationToken)
-
-             => await _categoryRepositroy.CategoryCreate(createCategoryDto, cancellationToken);
-
-        public async Task<bool> CategoryUpdate(UpdateCategoryDto updateCategoryDto, CancellationToken cancellationToken)
-
-             => await _categoryRepositroy.CategoryUpdate(updateCategoryDto, cancellationToken);
 
         public async Task<bool> CreateAsync(Category category, CancellationToken cancellationToken)
 
@@ -50,5 +43,9 @@ namespace Achareh.Domain.Services
         public async Task<bool> UpdateAsync(Category category, CancellationToken cancellationToken)
 
            => await _categoryRepositroy.UpdateAsync(category, cancellationToken);
+
+        public async Task<List<Category>> GetAllWithSubCategoriesAsync(CancellationToken cancellationToken)
+
+          => await _categoryRepositroy.GetAllWithSubCategoriesAsync(cancellationToken);
     }
 }

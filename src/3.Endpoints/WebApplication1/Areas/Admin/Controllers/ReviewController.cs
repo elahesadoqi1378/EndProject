@@ -1,9 +1,11 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ReviewController : Controller
     {
         private readonly IReviewAppService _reviewAppService;

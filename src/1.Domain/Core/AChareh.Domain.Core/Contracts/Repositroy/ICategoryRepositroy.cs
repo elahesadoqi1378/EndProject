@@ -17,8 +17,8 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
         Task<bool> CreateAsync(Category category,CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(Category category,CancellationToken cancellationToken);
-        Task<bool> CategoryCreate(CreateCategoryDto createCategoryDto, CancellationToken cancellationToken);
-        Task<bool> CategoryUpdate(UpdateCategoryDto updateCategoryDto, CancellationToken cancellationToken);
+        Task<List<Category>> GetAllWithSubCategoriesAsync(CancellationToken cancellationToken);
+
 
     }
 }

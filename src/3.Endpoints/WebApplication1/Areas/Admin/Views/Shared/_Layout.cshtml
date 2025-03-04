@@ -67,32 +67,29 @@
                     <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>مدیران کاربران</span></a>
                     <ul class="ml-menu">
                         <li><a asp-controller="Customer" asp-action="CustomerIndex" >مشتریان</a></li>
-                        <li><a href="chat.html">کارشناسان</a></li>
+                        <li><a asp-controller="Expert" asp-action="ExpertIndex">کارشناسان</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>مدیریت سرویس ها</span></a>
                     <ul class="ml-menu">
-                        <li><a href="project-list.html">کتگوری ها</a></li>
-                        <li><a href="taskboard.html">ساب کتگوری ها</a></li>
-                        <li><a href="ticket-list.html">هوم سرویس ها</a></li>
+                        <li><a asp-controller="Category" asp-action="CategoryIndex">کتگوری ها</a></li>
+                        <li><a asp-controller="SubCategory" asp-action="SubCategoryIndex">ساب کتگوری ها</a></li>
+                        <li><a  asp-controller="HomeService" asp-action="HomeServiceIndex">هوم سرویس ها</a></li>
                   
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-folder"></i><span>مدیریت کامنت ها</span></a>
+                    <a asp-area="Admin" asp-controller="Review" asp-action="ReviewIndex"><i class="zmdi zmdi-folder"></i><span>درخواست ها</span></a>
                     <ul class="ml-menu">
-                       
                     </ul>
                 </li>
+                
                 <li>
-                    <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-blogger"></i><span>سفارش ها</span></a>
-                    <ul class="ml-menu">
-                      
-                    </ul>
+                <a asp-area="Admin" asp-controller="Request" asp-action="RequestIndex"><i class="zmdi zmdi-folder"></i><span>کامنت ها</span></a>
+                <ul class="ml-menu">
+                </ul>
                 </li>
-               
-               
                   
                    
             </ul>

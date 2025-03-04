@@ -1,21 +1,5 @@
 ﻿@model List<CustomerExpertViewModel>
 
-<!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<title>:: Aero Bootstrap4 Admin ::</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="~/AdminTemplate/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="~/AdminTemplate/plugins/footable-bootstrap/css/footable.bootstrap.min.css">
-	<link rel="stylesheet" href="~/AdminTemplate/plugins/footable-bootstrap/css/footable.standalone.min.css">
-	<link rel="stylesheet" href="~/AdminTemplate/css/style.min.css">
-</head>
-
-<body class="theme-blush">
 	<!-- Page Loader -->
 	<div class="page-loader-wrapper">
 		<div class="loader">
@@ -59,6 +43,7 @@
 											<th>نوع کاربر</th>
 											<th>نام</th>
 											<th>نام خانوادگی</th>
+											<th>تصویر</th>
 											<th>اقدام</th>
 										</tr>
 									</thead>
@@ -88,11 +73,21 @@
 														<span class="lastname">@user.LastName</span>
 													</td>
 													<td>
-														<a asp-action="Edit" asp-controller="Customer" asp-route-id="@user.Id" class="btn btn-primary btn-sm">
+														@if (!string.IsNullOrEmpty(user.ImagePath))
+														{
+															<img src="@user.ImagePath" class="avatar w30" alt="Category Image">
+														}
+														else
+														{
+															<p>بدون تصویر </p>
+														}
+													</td>
+													<td>
+														<a asp-action="Edit" asp-controller="Expert" asp-route-id="@user.Id" class="btn btn-primary btn-sm">
 															<i class="zmdi zmdi-edit"></i> ویرایش
 														</a>
 
-														<a asp-action="Delete" asp-controller="Customer" asp-route-id="@user.Id" class="btn btn-danger btn-sm">
+														<a asp-action="Delete" asp-controller="Expert" asp-route-id="@user.Id" class="btn btn-danger btn-sm">
 															<i class="zmdi zmdi-delete"></i> حذف
 														</a>
 													</td>
@@ -115,12 +110,3 @@
 		</div>
 	</section>
 
-	<!-- Jquery Core Js -->
-	<script src="~/AdminTemplate/bundles/libscripts.bundle.js"></script>
-	<script src="~/AdminTemplate/bundles/vendorscripts.bundle.js"></script>
-	<script src="~/AdminTemplate/bundles/footable.bundle.js"></script>
-	<script src="~/AdminTemplate/bundles/mainscripts.bundle.js"></script>
-	<script src="~/AdminTemplate/js/pages/tables/footable.js"></script>
-</body>
-
-</html>

@@ -4,9 +4,23 @@
     ViewData["Title"] = "مدیریت زیردسته‌ها";
 }
 
+
 <div class="container mt-4">
     <h2 class="text-center mb-4">مدیریت زیردسته‌ها</h2>
     <a asp-action="Create" class="btn btn-success mb-3">افزودن زیردسته جدید</a>
+
+    @if (TempData["DeleteError"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["DeleteError"]
+        </div>
+    }
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-info">
+            @TempData["Success"]
+        </div>
+    }
 
     <table class="table table-striped">
         <thead>
@@ -28,7 +42,11 @@
                     <td>
                         @if (!string.IsNullOrEmpty(subCategory.ImagePath))
                         {
-                            <img src="@subCategory.ImagePath" alt="تصویر" width="100" height="80" class="rounded">
+                        <img src="@subCategory.ImagePath" class="avatar w30" alt="SubCategory Image">
+                        }
+                        else
+                        {
+                        <p>بدون تصویر </p>
                         }
                     </td>
                     <td>

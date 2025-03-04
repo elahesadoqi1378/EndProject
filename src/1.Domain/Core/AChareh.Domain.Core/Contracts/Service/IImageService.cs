@@ -9,6 +9,6 @@ namespace Achareh.Domain.Core.Contracts.Service
 {
     public interface IImageService
     {
-        Task<string> UploadImageAsync(IFormFile image);
+        Task<string> UploadImage(IFormFile FormFile, string folderName, CancellationToken cancellationToken);
     }
 }

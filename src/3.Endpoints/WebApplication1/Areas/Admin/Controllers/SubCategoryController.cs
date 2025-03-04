@@ -1,8 +1,9 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
+using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Dtos.HomeService;
-using Achareh.Domain.Core.Dtos.SubCategory;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Endpoint.MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -10,16 +11,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class SubCategoryController : Controller
     {
 
         private readonly ICategoryAppService _categoryAppService;
         private readonly ISubCategoryAppService _subCategoryAppService;
+        private readonly IImageService _imageService;
 
-        public SubCategoryController(ISubCategoryAppService subCategoryAppService, ICategoryAppService categoryAppService)
+        public SubCategoryController(ISubCategoryAppService subCategoryAppService, ICategoryAppService categoryAppService, IImageService imageService)
         {
             _categoryAppService = categoryAppService;
             _subCategoryAppService = subCategoryAppService;
+            _imageService = imageService;
         }
 
         public async Task<IActionResult> SubCategoryIndex(CancellationToken cancellationToken)
@@ -47,35 +51,26 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             return View();
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> Create(SubCategoryViewModel model, IFormFile ImageFile, CancellationToken cancellationToken)
+        public async Task<IActionResult> Create(SubCategoryViewModel model, CancellationToken cancellationToken)
         {
-            model.ImagePath = model.ImagePath ?? string.Empty;
+           
             if (!ModelState.IsValid)
             {
                 ViewBag.Categories = await _categoryAppService.GetAllCategoriesAsync(cancellationToken);
                 return View(model);
             }
-            string filePath = null;
 
-            if (ImageFile != null && ImageFile.Length > 0)
+            if (model.ImageFile is not null)
             {
-                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(ImageFile.FileName)}";
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
-
-                using (var stream = new FileStream(uploadPath, FileMode.Create))
-                {
-                    await ImageFile.CopyToAsync(stream);
-                }
-
-                model.ImagePath = $"/uploads/{fileName}"; 
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "subcategory", cancellationToken);
             }
+
             var newSubCategory = new SubCategory
             {
                 Title = model.Title,
                 CategoryId = model.CategoryId,
-                ImagePath = model.ImagePath 
+                ImagePath = model.ImagePath
             };
 
             var result = await _subCategoryAppService.CreateAsync(newSubCategory, cancellationToken);
@@ -121,18 +116,10 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 return View(model);
             }
 
-            // بررسی و ذخیره تصویر جدید (در صورت آپلود)
-            if (model.ImageFile != null && model.ImageFile.Length > 0)
+
+            if (model.ImageFile is not null)
             {
-                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(model.ImageFile.FileName)}";
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
-
-                using (var stream = new FileStream(uploadPath, FileMode.Create))
-                {
-                    await model.ImageFile.CopyToAsync(stream);
-                }
-
-                model.ImagePath = $"/uploads/{fileName}"; // مسیر تصویر جدید
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "subcategory", cancellationToken);
             }
 
             var updatedSubCategory = new SubCategory
@@ -140,7 +127,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 Id = model.Id,
                 Title = model.Title,
                 CategoryId = model.CategoryId,
-                ImagePath = model.ImagePath // مسیر جدید یا قبلی
+                ImagePath = model.ImagePath 
             };
 
             var result = await _subCategoryAppService.UpdateAsync(updatedSubCategory, cancellationToken);
@@ -169,10 +156,12 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             var result = await _subCategoryAppService.DeleteAsync(id, cancellationToken);
             if (!result)
             {
-                ModelState.AddModelError("", "something is wrong in delete.");
-                return View();
+                TempData["DeleteError"] = "مشکلی در حذف زیر دسته‌بندی وجود دارد یا این زیر دسته‌بندی دارای زیردسته‌های وابسته است.";
+                return RedirectToAction("SubCategoryIndex");
+               
             }
 
+            TempData["Success"] = "با موفقیت حذف شد.";
             return RedirectToAction("SubCategoryIndex");
         }
 

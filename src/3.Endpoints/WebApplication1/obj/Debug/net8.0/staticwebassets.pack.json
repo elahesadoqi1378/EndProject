@@ -2497,32 +2497,600 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\038bdfa8-36c2-4373-9540-0ef8443d8f4b.jpg",
-      "PackagePath": "staticwebassets\\images\\038bdfa8-36c2-4373-9540-0ef8443d8f4b.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\064a6e05-1f7d-4e9e-ae83-8641a7981ecfScreenshot 2024-12-16 144547.png",
+      "PackagePath": "staticwebassets\\images\\category\\064a6e05-1f7d-4e9e-ae83-8641a7981ecfScreenshot 2024-12-16 144547.png"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\03e43ed8-ec18-4fab-af97-41c66d69b737.jpg",
-      "PackagePath": "staticwebassets\\images\\03e43ed8-ec18-4fab-af97-41c66d69b737.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\3d5de8fc-4851-4ea2-9fef-40ab716efae7Screenshot 2025-02-08 133920.png",
+      "PackagePath": "staticwebassets\\images\\category\\3d5de8fc-4851-4ea2-9fef-40ab716efae7Screenshot 2025-02-08 133920.png"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\18847d41-5e29-40f1-846a-655589f84b00.jpg",
-      "PackagePath": "staticwebassets\\images\\18847d41-5e29-40f1-846a-655589f84b00.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\5991d6fa-4771-47ad-994e-42682ded94daScreenshot 2024-11-01 111824.png",
+      "PackagePath": "staticwebassets\\images\\category\\5991d6fa-4771-47ad-994e-42682ded94daScreenshot 2024-11-01 111824.png"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\1e55b977-fa86-43ea-8d38-5fe7d08af08c.jpg",
-      "PackagePath": "staticwebassets\\images\\1e55b977-fa86-43ea-8d38-5fe7d08af08c.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\5f56da86-800f-4bf0-9fdc-c7bba90570acScreenshot 2024-12-16 144213.png",
+      "PackagePath": "staticwebassets\\images\\category\\5f56da86-800f-4bf0-9fdc-c7bba90570acScreenshot 2024-12-16 144213.png"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\28d157c1-ee15-4c16-9fa1-2fea19f699e0.jpg",
-      "PackagePath": "staticwebassets\\images\\28d157c1-ee15-4c16-9fa1-2fea19f699e0.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\627ed8f4-f72c-408c-b8ba-ec9d22ed85b3Screenshot 2024-12-12 090741.png",
+      "PackagePath": "staticwebassets\\images\\category\\627ed8f4-f72c-408c-b8ba-ec9d22ed85b3Screenshot 2024-12-12 090741.png"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\7920fd2b-7b62-4802-ae76-4b55a14120c4.jpg",
-      "PackagePath": "staticwebassets\\images\\7920fd2b-7b62-4802-ae76-4b55a14120c4.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\62e0762b-5f3c-4361-bfa4-747349ee129eScreenshot 2024-12-16 204504.png",
+      "PackagePath": "staticwebassets\\images\\category\\62e0762b-5f3c-4361-bfa4-747349ee129eScreenshot 2024-12-16 204504.png"
     },
     {
-      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\c7971e17-a03b-4675-84f6-168e8ed684cc.jpg",
-      "PackagePath": "staticwebassets\\images\\c7971e17-a03b-4675-84f6-168e8ed684cc.jpg"
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\70fffc0f-7879-4955-95f8-468851f1e9a3Screenshot 2024-12-18 155210.png",
+      "PackagePath": "staticwebassets\\images\\category\\70fffc0f-7879-4955-95f8-468851f1e9a3Screenshot 2024-12-18 155210.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\8304f39b-4208-4e1c-8381-76bc89a4334eScreenshot 2024-12-15 180058.png",
+      "PackagePath": "staticwebassets\\images\\category\\8304f39b-4208-4e1c-8381-76bc89a4334eScreenshot 2024-12-15 180058.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\8a852752-4ef4-4a17-89ac-ff0f26f77fccScreenshot 2024-12-16 144113.png",
+      "PackagePath": "staticwebassets\\images\\category\\8a852752-4ef4-4a17-89ac-ff0f26f77fccScreenshot 2024-12-16 144113.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\a0abe3ad-a5d5-48a6-97b6-81903f2b1d5cScreenshot 2024-11-04 223810.png",
+      "PackagePath": "staticwebassets\\images\\category\\a0abe3ad-a5d5-48a6-97b6-81903f2b1d5cScreenshot 2024-11-04 223810.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\afc8c5ab-d7e4-4d9b-8eff-7b8cda8e33f8Screenshot 2024-11-04 223810.png",
+      "PackagePath": "staticwebassets\\images\\category\\afc8c5ab-d7e4-4d9b-8eff-7b8cda8e33f8Screenshot 2024-11-04 223810.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\asbabkeshi.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\asbabkeshi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\ba1ee655-7b20-428b-bc8f-80d7aefe941bScreenshot 2024-12-15 180043.png",
+      "PackagePath": "staticwebassets\\images\\category\\ba1ee655-7b20-428b-bc8f-80d7aefe941bScreenshot 2024-12-15 180043.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\c0ecf363-02d6-4471-8f64-6b261b1e005aScreenshot 2024-12-15 181833.png",
+      "PackagePath": "staticwebassets\\images\\category\\c0ecf363-02d6-4471-8f64-6b261b1e005aScreenshot 2024-12-15 181833.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\d94c32ed-db58-42c4-b0f1-74ec8d9e52b6Screenshot 2024-12-15 181833.png",
+      "PackagePath": "staticwebassets\\images\\category\\d94c32ed-db58-42c4-b0f1-74ec8d9e52b6Screenshot 2024-12-15 181833.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\sakhteman.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\sakhteman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\salamat_zibayi.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\salamat_zibayi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\sayer.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\sayer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\sazmanha_va_mojtamha.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\sazmanha_va_mojtamha.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\tamirat_ashya.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\tamirat_ashya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\category\\tamizkari.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\tamizkari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png",
+      "PackagePath": "staticwebassets\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\07b2566b-5f9f-4362-89be-7fa40623aae5Screenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\customer\\07b2566b-5f9f-4362-89be-7fa40623aae5Screenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\0b8206f7-6240-41e5-ae4a-47eaf1428303Screenshot 2024-12-15 180058.png",
+      "PackagePath": "staticwebassets\\images\\customer\\0b8206f7-6240-41e5-ae4a-47eaf1428303Screenshot 2024-12-15 180058.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\100aa186-e844-461c-9eb6-4e9c170c2d23Screenshot 2024-10-20 195626.png",
+      "PackagePath": "staticwebassets\\images\\customer\\100aa186-e844-461c-9eb6-4e9c170c2d23Screenshot 2024-10-20 195626.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png",
+      "PackagePath": "staticwebassets\\images\\customer\\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\customer\\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\6d667457-f1ef-45d2-8bbd-63a771f1c06cScreenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\customer\\6d667457-f1ef-45d2-8bbd-63a771f1c06cScreenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\765353c1-db2f-4717-8444-d998adeb091dScreenshot 2024-12-16 144113.png",
+      "PackagePath": "staticwebassets\\images\\customer\\765353c1-db2f-4717-8444-d998adeb091dScreenshot 2024-12-16 144113.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\87720a21-ccaf-455f-b29e-4613bb9f0b6bScreenshot 2024-10-02 190200.png",
+      "PackagePath": "staticwebassets\\images\\customer\\87720a21-ccaf-455f-b29e-4613bb9f0b6bScreenshot 2024-10-02 190200.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png",
+      "PackagePath": "staticwebassets\\images\\customer\\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png",
+      "PackagePath": "staticwebassets\\images\\customer\\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\08baffcc-6a80-4800-a65d-c46ed3d01154Screenshot 2024-12-16 144248.png",
+      "PackagePath": "staticwebassets\\images\\expert\\08baffcc-6a80-4800-a65d-c46ed3d01154Screenshot 2024-12-16 144248.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\29a027b1-1403-4296-95cf-aff24e14d14dScreenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\expert\\29a027b1-1403-4296-95cf-aff24e14d14dScreenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\2ce677dd-0622-42a1-aa5e-9fbfda4c49a8Screenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\expert\\2ce677dd-0622-42a1-aa5e-9fbfda4c49a8Screenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\56938b28-7149-4d1a-a4e0-1ebd2b0768f8Screenshot 2024-11-01 111824.png",
+      "PackagePath": "staticwebassets\\images\\expert\\56938b28-7149-4d1a-a4e0-1ebd2b0768f8Screenshot 2024-11-01 111824.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\60507cb3-a4a1-4cec-a5db-26742aadb16aScreenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\expert\\60507cb3-a4a1-4cec-a5db-26742aadb16aScreenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\6f5b16b5-ecc4-41d8-a9d0-6abe53dcc904Screenshot 2025-02-27 220244.png",
+      "PackagePath": "staticwebassets\\images\\expert\\6f5b16b5-ecc4-41d8-a9d0-6abe53dcc904Screenshot 2025-02-27 220244.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\7748cbde-0ff2-493f-80ad-ec3473cc138fScreenshot 2024-12-16 144248.png",
+      "PackagePath": "staticwebassets\\images\\expert\\7748cbde-0ff2-493f-80ad-ec3473cc138fScreenshot 2024-12-16 144248.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\7797e4ae-28e2-4c89-a808-cc20622f3d27Screenshot 2024-10-02 190200.png",
+      "PackagePath": "staticwebassets\\images\\expert\\7797e4ae-28e2-4c89-a808-cc20622f3d27Screenshot 2024-10-02 190200.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\7cf5a7b6-375d-4f83-94dc-7bf4372b9b46Screenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\expert\\7cf5a7b6-375d-4f83-94dc-7bf4372b9b46Screenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\fd26f1f1-e161-4e0b-b7f3-a32e3c8e44bfScreenshot 2024-10-20 192501.png",
+      "PackagePath": "staticwebassets\\images\\expert\\fd26f1f1-e161-4e0b-b7f3-a32e3c8e44bfScreenshot 2024-10-20 192501.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\1ae44765-b724-4f7d-96c5-229f8e07977dScreenshot 2024-12-15 180043.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\1ae44765-b724-4f7d-96c5-229f8e07977dScreenshot 2024-12-15 180043.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\2270bd84-9f94-467a-843b-aa4180cea9b4Screenshot 2024-10-02 190200.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\2270bd84-9f94-467a-843b-aa4180cea9b4Screenshot 2024-10-02 190200.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\272b260a-d571-4c25-ac1c-c169348352a3Screenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\272b260a-d571-4c25-ac1c-c169348352a3Screenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\3e4ab797-f4b0-455e-a746-a6bd9269d392Screenshot 2024-12-12 090741.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\3e4ab797-f4b0-455e-a746-a6bd9269d392Screenshot 2024-12-12 090741.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\68e08c68-b40e-4c1d-a79b-e567bfddbce7Screenshot 2024-12-26 135154.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\68e08c68-b40e-4c1d-a79b-e567bfddbce7Screenshot 2024-12-26 135154.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\a4961a1b-14ba-4d47-a2f0-17ded1cad918Screenshot 2024-12-16 144248.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\a4961a1b-14ba-4d47-a2f0-17ded1cad918Screenshot 2024-12-16 144248.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\aa526f5d-c9ba-4117-8ca7-8785d8b1e74aScreenshot 2024-12-12 090741.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\aa526f5d-c9ba-4117-8ca7-8785d8b1e74aScreenshot 2024-12-12 090741.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\amozesh_zaban_khareji.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\amozesh_zaban_khareji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\asabkeshi_ba_neysan.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\asabkeshi_ba_neysan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\asbabkeshi_ba_khavar.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\asbabkeshi_ba_khavar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\baft_moye_banovan.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\baft_moye_banovan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\banayi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\banayi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\batri_be_batri.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\batri_be_batri.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\berashing_moye_banovan.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\berashing_moye_banovan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\dekor_tavalod.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\dekor_tavalod.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\dekorasion_sakhteman.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\dekorasion_sakhteman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\dokht_lebas_zanane.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\dokht_lebas_zanane.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\ebtedayi_motevasete.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\ebtedayi_motevasete.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\ed05a58e-c844-4b0d-90bb-16817c21f8d0Screenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\ed05a58e-c844-4b0d-90bb-16817c21f8d0Screenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\estekhdam_niroye_khedmatkar.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\estekhdam_niroye_khedmatkar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\f8e9c373-fe9e-445f-8ffb-aa99fdf7f830Screenshot 2024-12-15 180043.png",
+      "PackagePath": "staticwebassets\\images\\homeservice\\f8e9c373-fe9e-445f-8ffb-aa99fdf7f830Screenshot 2024-12-15 180043.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\finger_food.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\finger_food.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\ghalishoyi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\ghalishoyi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\gol_arayi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\gol_arayi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\haml_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\haml_khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kafsabi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kafsabi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kanalsazi_cooler.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kanalsazi_cooler.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kargar_jabejayi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kargar_jabejayi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kasht_goldan.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kasht_goldan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kelas_polates.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kelas_polates.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\keyko_shirini.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\keyko_shirini.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamat_achare.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamat_achare.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamat_baqbani.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamat_baqbani.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamat_dampezshki.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamat_dampezshki.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamat_dorbin.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamat_dorbin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamat_tamir_mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamat_tamir_mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamt_kharid_mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamt_kharid_mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\khadamt_yoga.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\khadamt_yoga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\klidsazi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\klidsazi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kotahi_moye_banovan.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kotahi_moye_banovan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\kotahi_moye_kodak.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\kotahi_moye_kodak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\lolebazkoni.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\lolebazkoni.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\lolekeshi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\lolekeshi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\lolekeshi_fazelab.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\lolekeshi_fazelab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\moayene_pezeshki.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\moayene_pezeshki.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\modem_va_internet.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\modem_va_internet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\moraqebat_negahdari.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\moraqebat_negahdari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\moshavere_bazsazi_sakhteman.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\moshavere_bazsazi_sakhteman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\nasb_va_tamir_fer.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\nasb_va_tamir_fer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\nezafat_manzel.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\nezafat_manzel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\nezafat_rahpele.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\nezafat_rahpele.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\pardeshoyi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\pardeshoyi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\petshop.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\petshop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\pirapezeshki.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\pirapezeshki.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\sangkari.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\sangkari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\sefrshoyi_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\sefrshoyi_khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\seramik_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\seramik_khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamir_coolerabi.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamir_coolerabi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamir_kifokafsh.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamir_kifokafsh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamir_laptop.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamir_laptop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamir_motorkhane.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamir_motorkhane.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamir_panke.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamir_panke.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamirat_lebas.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamirat_lebas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamirat_mobleman.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamirat_mobleman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tamirat_mobleman_edari.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tamirat_mobleman_edari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\tarahi_otaq_kodak.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\tarahi_otaq_kodak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\taviz_batri_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\taviz_batri_khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\homeservice\\taviz_vayer_sham_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\homeservice\\taviz_vayer_sham_khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\0053d204-3e84-4fc0-b1ec-543a61c995cbScreenshot 2025-02-19 015709.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\0053d204-3e84-4fc0-b1ec-543a61c995cbScreenshot 2025-02-19 015709.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\53318ebe-b353-44c4-9042-4030a161b4faSavarian11.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\53318ebe-b353-44c4-9042-4030a161b4faSavarian11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\7116e63b-dbff-4912-8945-3952dff47366Savarian.idnetityrole2.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\7116e63b-dbff-4912-8945-3952dff47366Savarian.idnetityrole2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\781c38b0-a2c7-4192-a026-b7d3e8ad1928Screenshot 2024-12-12 090741.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\781c38b0-a2c7-4192-a026-b7d3e8ad1928Screenshot 2024-12-12 090741.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\99403531-4715-4bfc-9672-9be5a3fb3301Screenshot 2025-02-19 015709.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\99403531-4715-4bfc-9672-9be5a3fb3301Screenshot 2025-02-19 015709.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\9a5a1dcb-c8ce-43f1-a4c4-ffafdf358df6Screenshot 2024-12-12 090741.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\9a5a1dcb-c8ce-43f1-a4c4-ffafdf358df6Screenshot 2024-12-12 090741.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\a21b2eb7-9d28-4089-ace7-5268acb57081Screenshot 2024-12-16 144248.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\a21b2eb7-9d28-4089-ace7-5268acb57081Screenshot 2024-12-16 144248.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\a330898e-8815-4ae5-afe5-4c34c48d9d67Screenshot 2024-12-16 144248.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\a330898e-8815-4ae5-afe5-4c34c48d9d67Screenshot 2024-12-16 144248.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\amozesh.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\amozesh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\b10d7f7f-c74f-4f1a-8d42-7f1c2ae3c1f1Screenshot 2024-10-02 192356.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\b10d7f7f-c74f-4f1a-8d42-7f1c2ae3c1f1Screenshot 2024-10-02 192356.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\b39312f3-bd48-4746-854c-f7bb53dccd3dScreenshot 2024-12-17 140834.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\b39312f3-bd48-4746-854c-f7bb53dccd3dScreenshot 2024-12-17 140834.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\baqbani_fazayesabz.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\baqbani_fazayesabz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\barbari_jabejayi.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\barbari_jabejayi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\cd0bc8a2-86ac-4b2f-8d10-09cea86970abScreenshot 2024-12-15 180043.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\cd0bc8a2-86ac-4b2f-8d10-09cea86970abScreenshot 2024-12-15 180043.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\choob_kabinet.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\choob_kabinet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\d7c6a0f1-dcb7-4bf9-b465-d2c13002808cScreenshot 2024-12-15 180058.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\d7c6a0f1-dcb7-4bf9-b465-d2c13002808cScreenshot 2024-12-15 180058.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\e9791fdb-4221-457a-bb91-579e29f8b100Screenshot 2024-12-05 091705.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\e9791fdb-4221-457a-bb91-579e29f8b100Screenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\f7b8c6f9-9d71-44b8-88f8-8e2df9068adbScreenshot 2025-02-08 133920.png",
+      "PackagePath": "staticwebassets\\images\\subcategory\\f7b8c6f9-9d71-44b8-88f8-8e2df9068adbScreenshot 2025-02-08 133920.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\heyvanat_khanegi.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\heyvanat_khanegi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\karvash_detailing.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\karvash_detailing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\khadamat_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\khadamat_khodro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\khadamat_sherkati.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\khadamat_sherkati.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\khadamt_cp.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\khadamt_cp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\khayati_tamirat.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\khayati_tamirat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\kodak.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\kodak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\lolekeshi.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\lolekeshi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\majales_roydad.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\majales_roydad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\nasab_tamir_lavazem.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\nasab_tamir_lavazem.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\nezafat_pazirayi.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\nezafat_pazirayi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\pezeshki_parastari.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\pezeshki_parastari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\sarmayesh_garmayesh.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\sarmayesh_garmayesh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\shostosho.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\shostosho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\tamin_niroye_ensani.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\tamin_niroye_ensani.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\tamirat_mobile.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\tamirat_mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\tamirat_sakhteman.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\tamirat_sakhteman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\tandorosti_varzesh.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\tandorosti_varzesh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\tarahi_bazsazi.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\tarahi_bazsazi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\subcategory\\zibayi_banovan.jpg",
+      "PackagePath": "staticwebassets\\images\\subcategory\\zibayi_banovan.jpg"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\js\\site.js",

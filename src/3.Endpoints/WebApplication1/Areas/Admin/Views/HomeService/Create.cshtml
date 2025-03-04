@@ -31,12 +31,10 @@
 
             <div class="mb-3">
                 <label class="form-label">آپلود تصویر</label>
-                <input type="file" name="ImageFile" class="form-control" required />
+                <input type="file" name="ImageFile" class="form-control" asp-for="ImageFile" required />
             </div>
 
-            <input type="hidden" asp-for="ImagePath" /> <!-- مقدار ImagePath را در فرم ارسال کن -->
-
-
+            
             <div class="mb-3">
                 <label asp-for="Price" class="form-label">قیمت</label>
                 <input asp-for="Price" type="number" class="form-control" />

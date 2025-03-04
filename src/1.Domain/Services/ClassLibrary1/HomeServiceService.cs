@@ -25,22 +25,20 @@ namespace Achareh.Domain.Services
 
         public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
 
-           => await _homeServiceRepository.GetAllAsync(cancellationToken)
-            ; 
+           => await _homeServiceRepository.GetAllAsync(cancellationToken);
+
+      
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
 
           => await _homeServiceRepository.GetByIdAsync(id, cancellationToken);
 
-        public async Task<bool> HomeServiceCreate(CreateHomeServiceDto createHomeServiceDto, CancellationToken cancellationToken)
-
-          => await _homeServiceRepository.HomeServiceCreate(createHomeServiceDto, cancellationToken);
-
-        public async Task<bool> HomeServiceUpdate(UpdateHomeServiceDto updateHomeServiceDto, CancellationToken cancellationToken)
-
-          => await _homeServiceRepository.HomeServiceUpdate(updateHomeServiceDto, cancellationToken);
-
         public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
 
          => await _homeServiceRepository.UpdateAsync(homeService, cancellationToken);
+
+        public async Task<List<HomeService>> GetAllWithSubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+
+        => await _homeServiceRepository.GetAllWithSubCategoryId(subCategoryId, cancellationToken);
+
     }
 }

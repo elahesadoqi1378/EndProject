@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,12 @@ namespace Achareh.Domain.Services
     public class ExpertService : IExpertService
     {
         private readonly IExpertRepository _expertRepository;
+        private readonly UserManager<User> _userManager;
 
-        public ExpertService(IExpertRepository expertRepository)
+        public ExpertService(IExpertRepository expertRepository, UserManager<User> userManager)
         {
             _expertRepository = expertRepository;
+            _userManager = userManager;
         }
 
         public async Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken)
@@ -41,5 +44,15 @@ namespace Achareh.Domain.Services
         public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
 
             => await _expertRepository.UpdateAsync(expert, cancellationToken);
+        public Task<IdentityResult> RegisterAsync(User user, string pass)
+        {
+            return _userManager.CreateAsync(user, pass);
+        }
+        public Task<IdentityResult> UpdateAsync(User user)
+        {
+            return _userManager.UpdateAsync(user);
+        }
+
+       
     }
 }

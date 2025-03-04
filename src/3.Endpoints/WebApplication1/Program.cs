@@ -11,13 +11,17 @@ using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Services;
 using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Repositroy;
-using Achareh.Domain.Core.Contracts.Repository;
 using Microsoft.AspNetCore.Http.Features;
+using AChareh.Domain.Core.Contracts.AppService;
+using AChareh.Domain.Core.Contracts.Service;
+
 
 
 Log.Logger = new LoggerConfiguration()
 .WriteTo.Console()
 .CreateLogger();
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +35,16 @@ builder.Host.ConfigureLogging(x =>
     config.WriteTo.Seq("http://localhost:5341", apiKey: "Bd4vhPAlo0XnCylPydEQ");
 });
 
+builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+.MinimumLevel.Information()
+.WriteTo.Console()
+.WriteTo.Seq("http://localhost:5341", apiKey: "Bd4vhPAlo0XnCylPydEQ")
+.Enrich.FromLogContext()
+.CreateLogger();
+
+
+
 
 builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<ICategoryRepositroy, CategoryRepository>();
@@ -42,6 +56,7 @@ builder.Services.AddScoped<IHomeServiceRepository, HomeServiceRepository>();
 builder.Services.AddScoped<IRequestRepository, RequestRepository>();
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
+
 
 ;
 
@@ -55,6 +70,8 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IRequestService, RequestService>();
 builder.Services.AddScoped<IExpertOfferService, ExpertOfferService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<IImageService, ImageService>();
+builder.Services.AddScoped<ICustomerExpertLoginService, CustomerExpertLoginService>();
 
 
 
@@ -69,6 +86,8 @@ builder.Services.AddScoped<ICategoryAppService, CategoryAppService>();
 builder.Services.AddScoped<IExpertOfferAppService, ExpertOfferAppService>();
 builder.Services.AddScoped<IRequestAppService, RequestAppService>();
 builder.Services.AddScoped<IReviewAppService, ReviewAppService>();
+builder.Services.AddScoped<ICustomerExpertLoginAppService, CustomerExpertLoginAppService>();
+
 
 
 
@@ -102,7 +121,10 @@ builder.Services.AddIdentity<User, IdentityRole<int>>
 .AddDefaultTokenProviders();
 
 
-
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Admin/Admin/Login";
+});
 
 var app = builder.Build();
 
@@ -133,16 +155,7 @@ app.MapAreaControllerRoute(
 
 
 
-//app.MapAreaControllerRoute(
-//name: "areas",
-//areaName: "Customer",
-//pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-
-//app.MapAreaControllerRoute(
-//name: "areas",
-//areaName: "Admin",
-//pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 
 
@@ -151,6 +164,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
 
 app.UseStaticFiles();
 

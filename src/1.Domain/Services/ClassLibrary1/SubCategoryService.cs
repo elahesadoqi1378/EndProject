@@ -1,7 +1,6 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Dtos.Category;
-using Achareh.Domain.Core.Dtos.SubCategory;
 using Achareh.Domain.Core.Entities.Request;
 using System;
 using System.Collections.Generic;
@@ -19,8 +18,6 @@ namespace Achareh.Domain.Services
         {
             _subCategoryRepository = subCategoryRepository;
         }
-
-        
 
         public async Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken)
 
@@ -41,15 +38,6 @@ namespace Achareh.Domain.Services
         public async Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken)
 
           => await _subCategoryRepository.GetByIdAsync(id, cancellationToken);
-
-        //public async Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken)
-
-
-        //  => await _subCategoryRepository.SubCategoryCreate(creasteSubCategoryDto, cancellationToken);
-
-        public async Task<bool> SubCategoryUpdate(UpdateSubCategoryDto updateSubCategoryDto, CancellationToken cancellationToken)
-
-           => await _subCategoryRepository.SubCategoryUpdate(updateSubCategoryDto, cancellationToken);
 
         public async Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken)
 

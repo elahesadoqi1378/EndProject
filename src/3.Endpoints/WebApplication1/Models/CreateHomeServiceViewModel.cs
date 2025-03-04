@@ -17,6 +17,7 @@ namespace Achareh.Endpoint.MVC.Models
 
         public string? ImagePath { get; set; } = null;
 
+        public IFormFile? ImageFile { get; set; }
 
         [Required(ErrorMessage = "وارد کردن قیمت الزامی است.")]
         [Range(0, int.MaxValue, ErrorMessage = "قیمت باید مقدار مثبت باشد.")]

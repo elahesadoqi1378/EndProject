@@ -1,4 +1,5 @@
 ﻿using Achareh.Domain.Core.Entities.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace Achareh.Domain.Core.Contracts.AppService
         Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
+        Task<IdentityResult> RegisterAsync(User user, string pass);
+        Task<IdentityResult> UpdateAsync(User user);
 
     }
 }

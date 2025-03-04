@@ -3,15 +3,18 @@ using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Achareh.Infrastructure.EfCore.Repository
 {
     public class ExpertOfferRepository : IExpertOfferRepository
     {
         private readonly AppDbContext _context;
-        public ExpertOfferRepository(AppDbContext context)
+        private readonly ILogger<ExpertOfferRepository> _logger;
+        public ExpertOfferRepository(AppDbContext context, ILogger<ExpertOfferRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public async Task<List<ExpertOffer>> GetAllAsync(CancellationToken cancellationToken)
 
@@ -22,8 +25,11 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
         {
+
             await _context.ExpertOffers.AddAsync(expertOffer ,cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation("expertoffer Added Succesfully");
+
         }
         public async Task UpdateAsync(ExpertOffer expertOffer,CancellationToken cancellationToken)
         {
@@ -34,6 +40,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 existingOffer.OfferDate = expertOffer.OfferDate;
                 existingOffer.Description = expertOffer.Description;
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("expertoffer updated Succesfully");
             }
         }
         public async Task DeleteAsync(int id,CancellationToken cancellationToken)
@@ -43,6 +50,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 _context.ExpertOffers.Remove(expertOffer);
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("expertoffer deleted Succesfully");
             }
         }
 

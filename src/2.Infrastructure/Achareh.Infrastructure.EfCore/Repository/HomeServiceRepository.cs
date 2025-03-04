@@ -3,6 +3,8 @@ using Achareh.Domain.Core.Dtos.HomeService;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System.Linq;
 using System.Threading;
 
 namespace Achareh.Infrastructure.EfCore.Repository
@@ -10,16 +12,19 @@ namespace Achareh.Infrastructure.EfCore.Repository
     public class HomeServiceRepository : IHomeServiceRepository
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<HomeServiceRepository> _logger;
 
-        public HomeServiceRepository(AppDbContext context)
+        public HomeServiceRepository(AppDbContext context, ILogger<HomeServiceRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await _context.HomeServices
-                .Include(x => x.SubCategory)
+                .Include(x=>x.SubCategory)
+                .Where(x=>x.IsDeleted==false)
                 .ToListAsync(cancellationToken);
         }
 
@@ -36,11 +41,13 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 await _context.HomeServices.AddAsync(homeService, cancellationToken);
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("homeservice Added Succesfully");
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("something is wrong in create");
+                _logger.LogError("something is wrong in create homeservice", ex.Message);
+                return false;
             }
 
 
@@ -60,56 +67,43 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 existingHomeService.VisitCount = homeService.VisitCount;
                 existingHomeService.ImagePath = homeService.ImagePath;
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("homeservice update Succesfully");
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("something is wrong in update");
+                _logger.LogError("something is wrong in update homeservice", ex.Message);
+                return false;
             }
         }
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
-            var homeService = await _context.HomeServices
-                .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
-            if (homeService == null)
-                return false;
-
-            _context.HomeServices.Remove(homeService);
-            return await _context.SaveChangesAsync(cancellationToken) > 0;
-        }
-
-        public async Task<bool> HomeServiceUpdate(UpdateHomeServiceDto updateHomeServiceDto, CancellationToken cancellationToken)
-        {
-            var existingModel = await _context.HomeServices.FirstOrDefaultAsync(x => x.Id == updateHomeServiceDto.Id, cancellationToken);
-            
-            existingModel.Title = updateHomeServiceDto.Title;
-            existingModel.Description = updateHomeServiceDto.Description;
-            existingModel.ImagePath = updateHomeServiceDto.ImagePath;
-            existingModel.Price = updateHomeServiceDto.Price;
-            existingModel.SubCategoryId = updateHomeServiceDto.SubCategoryId;
-
-            await _context.SaveChangesAsync(cancellationToken);
-
-            return true;
-        }
-
-        public async Task<bool> HomeServiceCreate(CreateHomeServiceDto createHomeServiceDto, CancellationToken cancellationToken)
-        {
-            var newModel = new HomeService()
+            try
             {
-                Title = createHomeServiceDto.Title,
-                ImagePath = createHomeServiceDto.ImagePath,
-                Price = createHomeServiceDto.Price,
-                SubCategoryId = createHomeServiceDto.SubCategoryId,
-                Description = createHomeServiceDto.Description
-            };
-            await _context.HomeServices.AddAsync(newModel, cancellationToken);
+                var homeService = await _context.HomeServices
+               .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+                if (homeService == null)
+                    return false;
 
-            await _context.SaveChangesAsync(cancellationToken);
-
-            return true;
+                homeService.IsDeleted = true;
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("homeservice update Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in delete homeservice", ex.Message);
+                return false;
+            }
 
         }
+        public async Task<List<HomeService>> GetAllWithSubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+
+          => await _context.HomeServices
+                           .Include(x=>x.SubCategory)
+                           .ThenInclude(x=>x.Category)
+                           .Where(x => x.SubCategoryId == subCategoryId)
+                           .ToListAsync(cancellationToken);
     }
 }

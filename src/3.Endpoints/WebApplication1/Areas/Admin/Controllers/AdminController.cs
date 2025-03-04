@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly IAdminAppService _adminAppService;
@@ -15,16 +16,16 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             _adminAppService = adminAppService;
         }
 
-
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
             
         }
 
-      
 
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login(string email, string password)
         {
@@ -39,7 +40,6 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             return RedirectToAction("Index", "Admin");
         }
 
-       
         
         public IActionResult Index()
         {

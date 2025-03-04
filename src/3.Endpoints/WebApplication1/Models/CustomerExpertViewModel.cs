@@ -17,5 +17,9 @@ namespace Achareh.Endpoint.MVC.Models
         [Required(ErrorMessage = "لطفا نام خانوادگی را وارد کنید")]
         [MaxLength(50, ErrorMessage = "نام خانوادگی نمی‌تواند بیشتر از 50 کاراکتر باشد")]
         public string LastName { get; set; }
+
+        public string? ImagePath { get; set; } = null;
+
+        public IFormFile? ImageFile { get; set; }
     }
 }

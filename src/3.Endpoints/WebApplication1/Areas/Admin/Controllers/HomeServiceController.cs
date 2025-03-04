@@ -1,10 +1,11 @@
 ﻿using Achareh.Domain.AppServices;
 using Achareh.Domain.Core.Contracts.AppService;
-using Achareh.Domain.Core.Contracts.Repository;
+using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Dtos.HomeService;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Endpoint.MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
@@ -13,19 +14,22 @@ using System.Threading;
 namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class HomeServiceController : Controller
     {
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        
         private readonly IHomeServiceAppService _homeServiceAppService;
         private readonly ISubCategoryAppService _subCategoryAppService;
+        private readonly IImageService _imageService;
        
 
 
-        public HomeServiceController(IHomeServiceAppService homeServiceAppService, IWebHostEnvironment webHostEnvironment, ISubCategoryAppService subCategoryAppService)
+        public HomeServiceController(IHomeServiceAppService homeServiceAppService, ISubCategoryAppService subCategoryAppService, IImageService imageService)
         {
             _homeServiceAppService = homeServiceAppService;
             _subCategoryAppService = subCategoryAppService;
-            _webHostEnvironment = webHostEnvironment;
+            _imageService = imageService;
+            
             
         }
 
@@ -48,27 +52,17 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateHomeServiceViewModel model, IFormFile ImageFile, CancellationToken cancellationToken)
+        public async Task<IActionResult> Create(CreateHomeServiceViewModel model, CancellationToken cancellationToken)
         {
-            model.ImagePath = model.ImagePath ?? string.Empty;
+           
             if (!ModelState.IsValid)
             {
                 ViewBag.SubCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
                 return View(model);
             }
-            string filePath = null;
-
-            if (ImageFile != null && ImageFile.Length > 0)
+            if (model.ImageFile is not null)
             {
-                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(ImageFile.FileName)}";
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
-
-                using (var stream = new FileStream(uploadPath, FileMode.Create))
-                {
-                    await ImageFile.CopyToAsync(stream);
-                }
-
-                model.ImagePath = $"/uploads/{fileName}";
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "homeservice", cancellationToken);
             }
             var newHomeService = new HomeService
             {
@@ -126,20 +120,10 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 return View(model);
             }
 
-            // بررسی و ذخیره تصویر جدید (در صورت آپلود)
-            if (model.ImageFile != null && model.ImageFile.Length > 0)
+            if (model.ImageFile is not null)
             {
-                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(model.ImageFile.FileName)}";
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
-
-                using (var stream = new FileStream(uploadPath, FileMode.Create))
-                {
-                    await model.ImageFile.CopyToAsync(stream);
-                }
-
-                model.ImagePath = $"/uploads/{fileName}"; // مسیر تصویر جدید
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "homeservice", cancellationToken);
             }
-
             var updatedHomeService = new HomeService
             {
                 Id = model.Id,
@@ -177,7 +161,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             var result = await _homeServiceAppService.DeleteAsync(id, cancellationToken);
             if (!result)
             {
-                ModelState.AddModelError("", "something is wrong in delete homeservice");
+                ModelState.AddModelError("", "something is wrong in delete homeservice or maybe your subcategory is depend on some subcategories");
                 return View();
             }
 

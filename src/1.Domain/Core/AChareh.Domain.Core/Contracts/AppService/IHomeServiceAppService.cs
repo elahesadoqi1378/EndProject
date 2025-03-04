@@ -13,9 +13,9 @@ namespace Achareh.Domain.Core.Contracts.AppService
         Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken);
         Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task<bool> CreateAsync(HomeService homeService, CancellationToken cancellationToken);
-        Task<bool> HomeServiceCreate(CreateHomeServiceDto createHomeServiceDto, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
-        Task<bool> HomeServiceUpdate(UpdateHomeServiceDto updateHomeServiceDto, CancellationToken cancellationToken);
+        Task<List<HomeService>> GetAllWithSubCategoryId(int subCategoryId, CancellationToken cancellationToken);
+
     }
 }

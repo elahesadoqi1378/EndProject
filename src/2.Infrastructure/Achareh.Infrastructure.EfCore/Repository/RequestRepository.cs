@@ -3,6 +3,7 @@ using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Achareh.Domain.Core.Enums;
+using Microsoft.Extensions.Logging;
 
 
 namespace Achareh.Infrastructure.EfCore.Repository
@@ -10,10 +11,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
     public class RequestRepository : IRequestRepository
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<RequestRepository> _logger;
 
-        public RequestRepository(AppDbContext context)
+        public RequestRepository(AppDbContext context, ILogger<RequestRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public async Task<List<Request>> GetAllAsync(CancellationToken cancellationToken)
 
@@ -23,39 +26,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
             => await _context.Requests.FirstOrDefaultAsync(x => x.Id == id);
 
-        public async Task CreateAsync(Request request)
-        {
-            await _context.Requests.AddAsync(request);
-            await _context.SaveChangesAsync();
-        }
-        public async Task UpdateAsync(Request request)
-        {
-            var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == request.Id);
-            if (existingRequest != null)
-            {
-                existingRequest.Title = request.Title;
-                existingRequest.Description = request.Description;
-                existingRequest.CreatedAt = request.CreatedAt;
-                existingRequest.CreatedAt = request.CreatedAt;
-                existingRequest.ApprovedAt = request.ApprovedAt;
-                existingRequest.RequestStatus = request.RequestStatus;
-                existingRequest.CityId = request.CityId;
-                existingRequest.CustomerId = request.CustomerId;
-                existingRequest.HomeServiceId = request.HomeServiceId;
-                await _context.SaveChangesAsync();
-            }
-        }
-        public async Task DeleteAsync(int id)
-        {
-            var request = await _context.Requests.FirstOrDefaultAsync(x => x.Id == id);
-            if (request != null)
-            {
-                await _context.SaveChangesAsync();
-            }
-        }
-
-
-
+      
         public async Task<Request> GetByIdAsync(int Id, CancellationToken cancellationToken)
 
          => await _context.Requests.FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
@@ -74,7 +45,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                     .Requests
                     .Include(r => r.HomeService)
                     .Include(r => r.City)
-                    .Include(r => r.Images)
+                    .Include(r => r.RequestImages)
                     .Include(r => r.ExpertOffers)
                     .ToListAsync(cancellationToken);
 
@@ -87,7 +58,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                .Where(r => r.CustomerId == customerId) //eager loading select
                .Include(r => r.HomeService)
                .Include(r => r.City)
-               .Include(r => r.Images)
+               .Include(r => r.RequestImages)
                .Include(r => r.ExpertOffers)
                .ToListAsync(cancellationToken);
 
@@ -98,7 +69,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                    .Requests
                    .Include(r => r.HomeService)
                    .Include(r => r.City)
-                   .Include(r => r.Images)
+                   .Include(r => r.RequestImages)
                    .Include(r => r.ExpertOffers)
                    .FirstOrDefaultAsync(e => e.Id == requestId, cancellationToken);
 
@@ -108,10 +79,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 await _context.Requests.AddAsync(request, cancellationToken);
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("request created Succesfully");
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError("something is wrong in create request", ex.Message);
                 return false;
             }
 
@@ -119,49 +92,80 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)
         {
-            var existRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
+            try
+            {
+                var existRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
 
-            if (existRequest == null)
+                if (existRequest == null)
+                    return false;
+
+                existRequest.Title = request.Title;
+                existRequest.Description = request.Description;
+                existRequest.RequestForTime = request.RequestForTime;
+                existRequest.ApprovedAt = request.ApprovedAt;
+                existRequest.RequestStatus = request.RequestStatus;
+                existRequest.CityId = request.CityId;
+
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("request updated Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in update request", ex.Message);
                 return false;
+            }
 
-            existRequest.Title = request.Title;
-            existRequest.Description = request.Description;
-            existRequest.RequestForTime = request.RequestForTime;
-            existRequest.ApprovedAt = request.ApprovedAt;
-            existRequest.RequestStatus = request.RequestStatus;
-            existRequest.CityId = request.CityId;
-
-            return await _context.SaveChangesAsync(cancellationToken) > 0;
 
         }
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
-            var request = await _context.Requests
-                                 .Include(x => x.Images)
-                                 .Include(x => x.ExpertOffers)
-                                 .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+            try
+            {
+                var request = await _context.Requests
+                                .Include(x => x.RequestImages)
+                                .Include(x => x.ExpertOffers)
+                                .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-            if (request == null)
+                if (request == null)
+                    return false;
+
+                request.IsDeleted = true;
+                await _context.SaveChangesAsync(cancellationToken) ;
+                _logger.LogInformation("request deleted Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in delete request", ex.Message);
                 return false;
-
-            request.IsDeleted = true;
-
-            return await _context.SaveChangesAsync(cancellationToken) > 0;
+            }
 
         }
 
         public async Task<bool> ChangeStatus(int status, int orderId, CancellationToken cancellationToken)
         {
-            var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == orderId, cancellationToken);
+            try
+            {
+                var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == orderId, cancellationToken);
 
-            if (existingRequest == null)
-                return false; 
+                if (existingRequest == null)
+                    return false;
 
-            existingRequest.RequestStatus = (StatusEnum)status; 
+                existingRequest.RequestStatus = (StatusEnum)status;
 
-            await _context.SaveChangesAsync(cancellationToken); 
-            return true;
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("requests status changed Succesfully");
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in changing status of request", ex.Message);
+                return false;
+            }
+
         }
         public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
 

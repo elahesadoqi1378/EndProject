@@ -1,6 +1,5 @@
 ﻿
 using Achareh.Domain.Core.Dtos.Category;
-using Achareh.Domain.Core.Dtos.SubCategory;
 using Achareh.Domain.Core.Entities.Request;
 
 namespace Achareh.Domain.Core.Contracts.AppService
@@ -12,8 +11,6 @@ namespace Achareh.Domain.Core.Contracts.AppService
         Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken);
-        Task<bool> SubCategoryUpdate(UpdateSubCategoryDto updateSubCategoryDto, CancellationToken cancellationToken);
-        //Task<bool> SubCategoryCreate(CreasteSubCategoryDto creasteSubCategoryDto, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
     }
       

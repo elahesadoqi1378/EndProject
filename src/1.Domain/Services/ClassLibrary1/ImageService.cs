@@ -1,21 +1,40 @@
 ﻿
-
-using Achareh.Domain.Core.Contracts.Repository;
 using Achareh.Domain.Core.Contracts.Service;
 using Microsoft.AspNetCore.Http;
+using System.Net.Http.Headers;
 
 namespace Achareh.Domain.Services
 {
     public class ImageService : IImageService
     {
-        private readonly IImageRepository _imageRepository;
-
-        public ImageService(IImageRepository imageRepository)
+        public async Task<string> UploadImage(IFormFile FormFile, string folderName, CancellationToken cancellation)
         {
-            _imageRepository = imageRepository;
-        }
-        public async Task<string> UploadImageAsync(IFormFile image)
+            string filePath;
+            string fileName;
+            if (FormFile != null)
+            {
+                fileName = Guid.NewGuid().ToString() +
+                           ContentDispositionHeaderValue.Parse(FormFile.ContentDisposition).FileName.Trim('"');
+                filePath = Path.Combine($"wwwroot/images/{folderName}", fileName);
+                try
+                {
+                    using (var stream = System.IO.File.Create(filePath))
+                    {
+                        await FormFile.CopyToAsync(stream, cancellation);
+                    }
+                }
+                catch
+                {
+                    throw new Exception("Upload files operation failed");
+                }
+                return $"/images/{folderName}/{fileName}";
+            }
+            else
+                fileName = "";
 
-            => await _imageRepository.UploadImageAsync(image);
+            return fileName;
+        }
+
+
     }
 }

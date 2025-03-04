@@ -13,9 +13,9 @@ namespace Achareh.Endpoint.MVC.Models
         [Required(ErrorMessage = "انتخاب دسته‌بندی الزامی است.")]
         public int CategoryId { get; set; }
 
-        public string? ImagePath { get; set; } // مقدار تصویر موجود
+        public string? ImagePath { get; set; } 
 
-        public IFormFile? ImageFile { get; set; } // فیلد برای آپلود تصویر جدید
+        public IFormFile? ImageFile { get; set; } 
 
 
     }

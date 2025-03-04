@@ -3,16 +3,19 @@ using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Achareh.Infrastructure.EfCore.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<CustomerRepository> _logger;
 
-        public CustomerRepository(AppDbContext context)
+        public CustomerRepository(AppDbContext context, ILogger<CustomerRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public async Task<bool> CreateAsync(Customer customer, CancellationToken cancellationToken)
         {
@@ -20,23 +23,37 @@ namespace Achareh.Infrastructure.EfCore.Repository
             {
                 await _context.Customers.AddAsync(customer, cancellationToken);
                 await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("customer Added Succesfully");
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("something is wrong in create");
+                _logger.LogError("something is wrong in create customer", ex.Message);
+                return false;
             }
         }
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
-            var customer = await _context.Customers.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+            try
+            {
+                var customer = await _context.Customers.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-            if (customer == null)
+                if (customer == null)
+                    return false;
+
+                _context.Customers.Remove(customer);
+               
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("customer deleted Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in delete customer", ex.Message);
                 return false;
+            }
 
-            _context.Customers.Remove(customer);
-            return await _context.SaveChangesAsync(cancellationToken) > 0;
 
         }
 
@@ -49,11 +66,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
         public async Task<Customer?> GetByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
         {
             return await _context.Customers
-            .Include(x=>x.User)
-            .Include(x => x.Requests)
-            .ThenInclude(x => x.ExpertOffers)
-            .ThenInclude(x => x.Expert)
-            .Include(x => x.Reviews).FirstOrDefaultAsync(c => c.Id == id, cancellationToken);
+             .Include(x => x.Requests)
+             .ThenInclude(x => x.ExpertOffers)
+             .Include(x => x.Reviews)
+             .Include(x => x.User)
+             .ThenInclude(x => x.City)
+             .FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
         }
 
         public async Task<Customer?> GetrByIdAsync(int id, CancellationToken cancellationToken)
@@ -64,22 +82,33 @@ namespace Achareh.Infrastructure.EfCore.Repository
        
         public async Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken)
         {
-            var existingCustomer = await _context.Customers
-            .Include(x => x.User)
-            .FirstOrDefaultAsync(x => x.Id == customer.Id, cancellationToken);
+            try
+            {
+                var existingCustomer = await _context.Customers
+                                                     .Include(x => x.User)
+                                                     .FirstOrDefaultAsync(x => x.Id == customer.Id, cancellationToken);
 
-            if (existingCustomer == null)
+                if (existingCustomer == null)
+                    return false;
+
+                existingCustomer.User.FirstName = customer.User.FirstName;
+                existingCustomer.User.LastName = customer.User.LastName;
+                existingCustomer.User.Email = customer.User.Email;
+                existingCustomer.User.PhoneNumber = customer.User.PhoneNumber;
+                existingCustomer.User.Address = customer.User.Address;
+                existingCustomer.User.CityId = customer.User.CityId;
+                existingCustomer.User.ImagePath = customer.User.ImagePath;
+                 await _context.SaveChangesAsync(cancellationToken) ;
+                _logger.LogInformation("customer updated Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in update customer", ex.Message);
                 return false;
+            }
 
-            existingCustomer.User.FirstName = customer.User.FirstName;
-            existingCustomer.User.LastName = customer.User.LastName;
-            existingCustomer.User.Email = customer.User.Email;
-            existingCustomer.User.PhoneNumber = customer.User.PhoneNumber;
-            existingCustomer.User.Address = customer.User.Address;
-            existingCustomer.User.CityId = customer.User.CityId;
-            existingCustomer.User.ImagePath = customer.User.ImagePath;
 
-            return await _context.SaveChangesAsync(cancellationToken) > 0;
         }
         public async Task<int> GetCount(CancellationToken cancellationToken) 
 

@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,15 @@ namespace Achareh.Domain.AppServices
         public async Task<Customer?> GetrByIdAsync(int id, CancellationToken cancellationToken)
 
             => await _customerService.GetrByIdAsync(id, cancellationToken);
+
+        public Task<IdentityResult> RegisterAsync(User user, string pass)
+        {
+            return _customerService.RegisterAsync(user, pass);
+        }
+        public Task<IdentityResult> UpdateAsync(User user)
+        {
+            return _customerService.UpdateAsync(user);
+        }
 
         public async Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken)
 

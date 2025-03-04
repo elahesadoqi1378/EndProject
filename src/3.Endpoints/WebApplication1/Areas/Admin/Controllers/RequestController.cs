@@ -1,11 +1,13 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Enums;
 using Achareh.Endpoint.MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class RequestController : Controller
     {
         private readonly IRequestAppService _requestAppService;
@@ -46,7 +48,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 AvailableStatuses = Enum.GetValues(typeof(StatusEnum)).Cast<StatusEnum>().ToList()
             };
 
-            return View(model);
+            return RedirectToAction("RequestIndex"); ;
         }
 
 
@@ -55,32 +57,38 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
-                Console.WriteLine("ModelState is NOT valid!"); //log giri
+                Console.WriteLine("ModelState is NOT valid!");
+                return View(model);
             }
 
-            if (model.AvailableStatuses == null || !model.AvailableStatuses.Any())
+            
+            var request = await _requestAppService.GetByIdAsync(model.RequestId, cancellationToken);
+            if (request == null)
             {
-                Console.WriteLine("AvailableStatuses is NULL or EMPTY, assigning values...");//
-                model.AvailableStatuses = Enum.GetValues(typeof(StatusEnum)).Cast<StatusEnum>().ToList();
+                return NotFound();
             }
 
-            if (ModelState.IsValid)
+         
+            if (request.RequestStatus != model.CurrentStatus)
             {
-                var result = await _requestAppService.ChangeStatus((int)model.NewStatus, model.RequestId, cancellationToken);
-
-                if (result)
-                {
-                    return RedirectToAction("RequestIndex");
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "something is not true in updating request.");
-                }
+                ModelState.AddModelError(string.Empty, "وضعیت این درخواست قبلاً تغییر کرده است و دیگر قابل تغییر نیست.");
+                return View(model);
             }
 
-            return View(model);
+           
+            var result = await _requestAppService.ChangeStatus((int)model.NewStatus, model.RequestId, cancellationToken);
+
+            if (result)
+            {
+                return RedirectToAction("RequestIndex");
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "خطایی در تغییر وضعیت رخ داده است.");
+            }
+
+            return RedirectToAction("RequestIndex");
         }
-
 
 
     }

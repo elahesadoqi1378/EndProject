@@ -3,7 +3,6 @@ C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.AssemblyInfoInputs.cache
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.AssemblyInfo.cs
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.csproj.CoreCompileInputs.cache
-C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.RazorAssemblyInfo.cache
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.RazorAssemblyInfo.cs
@@ -396,6 +395,7 @@ C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Seq.Extensions.Logging.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Serilog.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
@@ -576,12 +576,12 @@ C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Domain.AppServices.dll
-C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Domain.Core.dll
+C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\AChareh.Domain.Core.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Domain.Services.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Infrastructure.EfCore.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Framework.dll
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Framework.pdb
-C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Domain.Core.pdb
+C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\AChareh.Domain.Core.pdb
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Domain.AppServices.pdb
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Domain.Services.pdb
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\bin\Debug\net8.0\Achareh.Infrastructure.EfCore.pdb
@@ -606,3 +606,4 @@ C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.pdb
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.genruntimeconfig.cache
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\ref\Achareh.Endpoint.MVC.dll
+C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.MvcApplicationPartsAssemblyInfo.cs
