@@ -13,10 +13,16 @@ namespace Framework
     {
         public static string GetEnumDisplayName(this Enum enumType)
         {
-            return enumType.GetType().GetMember(enumType.ToString())
-                           .First()
-                           .GetCustomAttribute<DisplayAttribute>()
-                           .Name;
+            var member = enumType.GetType().GetMember(enumType.ToString()).FirstOrDefault();
+            if (member != null)
+            {
+                var displayAttribute = member.GetCustomAttribute<DisplayAttribute>();
+                if (displayAttribute != null)
+                {
+                    return displayAttribute.Name;
+                }
+            }
+            return enumType.ToString();
         }
     }
 }

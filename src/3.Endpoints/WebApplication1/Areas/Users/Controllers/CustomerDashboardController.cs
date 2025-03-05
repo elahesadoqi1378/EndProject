@@ -13,12 +13,14 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         private readonly UserManager<User> _userManager;
         private readonly ICustomerAppService _customerAppService;
         private readonly IRequestAppService _requestAppService;
+        private readonly IExpertOfferAppService _expertOfferAppService;
 
-        public CustomerDashboardController(UserManager<User> userManager, ICustomerAppService customerAppService, IRequestAppService requestAppService)
+        public CustomerDashboardController(UserManager<User> userManager, ICustomerAppService customerAppService, IRequestAppService requestAppService, IExpertOfferAppService expertOfferAppService)
         {
             _userManager = userManager;
             _customerAppService = customerAppService;
             _requestAppService = requestAppService;
+            _expertOfferAppService = expertOfferAppService;
         }
 
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
@@ -50,9 +52,30 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 
             return View(requests);
         }
-        public IActionResult OfferList()
+        public async Task<IActionResult> RequestDetails(int id, CancellationToken cancellationToken)
         {
-            return View();
+            var request = await _requestAppService.GetByIdAsync(id, cancellationToken);
+            if (request == null)
+            {
+                return NotFound();
+            }
+            return View(request);
+        }
+        public async Task<IActionResult> OfferList(int id, CancellationToken cancellationToken)
+        {
+            var offers = await _expertOfferAppService.OffersOfRequest(id, cancellationToken);
+
+            return View(offers);
+        }
+
+        public async Task<IActionResult> OfferDetails(int id, CancellationToken cancellationToken)
+        {
+            var expertOffer = await _expertOfferAppService.GetByIdAsync(id, cancellationToken);
+            if (expertOffer == null)
+            {
+                return NotFound();
+            }
+            return View(expertOffer);
         }
         public IActionResult EditCustomerInfo()
         {

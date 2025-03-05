@@ -19,9 +19,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
         public async Task<List<ExpertOffer>> GetAllAsync(CancellationToken cancellationToken)
 
             => await _context.ExpertOffers.ToListAsync(cancellationToken);
-        public async Task<ExpertOffer> GetByIdAsync(int id , CancellationToken cancellationToken)
+        public async Task<ExpertOffer?> GetByIdAsync(int id , CancellationToken cancellationToken)
 
-            => await _context.ExpertOffers.FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
+            => await _context.ExpertOffers
+                              .Include(x=>x.Request)
+                              .ThenInclude(x=>x.HomeService)
+                             .FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
 
         public async Task CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
         {
@@ -57,10 +60,10 @@ namespace Achareh.Infrastructure.EfCore.Repository
         public async Task<List<ExpertOffer>> OffersOfRequest(int requestId, CancellationToken cancellationToken)
 
            => await _context.ExpertOffers
+                            .Where(r => r.Request.Id == requestId)
                             .Include(c => c.Request)
                             .Include(c => c.Expert) 
                             .ThenInclude(c => c.User)
-                            .Where(r => r.Request.Id == requestId)
                             .ToListAsync(cancellationToken);
     }
 }

@@ -3,36 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\ARYA\\source\\repos\\EndProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\expertofferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\expertofferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\customerdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\customerdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\offerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\offerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\offerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\offerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\requestdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\requestdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\requestlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\requestlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\core\\achareh.domain.core\\entities\\request\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|solutionrelative:src\\1.domain\\core\\achareh.domain.core\\entities\\request\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\models\\addrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\models\\addrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\request\\addrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\request\\addrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\core\\achareh.domain.core\\entities\\baseentities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|solutionrelative:src\\1.domain\\core\\achareh.domain.core\\entities\\baseentities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\customerdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D058F5B3-0B92-4BF4-A6A7-2166881F923E}|src\\0.Framework\\ClassLibrary1\\Framework.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\0.framework\\classlibrary1\\enumextensionmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D058F5B3-0B92-4BF4-A6A7-2166881F923E}|src\\0.Framework\\ClassLibrary1\\Framework.csproj|solutionrelative:src\\0.framework\\classlibrary1\\enumextensionmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\admin\\views\\request\\requestindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\admin\\views\\request\\requestindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\request\\addrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\views\\request\\addrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5D5431A-74B4-4D15-9C99-CBB3673542A9}|src\\1.Domain\\Services\\Achareh.Domain.AppServices\\Achareh.Domain.AppServices.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\services\\achareh.domain.appservices\\requestappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB96789F-FCB0-496D-BC9B-177232484303}|src\\1.Domain\\Services\\ClassLibrary1\\Achareh.Domain.Services.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\services\\classlibrary1\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB96789F-FCB0-496D-BC9B-177232484303}|src\\1.Domain\\Services\\ClassLibrary1\\Achareh.Domain.Services.csproj|solutionrelative:src\\1.domain\\services\\classlibrary1\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\core\\achareh.domain.core\\contracts\\service\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{EB96789F-FCB0-496D-BC9B-177232484303}|src\\1.Domain\\Services\\ClassLibrary1\\Achareh.Domain.Services.csproj|solutionrelative:src\\1.domain\\services\\classlibrary1\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|solutionrelative:src\\3.endpoints\\webapplication1\\areas\\users\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,10 +145,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ARYA\\AppData\\Local\\SourceServer\\2f0e6f42c7b06adff3068474033d3aab8334738c5766deed58d734e10860b19e\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ARYA\\AppData\\Local\\SourceServer\\9cd021380c1f710dc209cdf7ea6c2ce5f898569ade4b8688bd71ca48beaeff34\\src\\libraries\\System.Private.CoreLib\\src\\System\\Runtime\\ExceptionServices\\ExceptionDispatchInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -126,14 +154,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\core\\achareh.domain.core\\dtos\\user\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|solutionrelative:src\\1.domain\\core\\achareh.domain.core\\dtos\\user\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\1.domain\\core\\achareh.domain.core\\entities\\baseentities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266D9D93-735C-4DEE-9FEA-6F95C7165B86}|src\\1.Domain\\Core\\AChareh.Domain.Core\\AChareh.Domain.Core.csproj|solutionrelative:src\\1.domain\\core\\achareh.domain.core\\entities\\baseentities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{194276B4-4003-438B-8249-16F6F63780E4}|src\\3.Endpoints\\WebApplication1\\Achareh.Endpoint.MVC.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\3.endpoints\\webapplication1\\areas\\users\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -218,6 +238,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\repository\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|c:\\users\\arya\\source\\repos\\endproject\\src\\2.infrastructure\\achareh.infrastructure.efcore\\migrations\\20250305044753_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1B8EFC-990B-435E-A630-203F4735E8F1}|src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Achareh.Infrastructure.EfCore.csproj|solutionrelative:src\\2.infrastructure\\achareh.infrastructure.efcore\\migrations\\20250305044753_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -227,7 +251,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -243,84 +267,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250305044753_init.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
-              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
-              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T04:47:53.255Z",
+              "WhenOpened": "2025-03-04T03:13:48.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwDIAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
+              "ViewState": "AgIAANwAAAAAAAAAAAAQwNsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T03:46:35.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
+              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAUwLYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T05:46:35.219Z",
+              "WhenOpened": "2025-03-04T08:29:43.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ExpertOfferRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\ExpertOfferRepository.cs",
+              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\ExpertOfferRepository.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\ExpertOfferRepository.cs",
+              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\ExpertOfferRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:28:51.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OfferDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferDetails.cshtml",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferDetails.cshtml",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferDetails.cshtml",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T08:18:14.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CustomerDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\CustomerDashboardController.cs",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\CustomerDashboardController.cs",
               "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\CustomerDashboardController.cs",
               "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\CustomerDashboardController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwCgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAzwEgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T05:08:05.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "RequestDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestDetails.cshtml",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestDetails.cshtml",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestDetails.cshtml",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T05:58:04.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RequestList.cshtml",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestList.cshtml",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestList.cshtml",
               "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestList.cshtml",
               "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\RequestList.cshtml",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAkwBIBAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAArwBIBAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-04T22:48:18.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
-              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\Index.cshtml",
-              "ViewState": "AgIAANMAAAAAAAAAAAAQwNsAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "OfferList.cshtml",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferList.cshtml",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferList.cshtml",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferList.cshtml",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\CustomerDashboard\\OfferList.cshtml",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAYwP8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T03:46:35.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddRequest.cshtml",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
-              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
-              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAgwGQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T21:27:17.561Z",
+              "WhenOpened": "2025-03-05T06:39:46.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
+              "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
+              "RelativeToolTip": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:23:36.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\RequestController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAHcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T05:46:35.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T05:03:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AddRequestViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Models\\AddRequestViewModel.cs",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Models\\AddRequestViewModel.cs",
@@ -333,32 +436,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
-              "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
-              "RelativeToolTip": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\Request\\Request.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wB4AAAAbAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "ImageConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
+              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T08:23:36.707Z",
+              "WhenOpened": "2025-03-04T08:24:41.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RequestRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
-              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
-              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\RequestRepository.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAAwLIAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Image.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
+              "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
+              "RelativeToolTip": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T08:29:43.919Z"
+              "WhenOpened": "2025-03-04T08:27:41.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
+              "Title": "EnumExtensionMethods.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\0.Framework\\ClassLibrary1\\EnumExtensionMethods.cs",
+              "RelativeDocumentMoniker": "src\\0.Framework\\ClassLibrary1\\EnumExtensionMethods.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\0.Framework\\ClassLibrary1\\EnumExtensionMethods.cs",
+              "RelativeToolTip": "src\\0.Framework\\ClassLibrary1\\EnumExtensionMethods.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T05:27:00.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20250305044753_init.cs",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
+              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
+              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250305044753_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T04:47:53.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RequestIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\Request\\RequestIndex.cshtml",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\Request\\RequestIndex.cshtml",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\Request\\RequestIndex.cshtml",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\Request\\RequestIndex.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAArwGQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T05:27:10.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddRequest.cshtml",
+              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
+              "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
+              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
+              "RelativeToolTip": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Request\\AddRequest.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAgwGQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T21:27:17.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "IRequestService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\IRequestService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\IRequestService.cs",
@@ -370,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "RequestService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\ClassLibrary1\\RequestService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\ClassLibrary1\\RequestService.cs",
@@ -382,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "RequestAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\Achareh.Domain.AppServices\\RequestAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\Achareh.Domain.AppServices\\RequestAppService.cs",
@@ -394,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "IRequestAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\IRequestAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\IRequestAppService.cs",
@@ -406,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "IRequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Repositroy\\IRequestRepository.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Repositroy\\IRequestRepository.cs",
@@ -418,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\ClassLibrary1\\CustomerService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\ClassLibrary1\\CustomerService.cs",
@@ -430,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "CustomerAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\Achareh.Domain.AppServices\\CustomerAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\Achareh.Domain.AppServices\\CustomerAppService.cs",
@@ -442,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "ICustomerService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\ICustomerService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\ICustomerService.cs",
@@ -454,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Repositroy\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Repositroy\\ICustomerRepository.cs",
@@ -466,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "ICustomerAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\ICustomerAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\ICustomerAppService.cs",
@@ -478,19 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
-              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CustomerRepository.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAYwEwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T05:03:37.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\AccountController.cs",
@@ -502,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "HomeServiceIndex.cshtml",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\HomeService\\HomeServiceIndex.cshtml",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\HomeService\\HomeServiceIndex.cshtml",
@@ -514,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "CategoryIndex.cshtml",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\Category\\CategoryIndex.cshtml",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Admin\\Views\\Category\\CategoryIndex.cshtml",
@@ -526,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "HomeServiceController.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\HomeServiceController.cs",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\HomeServiceController.cs",
@@ -538,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\HomeService\\Index.cshtml",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\HomeService\\Index.cshtml",
@@ -550,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Home\\Index.cshtml",
@@ -562,19 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
-              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\UserConfiguration.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAgwGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T03:13:48.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "ControllerActionInvoker.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\AppData\\Local\\SourceServer\\2f0e6f42c7b06adff3068474033d3aab8334738c5766deed58d734e10860b19e\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\2f0e6f42c7b06adff3068474033d3aab8334738c5766deed58d734e10860b19e\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs",
@@ -586,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "ResourceInvoker.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\AppData\\Local\\SourceServer\\2b0ded73d8a551e300206b514f476a92c42b86dee1f04803fc73cfa02965ffd4\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ResourceInvoker.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\2b0ded73d8a551e300206b514f476a92c42b86dee1f04803fc73cfa02965ffd4\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ResourceInvoker.cs",
@@ -598,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "ExceptionDispatchInfo.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\AppData\\Local\\SourceServer\\9cd021380c1f710dc209cdf7ea6c2ce5f898569ade4b8688bd71ca48beaeff34\\src\\libraries\\System.Private.CoreLib\\src\\System\\Runtime\\ExceptionServices\\ExceptionDispatchInfo.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\9cd021380c1f710dc209cdf7ea6c2ce5f898569ade4b8688bd71ca48beaeff34\\src\\libraries\\System.Private.CoreLib\\src\\System\\Runtime\\ExceptionServices\\ExceptionDispatchInfo.cs",
@@ -610,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\CategoryRepository.cs",
@@ -622,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "LoginUserDto.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Dtos\\User\\LoginUserDto.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Dtos\\User\\LoginUserDto.cs",
@@ -634,31 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Image.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
-              "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
-              "RelativeToolTip": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Entities\\BaseEntities\\Image.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T08:27:41.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ImageConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
-              "ToolTip": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
-              "RelativeToolTip": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\ImageConfiguration.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T08:24:41.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Views\\Account\\Login.cshtml",
@@ -670,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Areas\\Users\\Controllers\\HomeController.cs",
@@ -682,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "20250304032447_init.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250304032447_init.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250304032447_init.cs",
@@ -694,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "CustomerExpertLoginAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\Achareh.Domain.AppServices\\CustomerExpertLoginAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\Achareh.Domain.AppServices\\CustomerExpertLoginAppService.cs",
@@ -706,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "CustomerExpertLoginService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\ClassLibrary1\\CustomerExpertLoginService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\ClassLibrary1\\CustomerExpertLoginService.cs",
@@ -718,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "src\\3.Endpoints\\WebApplication1\\Program.cs",
@@ -730,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "ICustomerExpertLoginService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\ICustomerExpertLoginService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\ICustomerExpertLoginService.cs",
@@ -742,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "ICustomerExpertLoginAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\ICustomerExpertLoginAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\ICustomerExpertLoginAppService.cs",
@@ -754,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "20250304012121_init.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250304012121_init.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250304012121_init.cs",
@@ -766,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "20250304002641_init.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250304002641_init.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250304002641_init.cs",
@@ -778,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "SubcategoryConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\SubcategoryConfiguration.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\SubcategoryConfiguration.cs",
@@ -790,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "CategoryConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\CategoryConfiguration.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\CategoryConfiguration.cs",
@@ -802,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "20250303212342_init.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250303212342_init.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Migrations\\20250303212342_init.cs",
@@ -814,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "HomeServiceConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
@@ -826,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "HomeServiceService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\ClassLibrary1\\HomeServiceService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\ClassLibrary1\\HomeServiceService.cs",
@@ -838,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "HomeServiceAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Services\\Achareh.Domain.AppServices\\HomeServiceAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Services\\Achareh.Domain.AppServices\\HomeServiceAppService.cs",
@@ -850,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "IHomeServiceAppService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\IHomeServiceAppService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\AppService\\IHomeServiceAppService.cs",
@@ -862,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "IHomeServiceService.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\IHomeServiceService.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Service\\IHomeServiceService.cs",
@@ -874,7 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "IHomeServiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Repositroy\\IHomeServiceRepository.cs",
               "RelativeDocumentMoniker": "src\\1.Domain\\Core\\AChareh.Domain.Core\\Contracts\\Repositroy\\IHomeServiceRepository.cs",
@@ -886,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "HomeServiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\HomeServiceRepository.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\HomeServiceRepository.cs",
@@ -898,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "SubCategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\SubCategoryRepository.cs",
               "RelativeDocumentMoniker": "src\\2.Infrastructure\\Achareh.Infrastructure.EfCore\\Repository\\SubCategoryRepository.cs",

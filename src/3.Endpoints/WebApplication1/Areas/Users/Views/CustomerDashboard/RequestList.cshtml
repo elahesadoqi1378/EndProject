@@ -1,4 +1,5 @@
 ﻿@using Achareh.Domain.Core.Entities.Request
+@using Framework
 @model List<Request>
 
 <!DOCTYPE html>
@@ -253,10 +254,10 @@
                             <thead>
                                 <tr>
                                     <th scope="col">شناسه سفارش</th>
-                                    <th scope="col"> عکس هوم سرویس</th>
-                                    <th scope="col">تاریخ ثبت</th>
+                                   @*  <th scope="col"> عنوان هوم سرویس</th> *@
                                     <th scope="col">وضعیت</th>
                                     <th scope="col">جزئیات سفارش</th>
+                                    <th scope="col">پیشنهادات</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -268,23 +269,10 @@
                                     {
                                         <tr>
                                             <td>@request.Id</td>
-                                            <td>
-                                                @if (request.RequestImages != null && request.RequestImages.Any())
-                                                {
-                                                    @foreach (var imagePath in request.RequestImages)
-                                                    {
-                                                        <img src="@imagePath" class="avatar w30" alt="Request Image">
-                                                    }
-                                                }
-                                                else
-                                                {
-                                                    <p>تصویری یافت نشد</p>
-                                                }
-                                            </td>
-                                            <td style="white-space: nowrap; padding-right: 40px;">@request.RequestForTime</td>
-                                            <td>@request.RequestStatus/td>
-                                            <td>@request.Description</td>
-                                            <td></td>
+                                          @*   <td>@request.HomeService.Title</td> *@
+                                            <td>@request.RequestStatus.GetEnumDisplayName()</td>
+                                            <td><a asp-action="RequestDetails" asp-route-id="@request.Id" class="btn btn-primary">نمایش</a></td>
+                                            <td><a asp-action="OfferList" asp-route-id="@request.Id" class="btn btn-primary">پیشنهادات</a></td>
                                            
                                         </tr>
                                     }
