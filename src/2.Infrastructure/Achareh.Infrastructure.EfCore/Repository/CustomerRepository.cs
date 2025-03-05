@@ -74,12 +74,20 @@ namespace Achareh.Infrastructure.EfCore.Repository
              .FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
         }
 
+     
+
+
         public async Task<Customer?> GetrByIdAsync(int id, CancellationToken cancellationToken)
         
             => await _context.Customers.Include(x=>x.User)
                                        .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-       
+        public async Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken)
+
+           => await _context.Customers.Include(x => x.User)
+                                      .FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
+
+
         public async Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken)
         {
             try

@@ -58,7 +58,10 @@ namespace Achareh.Domain.Services
         {
             return _userManager.UpdateAsync(user);
         }
-       
+
+        public async Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken)
+
+            => await _customerRepository.GetCustomerByIdAsync(id, cancellationToken);
 
 
     }

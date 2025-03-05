@@ -19,7 +19,8 @@ namespace Achareh.Domain.Core.Contracts.Service
         Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken);
         Task<IdentityResult> RegisterAsync(User user, string pass);
         Task<IdentityResult> UpdateAsync(User user);
-      
+        Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken);
+    
     }
        
 }

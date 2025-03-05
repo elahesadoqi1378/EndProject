@@ -16,5 +16,6 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
         Task<int> GetCount(CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken);
+        Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken);
     }
 }

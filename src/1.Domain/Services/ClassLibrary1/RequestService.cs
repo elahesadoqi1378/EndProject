@@ -41,6 +41,7 @@ namespace Achareh.Domain.Services
 
            => await _requestRepository.GetByIdWithDetailsAsync(requestId, cancellationToken);
 
+       
         public async Task<List<Request>?> GetCustomerRequestsAsync(int customerId, CancellationToken cancellationToken)
 
            => await _requestRepository.GetCustomerRequestsAsync(customerId, cancellationToken);
@@ -61,6 +62,8 @@ namespace Achareh.Domain.Services
         public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)
 
             => await _requestRepository.UpdateAsync(request, cancellationToken);
+        public async Task<List<Request>> GetCustomerRequestAsync(int userId, CancellationToken cancellationToken)
 
+           => await _requestRepository.GetCustomerRequestAsync(userId, cancellationToken);
     }
 }

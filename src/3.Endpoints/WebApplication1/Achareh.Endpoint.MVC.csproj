@@ -33,6 +33,7 @@
     <Folder Include="Areas\Admin\Views\Admin\Admin\" />
     <Folder Include="wwwroot\images\customer\" />
     <Folder Include="wwwroot\images\expert\" />
+    <Folder Include="wwwroot\images\request\" />
     <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 

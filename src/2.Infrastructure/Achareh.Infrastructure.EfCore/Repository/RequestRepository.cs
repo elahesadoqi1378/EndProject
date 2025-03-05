@@ -4,6 +4,8 @@ using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Achareh.Domain.Core.Enums;
 using Microsoft.Extensions.Logging;
+using Achareh.Domain.Core.Entities.User;
+using System.Threading;
 
 
 namespace Achareh.Infrastructure.EfCore.Repository
@@ -174,7 +176,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
             .ThenInclude(c => c.User)
             .Include(h => h.HomeService)
             .ToListAsync(cancellationToken);
+        public async Task<List<Request>> GetCustomerRequestAsync(int userId, CancellationToken cancellationToken)
 
-       
+          => await _context.Requests
+                           .Where(r => r.Customer.UserId == userId)
+                           .Include(r => r.Customer)
+                           .ToListAsync(cancellationToken);
     }
+
 }

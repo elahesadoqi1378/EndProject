@@ -122,7 +122,7 @@
                     <div class="tab-pane" id="author-menu">
                         <ul class="navbar-list">
                             <li class="navbar-item"><a class="navbar-link" href="Index">پروفایل</a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="RequestList">سفارشات من</a></li>
+                            <li class="navbar-item"><a class="navbar-link" asp-controller="CustomerDashboard" asp-action="RequestList">سفارشات من</a></li>
                             <li class="navbar-item"><a class="navbar-link" asp-controller="CustomerDashboard" asp-action="EditCustomerInfo">ویرایش مشخصات </a></li>
                             <li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
                            
@@ -224,7 +224,7 @@
                     <div class="dash-menu-list">
                         <ul>
                             <li class="navbar-item"><a class="active" href="Index">پروفایل</a></li>
-                            <li class="navbar-item"><a href="RequestList">سفارشات من</a></li>
+                            <li class="navbar-item"><a asp-controller ="CustomerDashboard" asp-action="RequestList">سفارشات من</a></li>
                             <li class="navbar-item"><a asp-controller="CustomerDashboard" asp-action="EditCustomerInfo">ویرایش مشخصات </a></li>
                             <li class="navbar-item"><a href="SuggestionList">پیشنهادات من </a></li>
                             <li class="navbar-item"><a asp-controller="Account" asp-action="Logout">خروج </a></li>

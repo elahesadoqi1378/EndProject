@@ -3048,13 +3048,13 @@
           "Microsoft.Extensions.Identity.Stores": "8.0.12"
         },
         "runtime": {
-          "AChareh.Domain.Core.dll": {
+          "Achareh.Domain.Core.dll": {
             "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
+            "fileVersion": ""
           }
         },
         "compile": {
-          "AChareh.Domain.Core.dll": {}
+          "Achareh.Domain.Core.dll": {}
         }
       },
       "Achareh.Domain.Services/1.0.0": {

@@ -60,5 +60,10 @@ namespace Achareh.Domain.AppServices
 
             => await _requestService.UpdateAsync(request, cancellationToken);
 
+        public async Task<List<Request>> GetCustomerRequestAsync(int userId, CancellationToken cancellationToken)
+
+           => await _requestService.GetCustomerRequestAsync(userId, cancellationToken);
+
+
     }
 }

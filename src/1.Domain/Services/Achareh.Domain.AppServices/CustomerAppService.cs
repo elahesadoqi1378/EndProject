@@ -55,5 +55,11 @@ namespace Achareh.Domain.AppServices
         public async Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken)
 
            => await _customerService.UpdateAsync(customer, cancellationToken);
+
+        public async Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken)
+
+          => await _customerService.GetCustomerByIdAsync(id, cancellationToken);
+
+    
     }
 }

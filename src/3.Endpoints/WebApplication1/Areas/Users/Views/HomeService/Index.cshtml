@@ -118,7 +118,8 @@
                                                 {
                                                     @if (User.IsInRole("Customer"))
                                                     {
-                                                        <a href="/Users/Request/RequestIndex?homeServiceId=@homeService.Id" class="btn btn-success">سفارش سرویس جدید</a>
+
+                                                        <a asp-route-homeServiceId=@homeService.Id asp-area="Users" asp-controller="Request" asp-action="AddRequest" class="btn btn-success">سفارش سرویس جدید</a>
                                                     }
                                                     else if (User.IsInRole("Expert"))
                                                     {

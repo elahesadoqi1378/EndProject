@@ -4,6 +4,8 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Models
 {
     public class AddRequestViewModel
     {
+        public int HomeServiceId { get; set; }
+
         [Required(ErrorMessage = "عنوان سرویس خانگی الزامی است.")]
         [Display(Name = "عنوان سرویس خانگی")]
         public string HomeServiceTitle { get; set; }

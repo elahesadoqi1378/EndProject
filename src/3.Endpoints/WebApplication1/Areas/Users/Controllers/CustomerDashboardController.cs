@@ -3,6 +3,7 @@ using Achareh.Domain.Core.Entities.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using System.Threading;
 
 namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 {
@@ -11,11 +12,13 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly ICustomerAppService _customerAppService;
+        private readonly IRequestAppService _requestAppService;
 
-        public CustomerDashboardController(UserManager<User> userManager, ICustomerAppService customerAppService)
+        public CustomerDashboardController(UserManager<User> userManager, ICustomerAppService customerAppService, IRequestAppService requestAppService)
         {
             _userManager = userManager;
             _customerAppService = customerAppService;
+            _requestAppService = requestAppService;
         }
 
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
@@ -33,10 +36,19 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             return View(userInfo);
         
         }
-      
-        public IActionResult RequestList()
+
+        public async Task<IActionResult> RequestList(CancellationToken cancellationToken)
         {
-            return View();
+            var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (onlineUserId is null)
+                return RedirectToAction("Login", "Account");
+
+            int userId = int.Parse(onlineUserId);
+
+            var requests = await _requestAppService.GetCustomerRequestAsync(userId, cancellationToken); // فرض میکنیم چنین متدی در سرویس شما وجود دارد
+
+            return View(requests);
         }
         public IActionResult OfferList()
         {

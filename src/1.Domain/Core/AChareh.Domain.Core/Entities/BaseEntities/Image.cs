@@ -15,7 +15,5 @@ namespace Achareh.Domain.Core.Entities.BaseEntities
         public int RequestId { get; set; }
         #endregion
 
-       
-
     }
 }

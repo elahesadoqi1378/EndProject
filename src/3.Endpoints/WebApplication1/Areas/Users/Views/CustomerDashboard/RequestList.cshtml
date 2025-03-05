@@ -1,8 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using Achareh.Domain.Core.Entities.Request
+@model List<Request>
+
+<!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Mironcoder">
@@ -257,81 +260,42 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="table-number">
-                                       1
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                       1403/02/19
-                                    </td>
-                                    <td class="table-price">
-                                      منتظر انتخاب کارشناس
-                                    </td>
-                                    <td class="table-status">
-                                      
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                       
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                       
-                                    </td>
-                                    <td class="table-price">
-                                        
-                                    </td>
-                                    <td class="table-status">
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                     
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                    
-                                    </td>
-                                    <td class="table-price">
-                                     
-                                    </td>
-                                    <td class="table-status">
-                                     
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                     
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                     
-                                    </td>
-                                    <td class="table-price">
-                                      
-                                    </td>
-                                    <td class="table-status">
-                                      
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                       
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                       
-                                    </td>
-                                    <td class="table-price">
-                                       
-                                    </td>
-                                    <td class="table-status">
-                                      
-                                    </td>
-                                </tr>
+
+
+                                @if (Model != null && Model.Any())
+                                {
+                                    @foreach (var request in Model)
+                                    {
+                                        <tr>
+                                            <td>@request.Id</td>
+                                            <td>
+                                                @if (request.RequestImages != null && request.RequestImages.Any())
+                                                {
+                                                    @foreach (var imagePath in request.RequestImages)
+                                                    {
+                                                        <img src="@imagePath" class="avatar w30" alt="Request Image">
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <p>تصویری یافت نشد</p>
+                                                }
+                                            </td>
+                                            <td style="white-space: nowrap; padding-right: 40px;">@request.RequestForTime</td>
+                                            <td>@request.RequestStatus/td>
+                                            <td>@request.Description</td>
+                                            <td></td>
+                                           
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="7" class="text-center">هیچ ریکوئستی یافت نشد</td>
+                                    </tr>
+                                }
+
                             </tbody>
                         </table>
                     </div>
