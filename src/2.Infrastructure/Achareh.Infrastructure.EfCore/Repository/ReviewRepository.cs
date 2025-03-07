@@ -41,6 +41,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 Comment = review.Comment,
                 Rating = review.Rating,
                 ExpertId = review.ExpertId,
+                RequestId = review.RequestId,
                 CustomerId = review.CustomerId
             };
 

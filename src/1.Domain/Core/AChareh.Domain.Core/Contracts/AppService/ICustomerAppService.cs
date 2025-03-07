@@ -20,6 +20,7 @@ namespace Achareh.Domain.Core.Contracts.AppService
         Task<IdentityResult> RegisterAsync(User user, string pass);
         Task<IdentityResult> UpdateAsync(User user);
         Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken);
+        Task<bool> InventoryReductionAsync(int userId, double inventoryReduction, CancellationToken cancellationToken);
 
     }
 }

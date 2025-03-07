@@ -20,6 +20,7 @@ namespace Achareh.Domain.Core.Entities.Request
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
         public bool IsAccept { get; set; } = false;
+        public int RequestId { get; set; }
         public int CustomerId { get; set; }
         public int ExpertId { get; set; }
         #endregion

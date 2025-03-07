@@ -16,27 +16,27 @@ namespace Achareh.Infrastructure.EfCore.Configurations
             .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasOne(x => x.Review)
-                 .WithOne(x => x.Request)
-                 .OnDelete(DeleteBehavior.NoAction);
-                
+            .WithOne(x => x.Request)
+            .HasForeignKey<Request>(x => x.ReviewId) 
+            .OnDelete(DeleteBehavior.NoAction);
+
 
 
             builder.HasData
            (
-
             new Request
             {
-               Id = 1,
-               CreatedAt = new DateTime(2025, 2, 2),
-               CustomerId = 1,
-               IsDeleted = false,
-               Description = " تمیزکاری خانه",
-               RequestForTime = new DateTime(2025, 3, 5),
-               HomeServiceId = 1,
-               Title = "نظافت",
-               CityId = 1,
-               RequestStatus = StatusEnum.WorkPaidByCustomer,
-               ReviewId = 1
+                Id = 1,
+                CreatedAt = new DateTime(2025, 2, 2),
+                CustomerId = 1,
+                IsDeleted = false,
+                Description = " تمیزکاری خانه",
+                RequestForTime = new DateTime(2025, 3, 5),
+                HomeServiceId = 1,
+                Title = "نظافت",
+                CityId = 1,
+                RequestStatus = StatusEnum.WorkPaidByCustomer,
+                ReviewId = 1
             },
 
               new Request
@@ -50,9 +50,23 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                   HomeServiceId = 59,
                   Title = "طراحی اتاق کودک",
                   CityId = 1,
-                  RequestStatus = StatusEnum.WatingForChoosingExpert,
-                 
-              }
+                  RequestStatus = StatusEnum.WorkPaidByCustomer,
+
+              },
+               new Request
+               {
+                   Id = 3,
+                   CreatedAt = new DateTime(2025, 3, 5),
+                   CustomerId = 2,
+                   IsDeleted = false,
+                   Description = "نظافت راه پله ساختمان های اداری ",
+                   RequestForTime = new DateTime(2025, 3, 10),
+                   HomeServiceId = 2,
+                   Title = "نظافت راه پله",
+                   CityId = 1,
+                   RequestStatus = StatusEnum.WatingForCustomerToChoose,
+
+               }
            );
         }
     }

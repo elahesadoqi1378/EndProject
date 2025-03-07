@@ -26,18 +26,29 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                 {
                     Id = 1,
                     UserId = 3,
-
-                }
+                },
+                new Expert
+                {
+                    Id = 2,
+                    UserId = 4,
+                },
+                 new Expert
+                 {
+                     Id = 3,
+                     UserId = 6,
+                 }
 
            );
-                 builder
-                .HasMany(x => x.HomeServices)
-                .WithMany(x => x.Experts)
-                .UsingEntity(x => x.HasData
-                (
-                new { ExpertsId = 1, HomeServicesId = 6 },
-                new { ExpertsId = 1, HomeServicesId = 8 }
-                ));
+            builder
+           .HasMany(x => x.HomeServices)
+           .WithMany(x => x.Experts)
+           .UsingEntity(x => x.HasData
+           (
+           new { ExpertsId = 1, HomeServicesId = 1 },
+           new { ExpertsId = 1, HomeServicesId = 59 },
+           new { ExpertsId = 3, HomeServicesId = 2 },
+           new { ExpertsId = 2, HomeServicesId = 2 }
+           ));
         }
     }
 }

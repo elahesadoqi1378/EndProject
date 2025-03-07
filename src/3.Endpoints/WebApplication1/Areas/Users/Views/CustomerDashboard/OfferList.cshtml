@@ -1,289 +1,384 @@
 ﻿@using Achareh.Domain.Core.Entities.Request
+@using Framework
+@using Achareh.Domain.Core.Enums
 @model List<ExpertOffer>
+
+
+@{
+	var winner = Model.Any(x => x.OfferStatusEnum == StatusEnum.WorkStarted);
+	var done = Model.Any(x => x.OfferStatusEnum == StatusEnum.WorkPaidByCustomer);
+}
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 
 <head>
 
-    <title>آچاره - پروفایل</title>
-    
-    <link rel="stylesheet" href="~/UsersTemplate/css/custom/compare.css">
+	<title>آچاره - پروفایل</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/compare.css">
 </head>
 
 <body>
-    <header class="header-part">
-        <div class="container">
-            <div class="header-content">
-                <div class="header-left">
-                    <ul class="header-widget">
-                        <li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
-                        <li><a href="index.html" class="header-logo"><img src="images/logo.png" alt="logo"></a></li>
-                        <li>
-                            <a href="user-form.html" class="header-user">
-                                <i class="fas fa-user"></i><span>ورود</span>
-                            </a>
-                        </li>
-                        <li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
-                    </ul>
-                </div>
-                <form class="header-search">
-                    <div class="header-main-search">
-                        <button type="submit" class="header-search-btn">
-                            <i class="fas fa-search"></i>
-                        </button><input type="text" class="form-control"
-                                        placeholder="چیزی که دوست داری را جستجو کن ..."><button type="button"
-                                                                                                class="header-option-btn tooltip">
-                            <i class="fas fa-sliders-h"></i><span class="tooltext left">گزینه فیلتر</span>
-                        </button>
-                    </div>
-                    <div class="header-search-option">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="شهر"></div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="منطقه">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="دسته بندی">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="قیمت">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-btn">
-                                    <button type="submit" class="btn btn-inline">
-                                        <i class="fas fa-search"></i><span>جستجو کنید</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="header-right">
-                    <ul class="header-widget">
-                        <li><button class="header-favourite"><i class="fas fa-heart"></i><sup>0</sup></button></li>
-                        <li><button class="header-notify"><i class="fas fa-bell"></i><sup>0</sup></button></li>
-                        <li><button class="header-message"><i class="fas fa-envelope"></i><sup>0</sup></button></li>
-                    </ul><a href="ad-post.html" class="btn btn-inline">
-                        <i class="fas fa-plus-circle"></i><span>
-                            تبلیغ خود
-                            را ارسال کنید
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="sidebar-part">
-        <div class="sidebar-body">
-            <div class="sidebar-header">
-                <a href="index.html" class="sidebar-logo">
-                    <img src="images/logo.png"
-                         alt="logo">
-                </a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="sidebar-content">
-                <div class="sidebar-profile">
-                    <a href="#" class="sidebar-avatar">
-                        <img src="images/avatar/01.jpg"
-                             alt="avatar">
-                    </a>
-                    <h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
-                                                                                  class="btn btn-inline sidebar-btn">
-                        <i class="fas fa-plus-circle"></i><span>
-                            تبلیغ خود را ارسال
-                            کنید
-                        </span>
-                    </a>
-                </div>
-                <div class="sidebar-menu">
-                    <ul class="nav nav-tabs">
-                        <li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
-                        <li><a href="#author-menu" class="nav-link" data-toggle="tab">منوی نویسنده</a></li>
-                    </ul>
-                    <div class="tab-pane active" id="main-menu">
-                        <ul class="navbar-list">
-                            <li class="navbar-item"><a class="navbar-link" href="index.html">صفحه اصلی</a></li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link" href="#">
-                                    <span>
-                                        دسته
-                                        بندی
-                                    </span><i class="fas fa-plus"></i>
-                                </a>
-                                <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="category-list.html">لیست دسته ها</a></li>
-                                    <li><a class="dropdown-link" href="category-details.html">جزئیات دسته</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link" href="#">
-                                    <span>
-                                        لیست
-                                        تبلیغات
-                                    </span><i class="fas fa-plus"></i>
-                                </a>
-                                <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="grid-list.html">لیست گرید</a></li>
-                                    <li><a class="dropdown-link" href="leftbar-list.html">لیست نوار راست</a></li>
-                                    <li><a class="dropdown-link" href="rightbar-list.html">لیست نوار چپ</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link" href="#">
-                                    <span>
-                                        جزئیات
-                                        تبلیغات
-                                    </span><i class="fas fa-plus"></i>
-                                </a>
-                                <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="grid-details.html">جزئیات گرید</a></li>
-                                    <li><a class="dropdown-link" href="leftbar-details.html">جزئیات نوار راست</a></li>
-                                    <li><a class="dropdown-link" href="rightbar-details.html">جزئیات نوار چپ</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link" href="#">
-                                    <span>صفحات</span><i class="fas fa-plus"></i>
-                                </a>
-                                <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="about.html">درباره ما</a></li>
-                                    <li><a class="dropdown-link" href="compare.html">مقایسه تبلیغات</a></li>
-                                    <li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
-                                    <li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
-                                    <li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li>
-                                    <li><a class="dropdown-link" href="404.html">404</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link" href="#">
-                                    <span>
-                                        وبلاگ
-                                    </span><i class="fas fa-plus"></i>
-                                </a>
-                                <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
-                                    <li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="author-menu">
-                        <ul class="navbar-list">
-                            <li class="navbar-item"><a class="navbar-link" href="dashboard.html">داشبورد</a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="profile.html">پروفایل</a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="ad-post.html">ارسال آگهی </a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="my-ads.html">تبلیغات من </a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="setting.html">تنظیمات </a></li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link"
-                                   href="bookmark.html"><span>نشانک </span><span>0</span></a>
-                            </li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link" href="#">
-                                    <span>
-                                        پیام
-                                    </span><span>0</span>
-                                </a>
-                            </li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link"
-                                   href="#"><span>اعلانات</span><span>0</span></a>
-                            </li>
-                            <li class="navbar-item"><a class="navbar-link" href="user-form.html">خروج </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="sidebar-footer">
-                    <p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
-                    <p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="btmbar-part">
-        <div class="container">
-        </div>
-    </div>
-    <section class="single-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="single-content">
-                        <h2>فهرست مقایسه تبلیغ </h2>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
-                            <li class="breadcrumb-item"><a href="leftbar-list.html">لیست نوار راست</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">مقایسه </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="compare-part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="compare-list">
-                        <table class="table-list">
-                            <thead>
-                                <tr>
-                                    <th scope="col">شناسه پیشنهاد</th>
-                                    <th scope="col">کارشناس</th>
-                                    <th scope="col">قیمت پیشنهادی</th>
-                                    <th scope="col">تاریخ پیشنهاد</th>
-                                    <th scope="col">تاریخ اتمام کار</th>
-                                    <th scope="col">عملیات</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if (Model != null && Model.Any())
-                                {
-                                    @foreach (var expertOffer in Model)
-                                    {
-                                        <tr>
-                                            <td>@expertOffer.Id</td>
-                                            <td>@expertOffer.Expert.User.FirstName @expertOffer.Expert.User.LastName </td>
-                                            <td>@expertOffer.SuggestedPrice</td>
-                                            <td>@expertOffer.CreatedAt</td>
-                                            <td>@expertOffer.OfferDate</td>
-                                            <td><a asp-action="OfferDetails" asp-route-id="@expertOffer.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a></td>
-
-                                        </tr>
-                                    }
-                                }
-                                else
-                                {
-                                    <tr>
-                                        <td colspan="7" class="text-center">هیچ پیشنهادی یافت نشد</td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="compare-btn center-50">
-                        <a href="#" class="btn btn-inline">
-                            <i class="fas fa-eye"></i><span>نمایش لیست بیشتر</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
-   
+	<header class="header-part">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-left">
+					<ul class="header-widget">
+						<li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
+						<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
+						<li>
+							<a href="user-form.html" class="header-user">
+
+							</a>
+						</li>
+						<li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</header>
+	<div class="sidebar-part">
+		<div class="sidebar-body">
+			<div class="sidebar-header">
+				<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
+					<img src="~/UsersTemplate/images/logo.png"
+						 alt="logo">
+				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="sidebar-content">
+				<div class="sidebar-profile">
+					<a href="#" class="sidebar-avatar">
+						<img src="~/UsersTemplate/images/avatar/01.jpg"
+							 alt="avatar">
+					</a>
+					<h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
+																   class="btn btn-inline sidebar-btn">
+						<i class="fas fa-plus-circle"></i><span>
+							تبلیغ خود را ارسال
+							کنید
+						</span>
+					</a>
+				</div>
+				<div class="sidebar-menu">
+					<ul class="nav nav-tabs">
+						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
+
+					</ul>
+					<div class="tab-pane active" id="main-menu">
+						<ul class="navbar-list">
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										دسته
+										بندی
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="category-list.html">تمیزکاری</a></li>
+									<li><a class="dropdown-link" href="category-list.html">ساختمان</a></li>
+									<li><a class="dropdown-link" href="category-list.html">تعمیرات اشیا</a></li>
+									<li><a class="dropdown-link" href="category-list.html">اسباب کشی و حمل بار</a></li>
+									<li><a class="dropdown-link" href="category-list.html">خودرو</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سلامت و زیبایی</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سازمان ها و مجتمع ها</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سایر</a></li>
+
+								</ul>
+							</li>
+
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>صفحات</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
+									<li><a asp-area="Users" asp-controller="CustomerDashboard" asp-action="Index" class="dropdown-link">پروفایل مشتری</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
+
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										وبلاگ
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
+									<li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="sidebar-footer">
+					<p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
+					<p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="sidebar-part">
+		<div class="sidebar-body">
+			<div class="sidebar-header">
+				<a href="index.html" class="sidebar-logo">
+					<img src="images/logo.png"
+						 alt="logo">
+				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="sidebar-content">
+				<div class="sidebar-profile">
+					<a href="#" class="sidebar-avatar">
+						<img src="images/avatar/01.jpg"
+							 alt="avatar">
+					</a>
+					<h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
+																   class="btn btn-inline sidebar-btn">
+						<i class="fas fa-plus-circle"></i><span>
+							تبلیغ خود را ارسال
+							کنید
+						</span>
+					</a>
+				</div>
+				<div class="sidebar-menu">
+					<ul class="nav nav-tabs">
+						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
+						<li><a href="#author-menu" class="nav-link" data-toggle="tab">منوی نویسنده</a></li>
+					</ul>
+					<div class="tab-pane active" id="main-menu">
+						<ul class="navbar-list">
+							<li class="navbar-item"><a class="navbar-link" href="index.html">صفحه اصلی</a></li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										دسته
+										بندی
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="category-list.html">لیست دسته ها</a></li>
+									<li><a class="dropdown-link" href="category-details.html">جزئیات دسته</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										لیست
+										تبلیغات
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="grid-list.html">لیست گرید</a></li>
+									<li><a class="dropdown-link" href="leftbar-list.html">لیست نوار راست</a></li>
+									<li><a class="dropdown-link" href="rightbar-list.html">لیست نوار چپ</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										جزئیات
+										تبلیغات
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="grid-details.html">جزئیات گرید</a></li>
+									<li><a class="dropdown-link" href="leftbar-details.html">جزئیات نوار راست</a></li>
+									<li><a class="dropdown-link" href="rightbar-details.html">جزئیات نوار چپ</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>صفحات</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="about.html">درباره ما</a></li>
+									<li><a class="dropdown-link" href="compare.html">مقایسه تبلیغات</a></li>
+									<li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
+									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
+									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li>
+									<li><a class="dropdown-link" href="404.html">404</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										وبلاگ
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
+									<li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="author-menu">
+						<ul class="navbar-list">
+							<li class="navbar-item"><a class="navbar-link" href="dashboard.html">داشبورد</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="profile.html">پروفایل</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="ad-post.html">ارسال آگهی </a></li>
+							<li class="navbar-item"><a class="navbar-link" href="my-ads.html">تبلیغات من </a></li>
+							<li class="navbar-item"><a class="navbar-link" href="setting.html">تنظیمات </a></li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link"
+								   href="bookmark.html"><span>نشانک </span><span>0</span></a>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										پیام
+									</span><span>0</span>
+								</a>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link"
+								   href="#"><span>اعلانات</span><span>0</span></a>
+							</li>
+							<li class="navbar-item"><a class="navbar-link" href="user-form.html">خروج </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar-footer">
+					<p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
+					<p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="btmbar-part">
+		<div class="container">
+		</div>
+	</div>
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>فهرست مقایسه تبلیغ </h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item"><a href="leftbar-list.html">لیست نوار راست</a></li>
+							<li class="breadcrumb-item active" aria-current="page">مقایسه </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="compare-part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="compare-list">
+						<table class="table-list">
+							<thead>
+								<tr>
+									<th scope="col">شناسه پیشنهاد</th>
+									<th scope="col">کارشناس</th>
+									<th scope="col">قیمت پیشنهادی</th>
+									<th scope="col">تاریخ پیشنهاد</th>
+									<th scope="col">تاریخ شروع کار</th>
+									<th scope="col">وضعیت پیشنهاد</th>
+									<th scope="col">عملیات</th>
+								</tr>
+							</thead>
+							<tbody>
+								@if (Model != null && Model.Any())
+								{
+									@foreach (var offer in Model)
+									{
+										<tr>
+											<td>@offer.Id</td>
+											<td>@offer.Expert.User.FirstName @offer.Expert.User.LastName </td>
+											<td>@offer.SuggestedPrice</td>
+											<td>@offer.CreatedAt</td>
+											<td>@offer.OfferDate</td>
+											<td>
+												@if (offer.OfferStatusEnum != null)
+												{
+													<span class="badge
+                                                         @(offer.OfferStatusEnum == StatusEnum.WatingExpertOffer ? "badge-secondary" :
+                                                           offer.OfferStatusEnum == StatusEnum.WatingForCustomerToChoose ? "badge-warning" :
+                                                           offer.OfferStatusEnum == StatusEnum.WorkStarted ? "badge-primary" :
+                                                           offer.OfferStatusEnum == StatusEnum.WorkDoneByExpert ? "badge-success" :
+                                                           offer.OfferStatusEnum == StatusEnum.Cancelled ? "badge-danger" :
+                                                           offer.OfferStatusEnum == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+														@offer.OfferStatusEnum.GetEnumDisplayName()
+													</span>
+												}
+											</td>
+											<td>
+												<a asp-action="OfferDetails" asp-route-id="@offer.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a>
+
+												@if (!winner&&!done && offer.OfferStatusEnum != StatusEnum.WorkPaidByCustomer &&
+																				offer.OfferStatusEnum != StatusEnum.WorkDoneByExpert &&
+																				offer.OfferStatusEnum != StatusEnum.Cancelled)
+												{
+
+													<form asp-action="ConfirmOffer" asp-controller="CustomerDashboard" method="post">
+														<input type="hidden" name="id" value="@offer.Id" />
+														<button type="submit" class="btn btn-warning"
+																onclick="return confirm('آیا از انتخاب این پیشنهاد مطمئن هستید؟')">
+															انتخاب پیشنهاد
+														</button>
+													</form>
+												}
+
+
+
+											</td>
+										</tr>
+									}
+								}
+								else
+								{
+									<tr>
+										<td colspan="7" class="text-center">هیچ پیشنهادی یافت نشد</td>
+									</tr>
+								}
+							</tbody>
+
+						</table>
+
+					</div>
+					<div class="compare-btn center-50">
+
+						<a asp-action="Index" class="btn btn-inline">
+							<i class="fas fa-arrow-right"></i><span>بازگشت </span>
+						</a>
+
+						<a href="#" class="btn btn-inline">
+							<i class="fas fa-eye"></i><span>نمایش لیست بیشتر</span>
+						</a>
+
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 
 </html>

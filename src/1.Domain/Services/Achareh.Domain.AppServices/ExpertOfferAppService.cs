@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.Request;
+using Achareh.Domain.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,8 @@ namespace Achareh.Domain.AppServices
         {
             _expertOfferService = expertOfferService;
         }
+
+       
         public async Task CreateAsync(ExpertOffer expertOffer, CancellationToken cancellationToken)
 
            => await _expertOfferService.CreateAsync(expertOffer, cancellationToken);
@@ -40,5 +43,9 @@ namespace Achareh.Domain.AppServices
         public async Task UpdateAsync(ExpertOffer expertOffer, CancellationToken cancellationToken)
 
             => await _expertOfferService.UpdateAsync(expertOffer, cancellationToken);
+
+        public async Task<bool> ChangeStausOfExpertOffer(int offerId, StatusEnum status, CancellationToken cancellationToken)
+
+           => await _expertOfferService.ChangeStausOfExpertOffer(offerId, status, cancellationToken);
     }
 }

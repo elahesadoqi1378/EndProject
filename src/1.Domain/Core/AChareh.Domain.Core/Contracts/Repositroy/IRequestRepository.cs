@@ -22,5 +22,8 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
         Task<bool> UpdateAsync(Request request,CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id,CancellationToken cancellationToken);
         Task<List<Request>> GetCustomerRequestAsync(int userId, CancellationToken cancellationToken);
+        Task<bool> SetWinnerForRequest(int offerId, int requestId, CancellationToken cancellationToken);
+        Task<bool> ChangeStatusOfRequest(StatusEnum status, int orderId, CancellationToken cancellationToken);
+        Task<int> GetPaidByCustomerOrderCountAsync(int userId , CancellationToken cancellationToken);
     }
 }

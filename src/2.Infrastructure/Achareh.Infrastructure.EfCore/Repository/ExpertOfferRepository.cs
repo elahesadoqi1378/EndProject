@@ -1,9 +1,11 @@
 ﻿
 using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Entities.Request;
+using Achareh.Domain.Core.Enums;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Threading;
 
 namespace Achareh.Infrastructure.EfCore.Repository
 {
@@ -24,7 +26,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
             => await _context.ExpertOffers
                               .Include(x=>x.Request)
                               .ThenInclude(x=>x.HomeService)
-                             .FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
+                              .FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
 
         public async Task CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
         {
@@ -65,5 +67,30 @@ namespace Achareh.Infrastructure.EfCore.Repository
                             .Include(c => c.Expert) 
                             .ThenInclude(c => c.User)
                             .ToListAsync(cancellationToken);
+
+        public async Task<bool> ChangeStausOfExpertOffer(int offerId,StatusEnum status , CancellationToken cancellationToken)
+        {
+            try
+            {
+                var existingExpertOffer = await _context.ExpertOffers.FirstOrDefaultAsync(x => x.Id == offerId, cancellationToken);
+
+                if (existingExpertOffer == null)
+                    return false;
+
+                existingExpertOffer.OfferStatusEnum = status;
+
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("expertoffers status changed Succesfully");
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in changing status of expertoffer", ex.Message);
+                return false;
+            }
+        }
+            
+
     }
 }

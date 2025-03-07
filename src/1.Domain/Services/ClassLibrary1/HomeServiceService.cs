@@ -2,7 +2,6 @@
 
 using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Contracts.Service;
-using Achareh.Domain.Core.Dtos.HomeService;
 using Achareh.Domain.Core.Entities.Request;
 
 namespace Achareh.Domain.Services

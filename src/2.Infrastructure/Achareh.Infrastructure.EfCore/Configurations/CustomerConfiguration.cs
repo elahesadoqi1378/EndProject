@@ -30,8 +30,18 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                  {
                      Id = 1,
                      UserId=2
+                 },
+                 new Customer
+                 {
+                     Id = 2,
+                     UserId = 5
+                 },
+                 new Customer
+                 {
+                     Id = 3,
+                     UserId = 7
                  }
-                
+
             ); 
 
 

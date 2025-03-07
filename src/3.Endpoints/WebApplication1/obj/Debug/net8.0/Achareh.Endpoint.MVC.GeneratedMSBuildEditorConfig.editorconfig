@@ -208,6 +208,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcUmVxdWVzdExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/CustomerDashboard/RequestPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcUmVxdWVzdFBheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/CustomerDashboard/SetReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQ3VzdG9tZXJEYXNoYm9hcmRcU2V0UmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ARYA/source/repos/EndProject/src/3.Endpoints/WebApplication1/Areas/Users/Views/HomeService/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVNlcnZpY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

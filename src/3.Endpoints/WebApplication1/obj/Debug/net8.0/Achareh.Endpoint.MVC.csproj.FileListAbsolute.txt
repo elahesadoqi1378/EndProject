@@ -606,4 +606,3 @@ C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.pdb
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.genruntimeconfig.cache
 C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\ref\Achareh.Endpoint.MVC.dll
-C:\Users\ARYA\source\repos\EndProject\src\3.Endpoints\WebApplication1\obj\Debug\net8.0\Achareh.Endpoint.MVC.MvcApplicationPartsAssemblyInfo.cs

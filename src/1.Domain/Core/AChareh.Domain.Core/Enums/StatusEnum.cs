@@ -8,19 +8,19 @@ namespace Achareh.Domain.Core.Enums
         [Display(Name = "منتظر پیشنهاد کارشناس")]
         WatingExpertOffer = 1,
 
-        [Display(Name = "منتظر انتخاب کارشناس")]
-        WatingForChoosingExpert = 2,
+        [Display(Name = " منتظر انتخاب کارشناس مد نظر مشتری")]  
+        WatingForCustomerToChoose = 2,                          
 
-        [Display(Name = "منتظر آمدن کارشناس به لوکیشن شما")]
-        WatingExpertComeToYourPlace = 3,
+        [Display(Name = " آغاز کار کارشناس")] 
+        WorkStarted = 3,
 
-        [Display(Name = " شروع شده توسط کارشناس")] 
-        WorkStarted = 4,
-
-        [Display(Name = " انجام شده توسط کارشناس")]
-        WorkDoneByExpert = 5,
+        [Display(Name = " پایان کار کارشناس")]
+        WorkDoneByExpert = 4,
 
         [Display(Name = " پرداخت شده توسط مشتری")]
-        WorkPaidByCustomer = 6
+        WorkPaidByCustomer = 5,
+
+        [Display(Name = " لغو شده")]
+        Cancelled = 6,
     }
 }

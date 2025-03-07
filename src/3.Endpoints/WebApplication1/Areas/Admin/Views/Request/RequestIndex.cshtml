@@ -93,8 +93,7 @@
 													<td>
 														<span class="badge
                                     @(request.RequestStatus == StatusEnum.WatingExpertOffer ? "badge-warning" :
-                                      request.RequestStatus == StatusEnum.WatingForChoosingExpert ? "badge-warning" :
-                                      request.RequestStatus == StatusEnum.WatingExpertComeToYourPlace ? "badge-warning" :
+                                      request.RequestStatus == StatusEnum.WatingForCustomerToChoose ? "badge-warning" :
                                       request.RequestStatus == StatusEnum.WorkStarted ? "badge-info" :
                                       request.RequestStatus == StatusEnum.WorkDoneByExpert ? "badge-primary" :
                                       request.RequestStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">

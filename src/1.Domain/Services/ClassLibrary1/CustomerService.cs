@@ -63,6 +63,8 @@ namespace Achareh.Domain.Services
 
             => await _customerRepository.GetCustomerByIdAsync(id, cancellationToken);
 
+        public async Task<bool> InventoryReductionAsync(int userId, double inventoryReduction, CancellationToken cancellationToken)
 
+            => await _customerRepository.InventoryReductionAsync(userId, inventoryReduction, cancellationToken);
     }
 }

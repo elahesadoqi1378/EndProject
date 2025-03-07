@@ -1,9 +1,3 @@
-C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.csproj.AssemblyReference.cache
-C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.AssemblyInfoInputs.cache
-C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.AssemblyInfo.cs
-C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.csproj.CoreCompileInputs.cache
-C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.sourcelink.json
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\Debug\net8.0\Achareh.Domain.Services.deps.json
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\Debug\net8.0\Achareh.Domain.Services.dll
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\Debug\net8.0\Achareh.Domain.Services.pdb
@@ -11,6 +5,12 @@ C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\De
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\Debug\net8.0\Framework.dll
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\Debug\net8.0\AChareh.Domain.Core.pdb
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\bin\Debug\net8.0\Framework.pdb
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.csproj.AssemblyReference.cache
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.AssemblyInfoInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.AssemblyInfo.cs
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.sourcelink.json
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh..8C716BC8.Up2Date
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\Achareh.Domain.Services.dll
 C:\Users\ARYA\source\repos\EndProject\src\1.Domain\Services\ClassLibrary1\obj\Debug\net8.0\refint\Achareh.Domain.Services.dll

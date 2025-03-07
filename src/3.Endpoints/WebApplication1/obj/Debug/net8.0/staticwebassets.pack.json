@@ -2293,6 +2293,14 @@
       "PackagePath": "staticwebassets\\UsersTemplate\\images\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\image_logo.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\image_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\images_logo.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\images_logo.jpg"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\UsersTemplate\\images\\logo.png",
       "PackagePath": "staticwebassets\\UsersTemplate\\images\\logo.png"
     },
@@ -2589,6 +2597,10 @@
       "PackagePath": "staticwebassets\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\05ccc808-be7d-4feb-981a-d0ba872c0670zibayi_banovan.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\05ccc808-be7d-4feb-981a-d0ba872c0670zibayi_banovan.jpg"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\07b2566b-5f9f-4362-89be-7fa40623aae5Screenshot 2024-12-05 091705.png",
       "PackagePath": "staticwebassets\\images\\customer\\07b2566b-5f9f-4362-89be-7fa40623aae5Screenshot 2024-12-05 091705.png"
     },
@@ -2607,6 +2619,10 @@
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png",
       "PackagePath": "staticwebassets\\images\\customer\\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\6711ea17-c7cf-4b93-83a9-320035706d0fimages_raheb.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\6711ea17-c7cf-4b93-83a9-320035706d0fimages_raheb.jpg"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\6d667457-f1ef-45d2-8bbd-63a771f1c06cScreenshot 2024-12-05 091705.png",
@@ -2973,6 +2989,10 @@
       "PackagePath": "staticwebassets\\images\\request\\39898dd7-00df-4c3b-8b36-541ce067123fberashing_moye_banovan.jpg"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\3e89ea38-9622-4a14-a35c-c528d86bd9e1taviz_vayer_sham_khodro.jpg",
+      "PackagePath": "staticwebassets\\images\\request\\3e89ea38-9622-4a14-a35c-c528d86bd9e1taviz_vayer_sham_khodro.jpg"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\41996d84-7f94-4302-a280-9462d67b85cetamirat_mobleman_edari.jpg",
       "PackagePath": "staticwebassets\\images\\request\\41996d84-7f94-4302-a280-9462d67b85cetamirat_mobleman_edari.jpg"
     },
@@ -3029,6 +3049,10 @@
       "PackagePath": "staticwebassets\\images\\request\\8a5fd468-4181-4ac9-a7b7-54e36a8305c0tamirat_mobleman_edari.jpg"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\8ece9f53-458b-4a60-9f86-e55831956d96tamirat_mobleman.jpg",
+      "PackagePath": "staticwebassets\\images\\request\\8ece9f53-458b-4a60-9f86-e55831956d96tamirat_mobleman.jpg"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\90defb73-21eb-4d8c-a897-22def3aa401ctaviz_batri_khodro.jpg",
       "PackagePath": "staticwebassets\\images\\request\\90defb73-21eb-4d8c-a897-22def3aa401ctaviz_batri_khodro.jpg"
     },
@@ -3047,6 +3071,10 @@
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\b0433675-cefb-480c-b779-5abc57ebe608tamirat_mobleman_edari.jpg",
       "PackagePath": "staticwebassets\\images\\request\\b0433675-cefb-480c-b779-5abc57ebe608tamirat_mobleman_edari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\b56fb0ac-c805-497a-8142-7766170e3067tamirat_lebas.jpg",
+      "PackagePath": "staticwebassets\\images\\request\\b56fb0ac-c805-497a-8142-7766170e3067tamirat_lebas.jpg"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\request\\bd024d9c-99d5-4d35-ab22-a6414b728708tarahi_otaq_kodak.jpg",

@@ -1,3 +1,9 @@
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.csproj.AssemblyReference.cache
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.AssemblyInfoInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.AssemblyInfo.cs
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.csproj.CoreCompileInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.sourcelink.json
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\bin\Debug\net8.0\Achareh.Infrastructure.EfCore.deps.json
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\bin\Debug\net8.0\Achareh.Infrastructure.EfCore.runtimeconfig.json
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\bin\Debug\net8.0\Achareh.Infrastructure.EfCore.dll
@@ -6,12 +12,6 @@ C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructur
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\bin\Debug\net8.0\Framework.dll
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\bin\Debug\net8.0\Framework.pdb
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\bin\Debug\net8.0\AChareh.Domain.Core.pdb
-C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.csproj.AssemblyReference.cache
-C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.AssemblyInfoInputs.cache
-C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.AssemblyInfo.cs
-C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.csproj.CoreCompileInputs.cache
-C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.sourcelink.json
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh..75AB35EE.Up2Date
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\Achareh.Infrastructure.EfCore.dll
 C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\Achareh.Infrastructure.EfCore\obj\Debug\net8.0\refint\Achareh.Infrastructure.EfCore.dll

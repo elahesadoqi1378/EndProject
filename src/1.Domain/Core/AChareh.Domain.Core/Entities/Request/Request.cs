@@ -13,8 +13,9 @@ namespace Achareh.Domain.Core.Entities.Request
         public DateTime RequestForTime { get; set; }  //tarikhi k mikhay ejra sh
         public DateTime CreatedAt { get; set; } = DateTime.Now; //tarikhi k in darkhast sabt shode
         public bool IsDeleted { get; set; } = false;
-        public DateTime? ApprovedAt { get; set; } // tarikh tahvil
-        public StatusEnum RequestStatus { get; set; }
+        public DateTime? ApprovedAt { get; set; } // tarikh tahvil tarikhi k anajm shode kar
+        public StatusEnum RequestStatus { get; set; } = StatusEnum.WatingExpertOffer;
+        public int WinnerId { get; set; }
         public int? ReviewId { get; set; }
         public int CityId { get; set; }
         public int CustomerId { get; set; }

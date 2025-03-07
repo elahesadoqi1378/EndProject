@@ -20,9 +20,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Achareh.Infrastructure.EfCore", "src\2.Infrastructure\Achareh.Infrastructure.EfCore\Achareh.Infrastructure.EfCore.csproj", "{0B1B8EFC-990B-435E-A630-203F4735E8F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Endpoint", "3.Endpoint", "{AFC90840-AD3C-49EC-B599-A6DE2F05ABD7}"
-	ProjectSection(SolutionItems) = preProject
-		src\2.Infrastructure\Achareh.Infrastructure.EfCore\Repository\CityRepository.cs = src\2.Infrastructure\Achareh.Infrastructure.EfCore\Repository\CityRepository.cs
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Achareh.Endpoint.MVC", "src\3.Endpoints\WebApplication1\Achareh.Endpoint.MVC.csproj", "{194276B4-4003-438B-8249-16F6F63780E4}"
 EndProject

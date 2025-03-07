@@ -41,7 +41,6 @@ namespace Achareh.Domain.Services
 
            => await _requestRepository.GetByIdWithDetailsAsync(requestId, cancellationToken);
 
-       
         public async Task<List<Request>?> GetCustomerRequestsAsync(int customerId, CancellationToken cancellationToken)
 
            => await _requestRepository.GetCustomerRequestsAsync(customerId, cancellationToken);
@@ -54,7 +53,6 @@ namespace Achareh.Domain.Services
 
          => await _requestRepository.GetRequestByIdAsync(requestId, cancellationToken);
 
-
         public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
 
             => await _requestRepository.GetRequestsInfo(cancellationToken);
@@ -65,5 +63,17 @@ namespace Achareh.Domain.Services
         public async Task<List<Request>> GetCustomerRequestAsync(int userId, CancellationToken cancellationToken)
 
            => await _requestRepository.GetCustomerRequestAsync(userId, cancellationToken);
+
+        public async Task<bool> SetWinnerForRequest(int offerId, int requestId, CancellationToken cancellationToken)
+
+          => await _requestRepository.SetWinnerForRequest(offerId, requestId, cancellationToken);
+
+        public async Task<bool> ChangeStatusOfRequest(StatusEnum status, int orderId, CancellationToken cancellationToken)
+
+          => await _requestRepository.ChangeStatusOfRequest(status, orderId, cancellationToken);
+
+        public async Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken)
+
+         => await _requestRepository.GetPaidByCustomerOrderCountAsync(userId, cancellationToken);
     }
 }

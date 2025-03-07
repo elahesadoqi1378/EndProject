@@ -8,7 +8,7 @@ namespace Achareh.Domain.Core.Entities.Request
         #region Properties
         public int Id { get; set; }
         public int SuggestedPrice { get; set; }
-        public DateTime OfferDate { get; set; }  //tarikh tahvil
+        public DateTime OfferDate { get; set; }  //tarikh tahvil ya tarikhi k mikhay tahvil bdi
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public bool IsDeleted { get; set; } = false;
         public StatusEnum OfferStatusEnum  { get; set; }

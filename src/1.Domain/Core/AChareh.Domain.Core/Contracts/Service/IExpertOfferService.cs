@@ -1,4 +1,5 @@
 ﻿using Achareh.Domain.Core.Entities.Request;
+using Achareh.Domain.Core.Enums;
 
 namespace Achareh.Domain.Core.Contracts.Service
 {
@@ -10,5 +11,6 @@ namespace Achareh.Domain.Core.Contracts.Service
         Task UpdateAsync(ExpertOffer expertOffer, CancellationToken cancellationToken);
         Task DeleteAsync(int id, CancellationToken cancellationToken);
         Task<List<ExpertOffer>> OffersOfRequest(int requestId, CancellationToken cancellationToken);
+        Task<bool> ChangeStausOfExpertOffer(int offerId, StatusEnum status, CancellationToken cancellationToken);
     }
 }

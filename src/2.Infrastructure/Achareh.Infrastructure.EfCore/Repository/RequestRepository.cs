@@ -8,6 +8,7 @@ using Achareh.Domain.Core.Entities.User;
 using System.Threading;
 
 
+
 namespace Achareh.Infrastructure.EfCore.Repository
 {
     public class RequestRepository : IRequestRepository
@@ -28,7 +29,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
             => await _context.Requests.FirstOrDefaultAsync(x => x.Id == id);
 
-      
+
         public async Task<Request> GetByIdAsync(int Id, CancellationToken cancellationToken)
 
          => await _context.Requests.FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
@@ -134,7 +135,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                     return false;
 
                 request.IsDeleted = true;
-                await _context.SaveChangesAsync(cancellationToken) ;
+                await _context.SaveChangesAsync(cancellationToken);
                 _logger.LogInformation("request deleted Succesfully");
                 return true;
             }
@@ -169,6 +170,31 @@ namespace Achareh.Infrastructure.EfCore.Repository
             }
 
         }
+
+        public async Task<bool> ChangeStatusOfRequest(StatusEnum status, int orderId, CancellationToken cancellationToken)
+        {
+            try
+            {
+                var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == orderId, cancellationToken);
+
+                if (existingRequest == null)
+                    return false;
+
+                existingRequest.RequestStatus = status;
+
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("requests status changed Succesfully");
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in changing status of request", ex.Message);
+                return false;
+            }
+
+        }
+
         public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
 
              => await _context.Requests
@@ -182,6 +208,33 @@ namespace Achareh.Infrastructure.EfCore.Repository
                            .Where(r => r.Customer.UserId == userId)
                            .Include(r => r.Customer)
                            .ToListAsync(cancellationToken);
+
+        public async Task<bool> SetWinnerForRequest(int offerId, int requestId, CancellationToken cancellationToken)
+        {
+            try
+            {
+                var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == requestId, cancellationToken);
+                existingRequest.WinnerId = offerId;
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("winner request set Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in setting winner for request", ex.Message);
+                return false;
+
+            }
+        }
+
+        public async Task<int> GetPaidByCustomerOrderCountAsync(int userId,CancellationToken cancellationToken)
+        {
+            return await _context.Requests
+                .Where(x=>x.Customer.UserId == userId)
+                .Include(x=>x.Customer)
+                .CountAsync(r => r.RequestStatus == StatusEnum.WorkPaidByCustomer , cancellationToken);
+        }
+
     }
 
 }

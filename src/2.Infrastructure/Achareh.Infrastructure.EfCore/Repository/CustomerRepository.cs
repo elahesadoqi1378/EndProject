@@ -80,7 +80,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
         public async Task<Customer?> GetrByIdAsync(int id, CancellationToken cancellationToken)
         
             => await _context.Customers.Include(x=>x.User)
-                                       .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+                                       .FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
 
         public async Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken)
 
@@ -122,5 +122,31 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
             => await  _context.Customers.AsNoTracking()
                                         .CountAsync(cancellationToken);
+
+        public async Task<bool> InventoryReductionAsync(int userId, double inventoryReduction, CancellationToken cancellationToken)
+        {
+            var customer = await _context.Customers
+                .Include(c => c.User)
+                .FirstOrDefaultAsync(c => c.User.Id == userId, cancellationToken);
+
+            if (customer == null)
+                return false;
+
+            if (customer.User.Inventory - inventoryReduction < 0)
+                return false;
+
+            try
+            {
+                customer.User.Inventory -= inventoryReduction;
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation(" inventory of customer reduce Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Error in reduction of customer inventory", ex.Message);
+                return false;
+            }
+        }
     }
 }

@@ -1,161 +1,341 @@
-﻿
+﻿@using Achareh.Endpoint.MVC.Areas.Users.Models
+
+@model EditCustomerInfoViewModel
+<!DOCTYPE html>
+<html lang="en">
 
 
-    <div class="btmbar-part">
-        <div class="container">
-            <ul class="btmbar-widget">
-                <li><a href="user-form.html"><i class="fas fa-user"></i></a></li>
-                <li><a href="#"><i class="fas fa-star"></i><sup>0</sup></a></li>
-                <li>
-                    <a class="plus-btn" href="ad-post.html">
-                        <i class="fas fa-plus"></i><span>
-                            پست خود را تبلیغ کنید
-                        </span>
-                    </a>
-                </li>
-                <li><a href="#"><i class="fas fa-bell"></i><sup>0</sup></a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i><sup>0</sup></a></li>
-            </ul>
-        </div>
-    </div>
-    <section class="single-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="single-content">
-                        <h2>تنظیمات</h2>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">تنظیمات</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="dash-header-part">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <div class="dash-avatar"><a href="#"><img src="~/UsersTemplate/images/avatar/01.jpg" alt="avatar"></a></div>
-                </div>
-                <div class="col-sm-8 col-md-9 col-lg-3">
-                    <div class="dash-intro">
-                        <h4><a href="#">جک اسپارو</a></h4>
-                        <h5>فروشنده جدید</h5>
-                    </div>
-                    <ul class="dash-meta">
-                        <li><i class="fas fa-phone-alt"></i><span>(123) 000-1234</span></li>
-                        <li><i class="fas fa-envelope"></i><span>gackon@gmail.com</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i><span>آمریکا، لس آنجلس</span></li>
-                    </ul>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="dash-focus dash-list">
-                                <h2>2433</h2>
-                                <p>آگهی تبلیغ </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="dash-focus dash-book">
-                                <h2>2433</h2>
-                                <p>نشان دار کردن تبلیغ </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="dash-focus dash-rev">
-                                <h2>2433</h2>
-                                <p>مجموع نظرات</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="dash-menu-list">
-                        <ul>
-                            <li class="navbar-item"><a href="profile.html">پروفایل</a></li>
-                            <li class="navbar-item"><a href="my-ads.html">سفارشات من</a></li>
-                            <li class="navbar-item"><a class="active" href="setting.html">ویرایش مشخصات </a></li>
-                            <li class="navbar-item"><a href="#">خروج </a></li>
-                            <li class="navbar-item navbar-dropdown">
-                                <a class="navbar-link"
-                                   href="bookmark.html"><span>نشانک </span><span>0</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="setting-part">
-        <div class="container">
-            <form class="setting-form">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">نام  </label><input type="text"
-                                                                          class="form-control" placeholder="محمد">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">نام خانوادگی </label><input type="text"
-                                                                                  class="form-control" placeholder="حسن">
-                        </div>
-                    </div>
+<head>
 
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <label class="form-label">آدرس </label><input type="text"
-                                                                          class="form-control" placeholder="ایران، ارومیه، شاهین دژ">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">استان</label><input type="text"
-                                                                          class="form-control" placeholder="شاهین دژ">
-                        </div>
-                    </div>
+	<style>
+		.circular-image {
+			width: 150px; 
+			height: 150px; 
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+			.circular-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; 
+			}
+	</style>
+
+
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>آچاره - ویرایش</title>
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/setting.css">
+</head>
+
+<body>
 
 
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">ایمیل </label><input type="email"
-                                                                           class="form-control" placeholder="mironcoder@gmail.com">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">شماره </label><input type="email"
-                                                                           class="form-control" placeholder="+8801838288389">
-                        </div>
-                    </div>
+	<header class="header-part">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-left">
+					<ul class="header-widget">
+						<li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
+						<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
+						<li>
+							<a href="user-form.html" class="header-user">
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">تصویر پروفایل</label><input type="file"
-                                                                                  class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">موجودی</label><input type="number"
-                                                                           step="100000" class="form-control" placeholder="200000">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="form-group text-center mt-5">
-                            <button class="btn btn-inline">
-                                <i class="fas fa-user-check"></i><span>بروز رسانی اطلاعات</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+							</a>
+						</li>
+						<li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</header>
+	<div class="sidebar-part">
+		<div class="sidebar-body">
+			<div class="sidebar-header">
+				<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
+					<img src="~/UsersTemplate/images/logo.png"
+						 alt="logo">
+				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="sidebar-content">
+				<div class="sidebar-profile">
+					<a href="#" class="sidebar-avatar">
+						<img src="~/UsersTemplate/images/avatar/01.jpg"
+							 alt="avatar">
+					</a>
+					<h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
+																   class="btn btn-inline sidebar-btn">
+						<i class="fas fa-plus-circle"></i><span>
+							تبلیغ خود را ارسال
+							کنید
+						</span>
+					</a>
+				</div>
+				<div class="sidebar-menu">
+					<ul class="nav nav-tabs">
+						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
+
+					</ul>
+					<div class="tab-pane active" id="main-menu">
+						<ul class="navbar-list">
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										دسته
+										بندی
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="category-list.html">تمیزکاری</a></li>
+									<li><a class="dropdown-link" href="category-list.html">ساختمان</a></li>
+									<li><a class="dropdown-link" href="category-list.html">تعمیرات اشیا</a></li>
+									<li><a class="dropdown-link" href="category-list.html">اسباب کشی و حمل بار</a></li>
+									<li><a class="dropdown-link" href="category-list.html">خودرو</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سلامت و زیبایی</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سازمان ها و مجتمع ها</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سایر</a></li>
+
+								</ul>
+							</li>
+
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>صفحات</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
+									<li><a asp-area="Users" asp-controller="CustomerDashboard" asp-action="Index" class="dropdown-link">پروفایل مشتری</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
+
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										وبلاگ
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
+									<li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="sidebar-footer">
+					<p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
+					<p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="btmbar-part">
+		<div class="container">
+			<ul class="btmbar-widget">
+				<li><a href="user-form.html"><i class="fas fa-user"></i></a></li>
+				<li><a href="#"><i class="fas fa-star"></i><sup>0</sup></a></li>
+				<li>
+					<a class="plus-btn" href="ad-post.html">
+						<i class="fas fa-plus"></i><span>
+							پست خود را تبلیغ کنید
+						</span>
+					</a>
+				</li>
+				<li><a href="#"><i class="fas fa-bell"></i><sup>0</sup></a></li>
+				<li><a href="#"><i class="fas fa-envelope"></i><sup>0</sup></a></li>
+			</ul>
+		</div>
+	</div>
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>تنظیمات</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item active" aria-current="page">تنظیمات</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="dash-header-part">
+		<div class="container">
+			<div class="row">
+				<div class="circular-image">
+					<img src=@Model.ImagePath alt="avatar">
+				</div>
+				<div class="col-sm-8 col-md-9 col-lg-3">
+					<div class="dash-intro">
+						<h4><a href="#">@Model.FirstName @Model.LastName</a></h4>
+						
+					</div>
+					<ul class="dash-meta">
+						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
+						<li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>
+						<li><i class="fas fa-map-marker-alt"></i><span>@Model.Address</span></li>
+					</ul>
+				</div>
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-list">
+								<h2>2433</h2>
+								<p>آگهی تبلیغ </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-book">
+								<h2>2433</h2>
+								<p>نشان دار کردن تبلیغ </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-rev">
+								<h2>2433</h2>
+								<p>مجموع نظرات</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="dash-menu-list">
+						<ul>
+							<li class="navbar-item"><a asp-controller="CustomerDashboard" asp-action="Index" >پروفایل</a></li>
+							<li class="navbar-item"><a asp-controller="CustomerDashboard" asp-action="RequestList">سفارشات من</a></li>
+							<li class="navbar-item"><a class="active" href="setting.html">ویرایش مشخصات </a></li>
+							<li class="navbar-item"><a href="#">خروج </a></li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link"
+								   href="bookmark.html"><span>نشانک </span><span>0</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="setting-part">
+		<div class="container">
+			<form class="setting-form" asp-controller="CustomerDashboard" asp-action="EditCustomerInfo" method="post" enctype="multipart/form-data">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="FirstName" class="form-label">نام  </label><input asp-for="FirstName" type="text"
+																							  class="form-control" placeholder="@Model.FirstName">
+						</div>
+
+						<span asp-validation-for="FirstName" class="text-danger"></span>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="LastName" class="form-label">نام خانوادگی </label><input asp-for="LastName" type="text"
+																									 class="form-control" placeholder="@Model.LastName">
+						</div>
+						<span asp-validation-for="LastName" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="UserName" class="form-label">نام کاربری </label><input asp-for="UserName" type="text"
+																								   class="form-control" placeholder="@Model.UserName">
+						</div>
+						<span asp-validation-for="LastName" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label asp-for="Address" class="form-label">آدرس </label><input asp-for="Address" type="text"
+																	   class="form-control" placeholder="@Model.Address">
+						</div>
+						<span asp-validation-for="Address" class="text-danger"></span>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="CityId" class="form-label">استان ها</label>
+							<select asp-for="CityId" class="form-select">
+								<option value="">انتخاب کنید...</option>
+								@foreach (var item in ViewBag.Cities as List<SelectListItem>)
+								{
+									<option value="@item.Value">@item.Text</option>
+								}
+							</select>
+							<span asp-validation-for="CityId" class="text-danger"></span>
+						</div>
+
+
+
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label asp-for="Email" class="form-label">ایمیل </label><input asp-for="Email" type="email"
+																	   class="form-control" placeholder="@Model.Email">
+							</div>
+							<span asp-validation-for="Email" class="text-danger"></span>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label asp-for="PhoneNumber" class="form-label">شماره </label><input asp-for="PhoneNumber" type="text"
+																			 class="form-control" placeholder="@Model.PhoneNumber">
+							</div>
+							<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-label">آپلود عکس جدید</label>
+								<input type="file" asp-for="ImageFile" class="form-control" />
+
+							</div>
+							<span asp-validation-for="ImageFile" class="text-danger"></span>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label asp-for="Price" class="form-label">موجودی</label><input asp-for="Price" type="number"
+																				 step="100000" class="form-control" placeholder="@Model.Price">
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-12">
+							<div class="form-group text-center mt-5">
+								<button class="btn btn-inline">
+									<i class="fas fa-user-check"></i><span>بروز رسانی اطلاعات</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
+
+@section Scripts
+{
+	<partial name="_validationScriptsPartial" />
+}

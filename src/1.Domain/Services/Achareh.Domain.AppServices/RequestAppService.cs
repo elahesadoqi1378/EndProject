@@ -50,20 +50,30 @@ namespace Achareh.Domain.AppServices
 
         public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
 
-            => await _requestService.GetRequestByIdAsync(requestId, cancellationToken);
+           => await _requestService.GetRequestByIdAsync(requestId, cancellationToken);
 
         public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
 
-            => await _requestService.GetRequestsInfo(cancellationToken);
+           => await _requestService.GetRequestsInfo(cancellationToken);
 
         public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)
 
-            => await _requestService.UpdateAsync(request, cancellationToken);
+           => await _requestService.UpdateAsync(request, cancellationToken);
 
         public async Task<List<Request>> GetCustomerRequestAsync(int userId, CancellationToken cancellationToken)
 
            => await _requestService.GetCustomerRequestAsync(userId, cancellationToken);
 
+        public async Task<bool> SetWinnerForRequest(int offerId,int requestId, CancellationToken cancellationToken)
 
+          => await _requestService.SetWinnerForRequest(offerId, requestId, cancellationToken);
+
+        public async Task<bool> ChangeStatusOfRequest(StatusEnum status, int orderId, CancellationToken cancellationToken)
+
+         => await _requestService.ChangeStatusOfRequest(status, orderId, cancellationToken);
+
+        public async Task<int> GetPaidByCustomerOrderCountAsync(int userId , CancellationToken cancellationToken)
+
+         => await _requestService.GetPaidByCustomerOrderCountAsync(userId,cancellationToken);
     }
 }

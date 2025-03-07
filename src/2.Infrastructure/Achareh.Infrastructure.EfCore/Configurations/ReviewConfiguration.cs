@@ -43,6 +43,7 @@ namespace Achareh.Infrastructure.EfCore.Configurations
                    IsDeleted = false,
                    Rating = 4,
                    CreatedAt = new DateTime(2025, 2, 2),
+                  
                }
            );
             
