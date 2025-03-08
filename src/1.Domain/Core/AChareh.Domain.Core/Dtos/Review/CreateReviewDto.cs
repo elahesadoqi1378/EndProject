@@ -9,7 +9,6 @@ namespace Achareh.Domain.Core.Dtos.Review
 {
     public class CreateReviewDto
     {
-        [Required(ErrorMessage = "شناسه درخواست الزامی است.")]
         public int RequestId { get; set; }
 
         [Required(ErrorMessage = "امتیاز الزامی است.")]
@@ -24,10 +23,8 @@ namespace Achareh.Domain.Core.Dtos.Review
         [StringLength(100, ErrorMessage = "عنوان موضوع نظر نباید بیشتر از 100 کاراکتر باشد.")]
         public string? Title { get; set; }
 
-        [Required(ErrorMessage = "شناسه متخصص الزامی است.")]
         public int ExpertId { get; set; }
 
-        [Required(ErrorMessage = "شناسه کارشناس الزامی است.")]
         public int CustomerId { get; set; }
 
     }

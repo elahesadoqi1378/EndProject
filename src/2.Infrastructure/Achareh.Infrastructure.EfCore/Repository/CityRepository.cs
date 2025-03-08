@@ -1,12 +1,15 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Entities.BaseEntities;
+using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Achareh.Infrastructure.EfCore.Repository
@@ -15,19 +18,31 @@ namespace Achareh.Infrastructure.EfCore.Repository
     {
         private readonly AppDbContext _context;
         private readonly ILogger<CityRepository> _logger;
+        private readonly IMemoryCache _memoryCache;
 
-        public CityRepository(AppDbContext context, ILogger<CityRepository> logger)
+        public CityRepository(AppDbContext context, ILogger<CityRepository> logger, IMemoryCache memoryCache)
         {
             _context = context;
             _logger = logger;
+            _memoryCache = memoryCache;
         }
 
         public async Task<List<City>> GetAllAsync(CancellationToken cancellationToken)
         {
-            var cities = await _context.Cities.ToListAsync(cancellationToken);
+            var cities = _memoryCache.Get<List<City>>("GetAllAsync");
+
+            if(cities is null)
+            {
+                cities = await _context.Cities.ToListAsync(cancellationToken);
+            }
+
+            _memoryCache.Set("GetAllAsync", cities, TimeSpan.FromMinutes(10));
+
             return cities;
 
         }
+
+  
 
       
         public async Task<bool> CreateAsync(City city, CancellationToken cancellationToken)

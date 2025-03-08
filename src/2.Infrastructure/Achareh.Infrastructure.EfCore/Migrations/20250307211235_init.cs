@@ -393,6 +393,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                     ReviewId = table.Column<int>(type: "int", nullable: true),
                     CityId = table.Column<int>(type: "int", nullable: false),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
+                    IsReviewd = table.Column<bool>(type: "bit", nullable: false),
                     HomeServiceId = table.Column<int>(type: "int", nullable: false),
                     RequestImages = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -514,13 +515,13 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "Address", "CityId", "ConcurrencyStamp", "CreatedAt", "Email", "EmailConfirmed", "FirstName", "ImagePath", "Inventory", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { 1, 0, "Tehran, Iran", 1, "c5cb3857-4123-4264-a7f8-102237c0460d", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "ela@gmail.com", false, "Ela", null, 50000.0, "Sdq", false, null, "ELA@GMAIL.COM", "ELA", "AQAAAAIAAYagAAAAEOoK7GbPhDIRwRP4dYB6TRTsi5+jaL/qaVwYkrVAhjChOm16mn/S/0I9jXDbPQ9TKQ==", "093689162292", false, "Guid.NewGuid().ToString()", false, "ela" },
-                    { 2, 0, "Tehran, Iran", 1, "a5b9aefb-a077-4f1e-addd-c6face77a99b", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "sara@gmail.com", false, "Sara", null, 5000.0, "Sdq", false, null, "SARA@GMAIL.COM", "SARA", "AQAAAAIAAYagAAAAEEnXXUOnUxB8q+6/2JGGbh0CYtEE4Qn5id+2aOisYGD/Xu7YC5JE9G7i7U6oVoff6Q==", "09124361938", false, "Guid.NewGuid().ToString()", false, "sara" },
-                    { 3, 0, "Tehran, Iran", 1, "d9f1ace0-5856-4c7c-8e07-ff4e76247ce1", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "amir@gmail.com", false, "Amir", null, 5000.0, "Sdq", false, null, "AMIR@GMAIL.COM", "AMIR", "AQAAAAIAAYagAAAAEISuHnM4W70PesamkU7G+SHHYuPUrCdly7tE3s9+JAfGpX7qmDYStzFxs7sDHKiuHw==", "09128361939", false, "Guid.NewGuid().ToString()", false, "amir" },
-                    { 4, 0, "Tehran, Iran", 1, "5d408648-3f55-4f6d-a90f-8c6e11723921", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "leila@gmail.com", false, "Leila", null, 5000.0, "Sdq", false, null, "LEILA@GMAIL.COM", "LEILA", "AQAAAAIAAYagAAAAELejAmyhLPHQYfVXXm2WYEDQaeciAWK6PQlPqySZodXFSTTk7TNj2lJb+7cIG8XPNw==", "09016308704", false, "Guid.NewGuid().ToString()", false, "leila" },
-                    { 5, 0, "Tehran, Iran", 1, "94b10ae3-2bc7-46bc-8926-6098a5dfd3a2", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "miko@gmail.com", false, "Miko", null, 5000.0, "Sdq", false, null, "MIKO@GMAIL.COM", "MIKO", "AQAAAAIAAYagAAAAEIloKiT141kT3YPWm5wS/7/OF13C0BPDA+uDCpuhDgN8xaoVAs/KUuSSMHKZdJNj6w==", "09059073557", false, "Guid.NewGuid().ToString()", false, "miko" },
-                    { 6, 0, "Tehran, Iran", 1, "f2efd490-c7d0-456b-ac66-6466301a3cb3", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "zahra@gmail.com", false, "Zahra", null, 5000.0, "Sdq", false, null, "ZAHRA@GMAIL.COM", "ZAHRA", "AQAAAAIAAYagAAAAEIAO9BsuKpoxw+zJ+dXt9+HEqWVxGf+I8E2RqjiCljl9Xj2CdBvQMVqeaQMflGO5Fw==", "09388383857", false, "Guid.NewGuid().ToString()", false, "zahra" },
-                    { 7, 0, "Tehran, Iran", 1, "795ef9cb-55d2-4cd3-ab8b-c8706389dca0", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "amin@gmail.com", false, "Amin", null, 5000.0, "Sdq", false, null, "AMIN@GMAIL.COM", "AMIN", "AQAAAAIAAYagAAAAEIqncBsCWFt5MR1gttepJVtFOhqhYsDDEOgiZpgXUeHN7ShBhf4irAFWzM58X7sNuA==", "09059073557", false, "Guid.NewGuid().ToString()", false, "amin" }
+                    { 1, 0, "Tehran, Iran", 1, "a0db66aa-aa1a-4777-980d-59a7d4b38c9b", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "ela@gmail.com", false, "Ela", null, 50000.0, "Sdq", false, null, "ELA@GMAIL.COM", "ELA", "AQAAAAIAAYagAAAAEHzIBO8h+7NJa8a7ViwneX9D+oh/bNzl0/GP1WjKsyhAuUHpTDPnYpbQu6lfl9vLpg==", "093689162292", false, "Guid.NewGuid().ToString()", false, "ela" },
+                    { 2, 0, "Tehran, Iran", 1, "5e80fb8d-b0e1-4dda-8a21-23dba8d3c800", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "sara@gmail.com", false, "Sara", null, 5000.0, "Sdq", false, null, "SARA@GMAIL.COM", "SARA", "AQAAAAIAAYagAAAAECjC7n2LUSyE7xSqRvMFPphqa4jfhrfXc9TJk5qeaKCrQt+g9Od4l/jyTAKlO+4tUQ==", "09124361938", false, "Guid.NewGuid().ToString()", false, "sara" },
+                    { 3, 0, "Tehran, Iran", 1, "18074c7c-3013-4329-b866-f5bb847642ac", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "amir@gmail.com", false, "Amir", null, 5000.0, "Sdq", false, null, "AMIR@GMAIL.COM", "AMIR", "AQAAAAIAAYagAAAAELpHoJns3DKgtBwdVKsarm9An9+voyJyYKE1q7xS/IICKNrekS4YWM1UQcGATdnw7g==", "09128361939", false, "Guid.NewGuid().ToString()", false, "amir" },
+                    { 4, 0, "Tehran, Iran", 1, "628f6ff3-8e32-491a-8788-e993fecab3ef", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "leila@gmail.com", false, "Leila", null, 5000.0, "Sdq", false, null, "LEILA@GMAIL.COM", "LEILA", "AQAAAAIAAYagAAAAEDIuQoG7VXDTnezqFfFZX7DLZ9/MCqaI2s3Oo30kmbJzkhSpQtnvB9osMB3pUL++FA==", "09016308704", false, "Guid.NewGuid().ToString()", false, "leila" },
+                    { 5, 0, "Tehran, Iran", 1, "d7079450-467d-4378-b15d-573afa75fa7e", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "miko@gmail.com", false, "Miko", null, 5000.0, "Sdq", false, null, "MIKO@GMAIL.COM", "MIKO", "AQAAAAIAAYagAAAAENu3nGhW2qRgcQpcyozcUrq9Vp7oo+2+UobgKYzbQifwWRcOjXHR41UAOHFxsP6IBg==", "09059073557", false, "Guid.NewGuid().ToString()", false, "miko" },
+                    { 6, 0, "Tehran, Iran", 1, "80574313-6daf-42ca-aeec-5e9d85bb621a", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "zahra@gmail.com", false, "Zahra", null, 5000.0, "Sdq", false, null, "ZAHRA@GMAIL.COM", "ZAHRA", "AQAAAAIAAYagAAAAECVhwkyLSonniva8HbPyhynX0DgX3qtLAuAwpLuo44UIV8ExkCtK33o3YsyvijKFtg==", "09388383857", false, "Guid.NewGuid().ToString()", false, "zahra" },
+                    { 7, 0, "Tehran, Iran", 1, "84bf25b1-200c-41b8-85bc-2e73ff63a81d", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "amin@gmail.com", false, "Amin", null, 5000.0, "Sdq", false, null, "AMIN@GMAIL.COM", "AMIN", "AQAAAAIAAYagAAAAEIGldSj1UbYkwSfCUuSw4PDZPGgXM6yyRMQDVnv2n3/wuikpoVu7E4JLIzvBf7Z3pg==", "09059073557", false, "Guid.NewGuid().ToString()", false, "amin" }
                 });
 
             migrationBuilder.InsertData(
@@ -672,11 +673,11 @@ namespace Achareh.Infrastructure.EfCore.Migrations
 
             migrationBuilder.InsertData(
                 table: "Requests",
-                columns: new[] { "Id", "ApprovedAt", "CityId", "CreatedAt", "CustomerId", "Description", "HomeServiceId", "IsDeleted", "RequestForTime", "RequestImages", "RequestStatus", "ReviewId", "Title", "WinnerId" },
+                columns: new[] { "Id", "ApprovedAt", "CityId", "CreatedAt", "CustomerId", "Description", "HomeServiceId", "IsDeleted", "IsReviewd", "RequestForTime", "RequestImages", "RequestStatus", "ReviewId", "Title", "WinnerId" },
                 values: new object[,]
                 {
-                    { 2, null, 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "کودک ", 59, false, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, null, "طراحی اتاق کودک", 0 },
-                    { 3, null, 1, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "نظافت راه پله ساختمان های اداری ", 2, false, new DateTime(2025, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, null, "نظافت راه پله", 0 }
+                    { 2, null, 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "کودک ", 59, false, false, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, null, "طراحی اتاق کودک", 0 },
+                    { 3, null, 1, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "نظافت راه پله ساختمان های اداری ", 2, false, false, new DateTime(2025, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, null, "نظافت راه پله", 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -689,20 +690,20 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                 columns: new[] { "Id", "CreatedAt", "Description", "ExpertId", "IsDeleted", "OfferDate", "OfferStatusEnum", "RequestId", "SuggestedPrice" },
                 values: new object[,]
                 {
-                    { 2, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "پیشنهاد برای طراحی اتاق کودک", 1, false, new DateTime(2025, 3, 9, 2, 40, 52, 687, DateTimeKind.Local).AddTicks(3177), 1, 2, 2300 },
-                    { 3, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "من این راه پله ها را به خوبی تمیز میکنم با قیمت مناسب", 2, false, new DateTime(2025, 3, 9, 2, 40, 52, 687, DateTimeKind.Local).AddTicks(3181), 2, 3, 2400 },
-                    { 4, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), " من این راه پله ها را به خوبی تمیز میکنم", 3, false, new DateTime(2025, 3, 12, 2, 40, 52, 687, DateTimeKind.Local).AddTicks(3185), 2, 3, 2000 }
+                    { 2, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "پیشنهاد برای طراحی اتاق کودک", 1, false, new DateTime(2025, 3, 9, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(793), 1, 2, 2300 },
+                    { 3, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "من این راه پله ها را به خوبی تمیز میکنم با قیمت مناسب", 2, false, new DateTime(2025, 3, 9, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(796), 2, 3, 2400 },
+                    { 4, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), " من این راه پله ها را به خوبی تمیز میکنم", 3, false, new DateTime(2025, 3, 12, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(800), 2, 3, 2000 }
                 });
 
             migrationBuilder.InsertData(
                 table: "Requests",
-                columns: new[] { "Id", "ApprovedAt", "CityId", "CreatedAt", "CustomerId", "Description", "HomeServiceId", "IsDeleted", "RequestForTime", "RequestImages", "RequestStatus", "ReviewId", "Title", "WinnerId" },
-                values: new object[] { 1, null, 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, " تمیزکاری خانه", 1, false, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 1, "نظافت", 0 });
+                columns: new[] { "Id", "ApprovedAt", "CityId", "CreatedAt", "CustomerId", "Description", "HomeServiceId", "IsDeleted", "IsReviewd", "RequestForTime", "RequestImages", "RequestStatus", "ReviewId", "Title", "WinnerId" },
+                values: new object[] { 1, null, 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, " تمیزکاری خانه", 1, false, false, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 1, "نظافت", 0 });
 
             migrationBuilder.InsertData(
                 table: "ExpertOffers",
                 columns: new[] { "Id", "CreatedAt", "Description", "ExpertId", "IsDeleted", "OfferDate", "OfferStatusEnum", "RequestId", "SuggestedPrice" },
-                values: new object[] { 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "من این خانه را به خوبی نظافت می کنم", 1, false, new DateTime(2025, 3, 10, 2, 40, 52, 687, DateTimeKind.Local).AddTicks(3170), 3, 1, 2200 });
+                values: new object[] { 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "من این خانه را به خوبی نظافت می کنم", 1, false, new DateTime(2025, 3, 10, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(647), 3, 1, 2200 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Admins_UserId",

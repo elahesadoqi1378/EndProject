@@ -173,7 +173,7 @@ namespace Achareh.Infrastructure.EfCore.Configurations
             (
               new IdentityUserRole<int>() { RoleId = 1, UserId = 1 },
               new IdentityUserRole<int>() { RoleId = 3, UserId = 2 },
-              new IdentityUserRole<int>() { RoleId = 2, UserId = 2 },
+              new IdentityUserRole<int>() { RoleId = 2, UserId = 3 },
               new IdentityUserRole<int>() { RoleId = 2, UserId = 4 },
               new IdentityUserRole<int>() { RoleId = 3, UserId = 5 },
               new IdentityUserRole<int>() { RoleId = 2, UserId = 6 },

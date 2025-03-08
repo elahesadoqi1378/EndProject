@@ -11,5 +11,8 @@ namespace Achareh.Domain.Core.Contracts.Service
     {
        Task<SignInResult> LoginAsync(string email, string password);
        Task LogoutAsync();
+       Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken);
     }
+
 }
+

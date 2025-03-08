@@ -19,6 +19,7 @@ namespace Achareh.Domain.Core.Entities.Request
         public int? ReviewId { get; set; }
         public int CityId { get; set; }
         public int CustomerId { get; set; }
+        public bool IsReviewd { get; set; } = false;
         public int HomeServiceId { get; set; }
 
         #endregion

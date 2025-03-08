@@ -39,6 +39,11 @@ namespace Achareh.Domain.AppServices
 
              => await _expertService.GetCount(cancellationToken);
 
+        public Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken)
+        {
+            return _expertService.InventoryIncreaseAsync(userId, amount, cancellationToken);
+        }
+
         public  Task<IdentityResult> RegisterAsync(User user, string pass)
         {
             return _expertService.RegisterAsync(user, pass);

@@ -240,19 +240,23 @@ wwwroot\images\category\sayer.jpg
 wwwroot\images\category\sazmanha_va_mojtamha.jpg
 wwwroot\images\category\tamirat_ashya.jpg
 wwwroot\images\category\tamizkari.jpg
+wwwroot\images\customer\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg
 wwwroot\images\customer\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png
 wwwroot\images\customer\05ccc808-be7d-4feb-981a-d0ba872c0670zibayi_banovan.jpg
 wwwroot\images\customer\07b2566b-5f9f-4362-89be-7fa40623aae5Screenshot 2024-12-05 091705.png
 wwwroot\images\customer\0b8206f7-6240-41e5-ae4a-47eaf1428303Screenshot 2024-12-15 180058.png
 wwwroot\images\customer\100aa186-e844-461c-9eb6-4e9c170c2d23Screenshot 2024-10-20 195626.png
+wwwroot\images\customer\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg
 wwwroot\images\customer\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png
 wwwroot\images\customer\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png
 wwwroot\images\customer\6711ea17-c7cf-4b93-83a9-320035706d0fimages_raheb.jpg
 wwwroot\images\customer\6d667457-f1ef-45d2-8bbd-63a771f1c06cScreenshot 2024-12-05 091705.png
 wwwroot\images\customer\765353c1-db2f-4717-8444-d998adeb091dScreenshot 2024-12-16 144113.png
 wwwroot\images\customer\87720a21-ccaf-455f-b29e-4613bb9f0b6bScreenshot 2024-10-02 190200.png
+wwwroot\images\customer\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg
 wwwroot\images\customer\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png
 wwwroot\images\customer\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png
+wwwroot\images\customer\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg
 wwwroot\images\expert\08baffcc-6a80-4800-a65d-c46ed3d01154Screenshot 2024-12-16 144248.png
 wwwroot\images\expert\29a027b1-1403-4296-95cf-aff24e14d14dScreenshot 2024-12-05 091705.png
 wwwroot\images\expert\2ce677dd-0622-42a1-aa5e-9fbfda4c49a8Screenshot 2024-12-05 091705.png

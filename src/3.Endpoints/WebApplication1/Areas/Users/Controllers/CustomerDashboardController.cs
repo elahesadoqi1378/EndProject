@@ -5,7 +5,9 @@ using Achareh.Domain.Core.Dtos.Review;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Domain.Core.Enums;
+using Achareh.Domain.Services;
 using Achareh.Endpoint.MVC.Areas.Users.Models;
+using Azure.Core;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -24,8 +26,10 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         private readonly ICityAppService _cityAppService;
         private readonly IImageService _imageService;
         private readonly IReviewAppService _reviewAppService;
+        private readonly IExpertAppService _expertAppService;
+        private readonly IAdminAppService _adminAppService;
 
-        public CustomerDashboardController(UserManager<User> userManager, ICustomerAppService customerAppService, IRequestAppService requestAppService, IExpertOfferAppService expertOfferAppService, ICityAppService cityAppService, IImageService imageService, IReviewAppService reviewAppService)
+        public CustomerDashboardController(UserManager<User> userManager, ICustomerAppService customerAppService, IRequestAppService requestAppService, IExpertOfferAppService expertOfferAppService, ICityAppService cityAppService, IImageService imageService, IReviewAppService reviewAppService, IExpertAppService expertAppService,IAdminAppService adminAppService)
         {
             _userManager = userManager;
             _customerAppService = customerAppService;
@@ -34,6 +38,8 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             _cityAppService = cityAppService;
             _imageService = imageService;
             _reviewAppService = reviewAppService;
+            _expertAppService = expertAppService;
+            _adminAppService = adminAppService;
         }
 
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
@@ -78,7 +84,8 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 ImagePath = onlineUser.ImagePath,
                 PhoneNumber = onlineUser.PhoneNumber,
                 CityId = onlineUser.CityId,
-                UserName = onlineUser.UserName
+                UserName = onlineUser.UserName,
+                Price = onlineUser.Inventory
             };
 
             return View(model);
@@ -99,15 +106,21 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 return View(model);
 
             }
-
-            if (model.ImageFile is not null)
-            {
-                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "customer", cancellationToken);
-            }
+          
 
             var onlineUser = await _userManager.GetUserAsync(User);
             if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
+
+
+            if (model.ImageFile is null) 
+            {
+                model.ImagePath = onlineUser.ImagePath; 
+            }
+            else
+            {
+                model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "customer", cancellationToken);
+            }
 
             onlineUser.FirstName = model.FirstName;
             onlineUser.LastName = model.LastName;
@@ -117,6 +130,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             onlineUser.PhoneNumber = model.PhoneNumber;
             onlineUser.CityId = model.CityId;
             onlineUser.UserName = model.UserName;
+            onlineUser.Inventory = model.Price;
             var result = await _customerAppService.UpdateAsync(onlineUser);
 
             if (result.Succeeded)
@@ -124,7 +138,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 ViewBag.UpdateMessage = "information updated successfully";
                 return RedirectToAction("EditCustomerInfo");
             }
-            ViewBag.UpdateMessage = "information didi not updated ";
+            ViewBag.UpdateMessage = "information did not updated ";
 
             return RedirectToAction("EditCustomerInfo");
         }
@@ -211,23 +225,18 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         public async Task<IActionResult> RequestPayment(int id, CancellationToken cancellationToken)
         {
             var onlineUser = await _userManager.GetUserAsync(User);
-            if (onlineUser is null)
-                return RedirectToAction("Login", "Account");
-
-            var winnerOffer = await _expertOfferAppService.GetByIdAsync(id, cancellationToken);
-            if (winnerOffer == null)
+            var winner = await _expertOfferAppService.GetByIdAsync(id, cancellationToken);
+            if (winner == null)
                 return NotFound();
-
-            ViewBag.SuggestedPrice = winnerOffer.SuggestedPrice;
-            ViewBag.offerId = winnerOffer.Id;
-            ViewBag.RequestId = winnerOffer.RequestId;
+            ViewBag.Price = winner.SuggestedPrice;
+            ViewBag.SuggestionId = winner.Id;
+            ViewBag.RequestId = winner.RequestId;
 
 
             return View(onlineUser);
         }
-
         [HttpPost]
-        public async Task<IActionResult> RequestPayment(int offerId, string suggestedAmount, string customAmount, CancellationToken cancellationToken)
+        public async Task<IActionResult> RequestPayment(int SuggestionId, int RequestId, double minPrice, string selectedAmount, CancellationToken cancellationToken)
         {
             var onlineUser = await _userManager.GetUserAsync(User);
             if (onlineUser == null)
@@ -235,11 +244,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 
             double price = 0;
 
-            if (!string.IsNullOrEmpty(customAmount) && double.TryParse(customAmount, out double customMoney) && customMoney > 0)
-            {
-                price = customMoney;
-            }
-            else if (!string.IsNullOrEmpty(suggestedAmount) && double.TryParse(suggestedAmount, out double defaultMoney))
+            if (!string.IsNullOrEmpty(selectedAmount) && double.TryParse(selectedAmount, out double defaultMoney))
             {
                 price = defaultMoney;
             }
@@ -249,43 +254,66 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 return View(onlineUser);
             }
 
-            var winnerOffer = await _expertOfferAppService.GetByIdAsync(offerId, cancellationToken); 
-            if (winnerOffer == null)
+            var setWinnerResult = await _requestAppService.SetWinnerForRequest(SuggestionId, RequestId, cancellationToken);
+            if (!setWinnerResult)
             {
-                ModelState.AddModelError("", "offer winner didnot found.");
-                return View(onlineUser);
-            }
-
-            var request = winnerOffer.Request; 
-            if (request == null)
-            {
-                ModelState.AddModelError("", "request of the winner offer did not found.");
-                return View(onlineUser);
-            }
-
-
-            if (onlineUser.Inventory < price) 
-            {
-                ModelState.AddModelError("customAmount", "your inventory is not enough.");
-                return View(onlineUser);
+                TempData["ResultMessage"] = "خطا در تعیین برنده درخواست";
+                return RedirectToAction("RequestList");
             }
 
             var result = await _customerAppService.InventoryReductionAsync(onlineUser.Id, price, cancellationToken);
             if (result)
             {
-                var suggestionResult = await _expertOfferAppService.ChangeStausOfExpertOffer(offerId, StatusEnum.WorkPaidByCustomer, cancellationToken);
+                var suggestionResult = await _expertOfferAppService.ChangeStausOfExpertOffer(SuggestionId, StatusEnum.WorkPaidByCustomer, cancellationToken);
                 if (suggestionResult)
                 {
-                    var requestResult = await _requestAppService.ChangeStatusOfRequest(StatusEnum.WorkPaidByCustomer,request.Id, cancellationToken); 
+                    var requestResult = await _requestAppService.ChangeStatusOfRequest(StatusEnum.WorkPaidByCustomer, RequestId, cancellationToken);
                     if (requestResult)
                     {
-                        TempData["ResultMessage"] = "paying money was successfull";
-                        TempData["OfferId"] = offerId;
-                        TempData["RequestId"] = request.Id; 
-                        return RedirectToAction("SetReview", new { requestId = request.Id, expertId = offerId }); 
+                        var suggestion = await _expertOfferAppService.GetByIdAsync(SuggestionId, cancellationToken);
+                        if (suggestion != null)
+                        {
+                            var expert = await _expertAppService.GetByIdAsync(suggestion.ExpertId, cancellationToken);
+                            if (expert != null)
+                            {
+                                double expertShare = price * 0.7;
+                                double adminShare = price * 0.3;
+
+                                var expertIncreaseResult = await _expertAppService.InventoryIncreaseAsync(expert.Id.ToString(), expertShare, cancellationToken);
+                                if (expertIncreaseResult)
+                                {
+                                    var adminIncreaseResult = await _adminAppService.InventoryIncreaseAsync("1", adminShare, cancellationToken);
+                                    if (adminIncreaseResult)
+                                    {
+                                        TempData["ResultMessage"] = "پرداخت وجه موفقیت آمیز بود";
+                                        return RedirectToAction("RequestList");
+                                    }
+                                    else
+                                    {
+                                        TempData["ResultMessage"] = "خطا در پرداخت وجه: واریز به حساب ادمین صورت نگرفت";
+                                        return RedirectToAction("RequestList");
+                                    }
+                                }
+                                else
+                                {
+                                    TempData["ResultMessage"] = "خطا در پرداخت وجه: واریز به حساب کارشناس صورت نگرفت";
+                                    return RedirectToAction("RequestList");
+                                }
+                            }
+                            else
+                            {
+                                TempData["ResultMessage"] = "خطا در پرداخت وجه: کارشناس یافت نشد";
+                                return RedirectToAction("RequestList");
+                            }
+                        }
+                        else
+                        {
+                            TempData["ResultMessage"] = "خطا در پرداخت وجه: پیشنهاد یافت نشد";
+                            return RedirectToAction("RequestList");
+                        }
                     }
 
-                    TempData["ResultMessage"] = "error in paying money ,something is wrong";
+                    TempData["ResultMessage"] = "خطا در پرداخت وجه: تغییر وضعیت درخواست صورت نگرفت";
                     return RedirectToAction("RequestList");
                 }
             }
@@ -331,11 +359,17 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 return View(model);
             }
 
-
-
             model.CustomerId = customer.Id;
 
             await _reviewAppService.CreateAsync(model, cancellationToken);
+
+           
+            var request = await _requestAppService.GetByIdAsync(model.RequestId, cancellationToken); 
+            if (request != null)
+            {
+                request.IsReviewd = true;
+                await _requestAppService.UpdateAsync(request, cancellationToken); 
+            }
 
             TempData["ResultMessage"] = "your comment succefully registerd.";
             return RedirectToAction("RequestList");

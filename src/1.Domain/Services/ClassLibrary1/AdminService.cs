@@ -1,7 +1,7 @@
-﻿using Achareh.Domain.Core.Contracts.Service;
+﻿using Achareh.Domain.Core.Contracts.Repositroy;
+using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
 using Microsoft.AspNetCore.Identity;
-
 
 namespace Achareh.Domain.Services
 {
@@ -9,11 +9,18 @@ namespace Achareh.Domain.Services
     {
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
+        private readonly IAdminRepository _adminRepository;
 
-        public AdminService(SignInManager<User> signInManager, UserManager<User> userManager)
+        public AdminService(SignInManager<User> signInManager, UserManager<User> userManager, IAdminRepository adminRepository)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _adminRepository = adminRepository;
+        }
+
+        public Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken)
+        {
+            return _adminRepository.InventoryIncreaseAsync(userId, amount, cancellationToken);
         }
 
         public async Task<SignInResult> LoginAsync(string email, string password)

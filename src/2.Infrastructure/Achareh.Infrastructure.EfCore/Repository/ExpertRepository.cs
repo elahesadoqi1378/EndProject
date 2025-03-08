@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Infrastructure.EfCore.Common;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -16,10 +17,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
     {
         private readonly AppDbContext _context;
         private readonly ILogger<ExpertRepository> _logger;
-        public ExpertRepository(AppDbContext context, ILogger<ExpertRepository> logger)
+        private readonly UserManager<User> _userManager;
+        public ExpertRepository(AppDbContext context, ILogger<ExpertRepository> logger, UserManager<User> userManager)
         {
             _context = context;
             _logger = logger;
+            _userManager = userManager;
         }
         public async Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken)
         {
@@ -104,6 +107,49 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
            => await _context.Experts.AsNoTracking()
                                     .CountAsync(cancellationToken);
+
+
+        public async Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken)
+        {
+            try
+            {
+             
+                var user = await _userManager.FindByIdAsync(userId);
+
+                if (user == null)
+                {
+                   
+                    return false;
+                }
+
+               
+                user.Inventory += amount;
+
+               
+                var result = await _userManager.UpdateAsync(user);
+
+                if (result.Succeeded)
+                {
+                   
+                    return true;
+                }
+                else
+                {
+                   
+                    foreach (var error in result.Errors)
+                    {
+                        _logger.LogError($"Error updating user inventory: {error.Code} - {error.Description}");
+                    }
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+               
+                _logger.LogError(ex, "An error occurred while increasing user inventory.");
+                return false;
+            }
+        }
     }
     }
 

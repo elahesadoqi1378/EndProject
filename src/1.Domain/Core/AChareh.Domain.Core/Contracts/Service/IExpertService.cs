@@ -18,6 +18,8 @@ namespace Achareh.Domain.Core.Contracts.Service
         Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
         Task<IdentityResult> RegisterAsync(User user, string pass);
         Task<IdentityResult> UpdateAsync(User user);
-
+        Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken);
     }
+
 }
+

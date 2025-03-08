@@ -17,6 +17,12 @@ namespace Achareh.Domain.AppServices
         {
             _adminService = adminService;
         }
+
+        public Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken)
+        {
+            return _adminService.InventoryIncreaseAsync(userId, amount, cancellationToken);
+        }
+
         public async Task<SignInResult> LoginAsync(string email, string password)
 
              => await _adminService.LoginAsync(email, password);

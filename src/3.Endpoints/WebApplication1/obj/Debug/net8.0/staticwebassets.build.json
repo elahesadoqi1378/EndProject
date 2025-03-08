@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nh7RqiSB20Jx2GxloIm3DOQnH4DvFYphpV/bBh7U6S0=",
+  "Hash": "IHmgbv7KDWSCUXhOzUxREKVgn4KAUNd1y3qzs+Rs3VQ=",
   "Source": "Achareh.Endpoint.MVC",
   "BasePath": "_content/Achareh.Endpoint.MVC",
   "Mode": "Default",
@@ -5141,6 +5141,27 @@
       "OriginalItemSpec": "wwwroot\\images\\category\\tamizkari.jpg"
     },
     {
+      "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg",
+      "SourceId": "Achareh.Endpoint.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/Achareh.Endpoint.MVC",
+      "RelativePath": "images/customer/04df4572-13fe-4e57-881c-0e6d6e024e67image_logo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w3gkhmfsln",
+      "Integrity": "dLhRXLEh3SLDEUFYdcoFh3mJQR6v1Ua/7w8rfw+ryHU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\customer\\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png",
       "SourceId": "Achareh.Endpoint.MVC",
       "SourceType": "Discovered",
@@ -5244,6 +5265,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\customer\\100aa186-e844-461c-9eb6-4e9c170c2d23Screenshot 2024-10-20 195626.png"
+    },
+    {
+      "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg",
+      "SourceId": "Achareh.Endpoint.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/Achareh.Endpoint.MVC",
+      "RelativePath": "images/customer/15da6f66-0702-43e3-b48a-6f712a035a03images_raheb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ww4v8upgiu",
+      "Integrity": "oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\customer\\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg"
     },
     {
       "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png",
@@ -5372,6 +5414,27 @@
       "OriginalItemSpec": "wwwroot\\images\\customer\\87720a21-ccaf-455f-b29e-4613bb9f0b6bScreenshot 2024-10-02 190200.png"
     },
     {
+      "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg",
+      "SourceId": "Achareh.Endpoint.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/Achareh.Endpoint.MVC",
+      "RelativePath": "images/customer/8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ww4v8upgiu",
+      "Integrity": "oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\customer\\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png",
       "SourceId": "Achareh.Endpoint.MVC",
       "SourceType": "Discovered",
@@ -5412,6 +5475,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\customer\\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png"
+    },
+    {
+      "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg",
+      "SourceId": "Achareh.Endpoint.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/Achareh.Endpoint.MVC",
+      "RelativePath": "images/customer/ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ww4v8upgiu",
+      "Integrity": "oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\customer\\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg"
     },
     {
       "Identity": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\08baffcc-6a80-4800-a65d-c46ed3d01154Screenshot 2024-12-16 144248.png",
@@ -38843,6 +38927,88 @@
       ]
     },
     {
+      "Route": "images/customer/04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dLhRXLEh3SLDEUFYdcoFh3mJQR6v1Ua/7w8rfw+ryHU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:15:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dLhRXLEh3SLDEUFYdcoFh3mJQR6v1Ua/7w8rfw+ryHU="
+        }
+      ]
+    },
+    {
+      "Route": "images/customer/04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.w3gkhmfsln.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dLhRXLEh3SLDEUFYdcoFh3mJQR6v1Ua/7w8rfw+ryHU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:15:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w3gkhmfsln"
+        },
+        {
+          "Name": "label",
+          "Value": "images/customer/04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dLhRXLEh3SLDEUFYdcoFh3mJQR6v1Ua/7w8rfw+ryHU="
+        }
+      ]
+    },
+    {
       "Route": "images/customer/052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.88c3qkpou7.png",
       "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png",
       "Selectors": [],
@@ -39249,6 +39415,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-2vno3LW5mdSvi/LiYPCcNKA7DkCGB2/OTUQJi7w8hyI="
+        }
+      ]
+    },
+    {
+      "Route": "images/customer/15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:19:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38="
+        }
+      ]
+    },
+    {
+      "Route": "images/customer/15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.ww4v8upgiu.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:19:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ww4v8upgiu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/customer/15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38="
         }
       ]
     },
@@ -39745,6 +39993,88 @@
       ]
     },
     {
+      "Route": "images/customer/8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:14:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38="
+        }
+      ]
+    },
+    {
+      "Route": "images/customer/8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.ww4v8upgiu.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:14:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ww4v8upgiu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/customer/8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38="
+        }
+      ]
+    },
+    {
       "Route": "images/customer/aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.55wpe1sm9j.png",
       "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png",
       "Selectors": [],
@@ -39905,6 +40235,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-qBq6QcRu+aZO6la2gO4SVb3QRPn1Vg07/Z7SQG3Vvpc="
+        }
+      ]
+    },
+    {
+      "Route": "images/customer/ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:27:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38="
+        }
+      ]
+    },
+    {
+      "Route": "images/customer/ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.ww4v8upgiu.jpg",
+      "AssetFile": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:27:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ww4v8upgiu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/customer/ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38="
         }
       ]
     },

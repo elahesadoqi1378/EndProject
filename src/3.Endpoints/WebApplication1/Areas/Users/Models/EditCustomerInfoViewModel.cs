@@ -35,8 +35,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Models
             [RegularExpression(@"^09\d{9}$", ErrorMessage = "فرمت شماره تلفن اشتباه است")]
             public string PhoneNumber { get; set; }
 
-            [Display(Name = "تصویر پروفایل")]
-            [Required(ErrorMessage = "تصویر پروفایل اجباری است")]
+            
             public IFormFile? ImageFile { get; set; }
 
             public string? ImagePath { get; set; }

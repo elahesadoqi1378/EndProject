@@ -2593,6 +2593,10 @@
       "PackagePath": "staticwebassets\\images\\category\\tamizkari.jpg"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\04df4572-13fe-4e57-881c-0e6d6e024e67image_logo.jpg"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png",
       "PackagePath": "staticwebassets\\images\\customer\\052c1225-72a2-4126-a75b-945c9af011c9Screenshot 2024-10-20 192501.png"
     },
@@ -2611,6 +2615,10 @@
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\100aa186-e844-461c-9eb6-4e9c170c2d23Screenshot 2024-10-20 195626.png",
       "PackagePath": "staticwebassets\\images\\customer\\100aa186-e844-461c-9eb6-4e9c170c2d23Screenshot 2024-10-20 195626.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png",
@@ -2637,12 +2645,20 @@
       "PackagePath": "staticwebassets\\images\\customer\\87720a21-ccaf-455f-b29e-4613bb9f0b6bScreenshot 2024-10-02 190200.png"
     },
     {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg"
+    },
+    {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png",
       "PackagePath": "staticwebassets\\images\\customer\\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png",
       "PackagePath": "staticwebassets\\images\\customer\\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png"
+    },
+    {
+      "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\customer\\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\ffeeb10e-c99e-4f4d-a894-36c209f77fe2images_raheb.jpg"
     },
     {
       "Id": "C:\\Users\\ARYA\\source\\repos\\EndProject\\src\\3.Endpoints\\WebApplication1\\wwwroot\\images\\expert\\08baffcc-6a80-4800-a65d-c46ed3d01154Screenshot 2024-12-16 144248.png",

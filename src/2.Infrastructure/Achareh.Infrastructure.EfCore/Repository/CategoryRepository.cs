@@ -5,6 +5,7 @@ using Achareh.Domain.Core.Dtos.Category;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
 namespace Achareh.Infrastructure.EfCore.Repository
@@ -13,17 +14,26 @@ namespace Achareh.Infrastructure.EfCore.Repository
     {
         private readonly AppDbContext _context;
         private readonly ILogger<CategoryRepository> _logger;
-        public CategoryRepository(AppDbContext context, ILogger<CategoryRepository> logger)
+        private readonly IMemoryCache _memoryCache;
+        public CategoryRepository(AppDbContext context, ILogger<CategoryRepository> logger, IMemoryCache memoryCache)
         {
             _context = context;
             _logger = logger;
+            _memoryCache = memoryCache;
         }
 
         public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
-        
-          => await _context.Categories.Where(x=>x.IsDeleted==false)
-                               .ToListAsync(cancellationToken);
-   
+
+        {
+            var categories = _memoryCache.Get<List<Category>>("GetAllAsync");
+            if (categories is null)
+            {
+                categories = await _context.Categories.ToListAsync(cancellationToken);
+            }
+            _memoryCache.Set("GetAllAsync", categories, TimeSpan.FromMinutes(10));
+
+            return categories;
+        }
 
         
               

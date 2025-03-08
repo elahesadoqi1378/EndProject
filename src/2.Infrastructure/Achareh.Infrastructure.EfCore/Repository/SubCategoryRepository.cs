@@ -1,7 +1,9 @@
 ﻿using Achareh.Domain.Core.Contracts.Repositroy;
+using Achareh.Domain.Core.Entities.BaseEntities;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 
@@ -12,28 +14,41 @@ namespace Achareh.Infrastructure.EfCore.Repository
     {
         private readonly AppDbContext _context;
         private readonly ILogger<SubCategoryRepository> _logger;
+        private readonly IMemoryCache _memoryCache;
 
-        public SubCategoryRepository(AppDbContext context, ILogger<SubCategoryRepository> logger)
+        public SubCategoryRepository(AppDbContext context, ILogger<SubCategoryRepository> logger, IMemoryCache memoryCache)
         {
             _context = context;
             _logger = logger;
+            _memoryCache = memoryCache;
         }
         public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
 
-            => await _context.SubCategories.Where(x=>x.IsDeleted == false)
-                                           .ToListAsync(cancellationToken);
+        {
+            var subCategories = _memoryCache.Get<List<SubCategory>>("GetAllAsync");
 
-        public async Task<SubCategory> GetByIdAsync(int id , CancellationToken cancellationToken)
+            if (subCategories is null)
+            {
+               subCategories= await _context.SubCategories.ToListAsync(cancellationToken);
+            }
+
+            _memoryCache.Set("GetAllAsync", subCategories, TimeSpan.FromMinutes(10));
+
+            return subCategories;
+
+        }
+
+        public async Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken)
 
             => await _context.SubCategories
                              .Include(x => x.HomeServices)
-                             .FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
+                             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
-        public async Task<bool> CreateAsync(SubCategory subCategory , CancellationToken cancellationToken)
+        public async Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken)
         {
             try
             {
-                await _context.SubCategories.AddAsync(subCategory,cancellationToken);
+                await _context.SubCategories.AddAsync(subCategory, cancellationToken);
                 await _context.SaveChangesAsync(cancellationToken);
                 _logger.LogInformation("subcategory created Succesfully");
                 return true;
@@ -49,7 +64,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
         {
             try
             {
-                var existingSubCategory = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == subCategory.Id,cancellationToken);
+                var existingSubCategory = await _context.SubCategories.FirstOrDefaultAsync(x => x.Id == subCategory.Id, cancellationToken);
 
                 if (existingSubCategory == null)
                     return false;
@@ -70,8 +85,8 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         }
 
-     
-        public async Task<bool> DeleteAsync(int id , CancellationToken cancellationToken)
+
+        public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
         {
             try
             {
@@ -99,9 +114,10 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
             => await _context.SubCategories.ToListAsync(cancellationToken);
 
-      
+
     }
+
 }
 
-   
+
 

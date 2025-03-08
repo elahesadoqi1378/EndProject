@@ -53,6 +53,9 @@ namespace Achareh.Domain.Services
             return _userManager.UpdateAsync(user);
         }
 
-       
+        public Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken)
+        {
+            return _expertRepository.InventoryIncreaseAsync(userId, amount, cancellationToken);
+        }
     }
 }

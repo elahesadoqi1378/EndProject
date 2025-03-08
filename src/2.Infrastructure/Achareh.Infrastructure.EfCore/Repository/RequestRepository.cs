@@ -214,16 +214,23 @@ namespace Achareh.Infrastructure.EfCore.Repository
             try
             {
                 var existingRequest = await _context.Requests.FirstOrDefaultAsync(x => x.Id == requestId, cancellationToken);
-                existingRequest.WinnerId = offerId;
-                await _context.SaveChangesAsync(cancellationToken);
-                _logger.LogInformation("winner request set Succesfully");
-                return true;
+                if (existingRequest != null)
+                {
+                    existingRequest.WinnerId = offerId;
+                    await _context.SaveChangesAsync(cancellationToken);
+                    _logger.LogInformation("winner request set Succesfully");
+                    return true;
+                }
+                else
+                {
+                    _logger.LogError($"Request with ID {requestId} not found.");
+                    return false;
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError("something is wrong in setting winner for request", ex.Message);
+                _logger.LogError(ex, "Error setting winner for request.");
                 return false;
-
             }
         }
 

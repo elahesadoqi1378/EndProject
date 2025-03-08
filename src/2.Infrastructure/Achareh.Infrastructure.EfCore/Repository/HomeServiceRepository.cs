@@ -2,6 +2,7 @@
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Infrastructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading;
@@ -12,8 +13,9 @@ namespace Achareh.Infrastructure.EfCore.Repository
     {
         private readonly AppDbContext _context;
         private readonly ILogger<HomeServiceRepository> _logger;
+        private readonly IMemoryCache _memoryCache;
 
-        public HomeServiceRepository(AppDbContext context, ILogger<HomeServiceRepository> logger)
+        public HomeServiceRepository(AppDbContext context, ILogger<HomeServiceRepository> logger, IMemoryCache memoryCache)
         {
             _context = context;
             _logger = logger;
@@ -21,11 +23,22 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
         {
-            return await _context.HomeServices
-                .Include(x=>x.SubCategory)
-                .Where(x=>x.IsDeleted==false)
+            var homeServices = _memoryCache.Get<List<HomeService>>("GetAllAsync");
+
+            if (homeServices is null)
+            {
+                homeServices = await _context.HomeServices
+                .Include(x => x.SubCategory)
+                .Where(x => x.IsDeleted == false)
                 .ToListAsync(cancellationToken);
+
+            }
+            _memoryCache.Set("GetAllAsync", homeServices, TimeSpan.FromMinutes(1));
+
+            return homeServices;
+
         }
+
 
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
         {

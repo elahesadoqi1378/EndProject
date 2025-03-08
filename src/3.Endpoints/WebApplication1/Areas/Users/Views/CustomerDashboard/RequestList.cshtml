@@ -7,7 +7,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="~/UsersTemplate/css/custom/compare.css">
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/compare.css">
 </head>
 
 <body>
@@ -144,71 +144,76 @@
 
 
 	<section class="compare-part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="compare-list">
-                        <table class="table-list">
-                            <thead>
-                                <tr>
-                                    <th scope="col">شناسه سفارش</th>
-                                    <th scope="col">وضعیت</th>
-                                    <th scope="col">جزئیات سفارش</th>
-                                    <th scope="col">پیشنهادات</th>
-                                    <th scope="col">عملیات</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if (Model != null && Model.Any())
-                                {
-                                    @foreach (var request in Model)
-                                    {
-                                        <tr>
-                                            <td>@request.Id</td>
-                                            <td>@request.RequestStatus.GetEnumDisplayName()</td>
-                                            <td><a asp-action="RequestDetails" asp-route-id="@request.Id" class="btn btn-primary">نمایش</a></td>
-                                            <td><a asp-action="OfferList" asp-route-id="@request.Id" class="btn btn-primary">پیشنهادات</a></td>
-                                            <td>
-                                                @if (request.RequestStatus == StatusEnum.WorkStarted)
-                                                {
-                                                    <a asp-action="RequestPayment" asp-route-id="@request.WinnerId" class="btn btn-warning">پرداخت هزینه</a>
-                                                }
-                                                else if (request.RequestStatus == StatusEnum.WorkPaidByCustomer)
-                                                {
-                                                    <a asp-action="SetReview" asp-controller="CustomerDashboard" asp-route-requestId="@request.Id" asp-route-expertId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
-                                                }
-                                            </td>
-                                        </tr>
-                                    }
-                                }
-                                else
-                                {
-                                    <tr>
-                                        <td colspan="7" class="text-center">هیچ ریکوئستی یافت نشد</td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="compare-btn center-50">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="compare-list">
+						<table class="table-list">
+							<thead>
+								<tr>
+									<th scope="col">شناسه سفارش</th>
+									<th scope="col">وضعیت</th>
+									<th scope="col">جزئیات سفارش</th>
+									<th scope="col">پیشنهادات</th>
+									<th scope="col">عملیات</th>
+								</tr>
+							</thead>
+							<tbody>
+								@if (Model != null && Model.Any())
+								{
+									@foreach (var request in Model)
+									{
+										<tr>
+											<td>@request.Id</td>
+											<td>@request.RequestStatus.GetEnumDisplayName()</td>
+											<td><a asp-action="RequestDetails" asp-route-id="@request.Id" class="btn btn-primary">نمایش</a></td>
+											<td><a asp-action="OfferList" asp-route-id="@request.Id" class="btn btn-primary">پیشنهادات</a></td>
+											<td>
+												@if (request.RequestStatus == StatusEnum.WorkStarted)
+												{
+													<a asp-action="RequestPayment" asp-route-id="@request.WinnerId" class="btn btn-warning">پرداخت هزینه</a>
+												}
+												else
+												{
+													if (request.RequestStatus == StatusEnum.WorkPaidByCustomer && !request.IsReviewd)
+													{
+														<a asp-action="SetReview" asp-controller="CustomerDashboard" asp-route-requestId="@request.Id" asp-route-expertId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
+													}
+												
+												}
 
-                        <a asp-action="Index" class="btn btn-inline">
-                            <i class="fas fa-arrow-right"></i><span>بازگشت </span>
-                        </a>
+											</td>
+										</tr>
+									}
+								}
+								else
+								{
+									<tr>
+										<td colspan="7" class="text-center">هیچ ریکوئستی یافت نشد</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+					<div class="compare-btn center-50">
 
-                        <a href="#" class="btn btn-inline">
-                            <i class="fas fa-eye"></i><span>نمایش لیست بیشتر</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+						<a asp-action="Index" class="btn btn-inline">
+							<i class="fas fa-arrow-right"></i><span>بازگشت </span>
+						</a>
 
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/custom/main.js"></script>
+						<a href="#" class="btn btn-inline">
+							<i class="fas fa-eye"></i><span>نمایش لیست بیشتر</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/custom/main.js"></script>
 </body>
 
 </html>

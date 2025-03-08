@@ -15,6 +15,8 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
         Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
+        Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken);
+    
 
-    }
+}
 }

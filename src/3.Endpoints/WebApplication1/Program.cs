@@ -25,6 +25,8 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddMemoryCache();
+
 builder.Host.ConfigureLogging(x =>
 {
     x.ClearProviders();
