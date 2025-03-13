@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Achareh.Infrastructure.EfCore.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250307211235_init")]
+    [Migration("20250311223255_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -333,7 +333,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "من این خانه را به خوبی نظافت می کنم",
                             ExpertId = 1,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 3, 10, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(647),
+                            OfferDate = new DateTime(2025, 3, 14, 15, 32, 54, 181, DateTimeKind.Local).AddTicks(9177),
                             OfferStatusEnum = 3,
                             RequestId = 1,
                             SuggestedPrice = 2200
@@ -345,7 +345,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "پیشنهاد برای طراحی اتاق کودک",
                             ExpertId = 1,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 3, 9, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(793),
+                            OfferDate = new DateTime(2025, 3, 13, 15, 32, 54, 181, DateTimeKind.Local).AddTicks(9191),
                             OfferStatusEnum = 1,
                             RequestId = 2,
                             SuggestedPrice = 2300
@@ -357,7 +357,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = "من این راه پله ها را به خوبی تمیز میکنم با قیمت مناسب",
                             ExpertId = 2,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 3, 9, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(796),
+                            OfferDate = new DateTime(2025, 3, 13, 15, 32, 54, 181, DateTimeKind.Local).AddTicks(9200),
                             OfferStatusEnum = 2,
                             RequestId = 3,
                             SuggestedPrice = 2400
@@ -369,7 +369,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             Description = " من این راه پله ها را به خوبی تمیز میکنم",
                             ExpertId = 3,
                             IsDeleted = false,
-                            OfferDate = new DateTime(2025, 3, 12, 13, 12, 34, 869, DateTimeKind.Local).AddTicks(800),
+                            OfferDate = new DateTime(2025, 3, 16, 15, 32, 54, 181, DateTimeKind.Local).AddTicks(9208),
                             OfferStatusEnum = 2,
                             RequestId = 3,
                             SuggestedPrice = 2000
@@ -1750,7 +1750,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "a0db66aa-aa1a-4777-980d-59a7d4b38c9b",
+                            ConcurrencyStamp = "25ecdb01-781c-4adb-adcd-c0f6ea2456ec",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ela@gmail.com",
                             EmailConfirmed = false,
@@ -1760,7 +1760,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ELA@GMAIL.COM",
                             NormalizedUserName = "ELA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHzIBO8h+7NJa8a7ViwneX9D+oh/bNzl0/GP1WjKsyhAuUHpTDPnYpbQu6lfl9vLpg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEjcRYqutXhSaSDJztRXdj02YyAlnO1VBHJbErDfkKPQxVlHUjPCeF4v9hG+bMjrnw==",
                             PhoneNumber = "093689162292",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1773,7 +1773,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "5e80fb8d-b0e1-4dda-8a21-23dba8d3c800",
+                            ConcurrencyStamp = "62c33f1f-7911-42f0-9642-0240e1e8332e",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "sara@gmail.com",
                             EmailConfirmed = false,
@@ -1783,7 +1783,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA@GMAIL.COM",
                             NormalizedUserName = "SARA",
-                            PasswordHash = "AQAAAAIAAYagAAAAECjC7n2LUSyE7xSqRvMFPphqa4jfhrfXc9TJk5qeaKCrQt+g9Od4l/jyTAKlO+4tUQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELwxp4Rj5GpCuwX794aMN+A5TJ32kxGq8w85xvv9kHF/zB0WgMJyAgrRc/aZbnVxRw==",
                             PhoneNumber = "09124361938",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1796,7 +1796,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "18074c7c-3013-4329-b866-f5bb847642ac",
+                            ConcurrencyStamp = "b0c7610c-7c81-45fb-8a49-6a8a379fb47c",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "amir@gmail.com",
                             EmailConfirmed = false,
@@ -1806,7 +1806,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "AMIR@GMAIL.COM",
                             NormalizedUserName = "AMIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAELpHoJns3DKgtBwdVKsarm9An9+voyJyYKE1q7xS/IICKNrekS4YWM1UQcGATdnw7g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJ3RjaNaVjT2xAI2swPufFRw6a4/429sYj85r+impYn1U/wlKXx8knfYIgI9WbFA4w==",
                             PhoneNumber = "09128361939",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1819,7 +1819,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "628f6ff3-8e32-491a-8788-e993fecab3ef",
+                            ConcurrencyStamp = "f5ff2f1e-4291-4489-8ac8-45ab96f04721",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "leila@gmail.com",
                             EmailConfirmed = false,
@@ -1829,7 +1829,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "LEILA@GMAIL.COM",
                             NormalizedUserName = "LEILA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDIuQoG7VXDTnezqFfFZX7DLZ9/MCqaI2s3Oo30kmbJzkhSpQtnvB9osMB3pUL++FA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJWawaO17LosT8hQcqtxM+iftcB7pEnTeswIPNUlnV3djpTQWMfjtuK6WwvBXx08TA==",
                             PhoneNumber = "09016308704",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1842,7 +1842,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "d7079450-467d-4378-b15d-573afa75fa7e",
+                            ConcurrencyStamp = "5852a072-556e-4d5b-bef1-4a0489cc3785",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "miko@gmail.com",
                             EmailConfirmed = false,
@@ -1852,7 +1852,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "MIKO@GMAIL.COM",
                             NormalizedUserName = "MIKO",
-                            PasswordHash = "AQAAAAIAAYagAAAAENu3nGhW2qRgcQpcyozcUrq9Vp7oo+2+UobgKYzbQifwWRcOjXHR41UAOHFxsP6IBg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB6uCGKEV3nxU/BoDViRLbYog2MAZs6eSrWInHYJ0Nb/gYR92Fp+tKTJb2tu7e5gjQ==",
                             PhoneNumber = "09059073557",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1865,7 +1865,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "80574313-6daf-42ca-aeec-5e9d85bb621a",
+                            ConcurrencyStamp = "089f3335-12e3-4973-a96b-9169d3dadbb5",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "zahra@gmail.com",
                             EmailConfirmed = false,
@@ -1875,7 +1875,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ZAHRA@GMAIL.COM",
                             NormalizedUserName = "ZAHRA",
-                            PasswordHash = "AQAAAAIAAYagAAAAECVhwkyLSonniva8HbPyhynX0DgX3qtLAuAwpLuo44UIV8ExkCtK33o3YsyvijKFtg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBpRzxPcW3t4LboCN7mC5+MbPOSfgGWSoposHE016iBo21qyRlDn/AYEawEKBeXFlQ==",
                             PhoneNumber = "09388383857",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -1888,7 +1888,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             AccessFailedCount = 0,
                             Address = "Tehran, Iran",
                             CityId = 1,
-                            ConcurrencyStamp = "84bf25b1-200c-41b8-85bc-2e73ff63a81d",
+                            ConcurrencyStamp = "d9953799-63f7-4424-a5d3-a5f15d1620b4",
                             CreatedAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "amin@gmail.com",
                             EmailConfirmed = false,
@@ -1898,7 +1898,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "AMIN@GMAIL.COM",
                             NormalizedUserName = "AMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIGldSj1UbYkwSfCUuSw4PDZPGgXM6yyRMQDVnv2n3/wuikpoVu7E4JLIzvBf7Z3pg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEBkn0eNybcz94BJL17uh+iKnqkJrbOIf8G8JYoT164C11UF8kovcakVEuataAxMqg==",
                             PhoneNumber = "09059073557",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "Guid.NewGuid().ToString()",
@@ -2090,7 +2090,7 @@ namespace Achareh.Infrastructure.EfCore.Migrations
                         },
                         new
                         {
-                            UserId = 2,
+                            UserId = 3,
                             RoleId = 2
                         },
                         new

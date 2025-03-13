@@ -149,7 +149,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(EditUserViewModel model , CancellationToken cancellationToken)
+        public async Task<IActionResult> Edit(EditUserViewModel model, List<int> selectedHomeServiceIds, CancellationToken cancellationToken)
         {
             if (!ModelState.IsValid)
                 return View(model);
@@ -186,7 +186,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             expert.User.ImagePath = model.ImagePath;
             expert.User = user;
 
-            await _expertAppService.UpdateAsync(expert, cancellationToken);
+            await _expertAppService.UpdateAsync(expert,selectedHomeServiceIds, cancellationToken);
 
             return RedirectToAction("ExpertIndex");
         }

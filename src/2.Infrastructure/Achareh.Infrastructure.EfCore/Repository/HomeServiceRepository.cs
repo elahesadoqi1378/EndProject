@@ -22,22 +22,15 @@ namespace Achareh.Infrastructure.EfCore.Repository
         }
 
         public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
-        {
-            var homeServices = _memoryCache.Get<List<HomeService>>("GetAllAsync");
-
-            if (homeServices is null)
-            {
-                homeServices = await _context.HomeServices
-                .Include(x => x.SubCategory)
-                .Where(x => x.IsDeleted == false)
+        
+              =>  await _context.HomeServices
+                //.Include(x => x.SubCategory)
+                //.Where(x => x.IsDeleted == false)
                 .ToListAsync(cancellationToken);
 
-            }
-            _memoryCache.Set("GetAllAsync", homeServices, TimeSpan.FromMinutes(1));
+           
+        
 
-            return homeServices;
-
-        }
 
 
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)

@@ -31,22 +31,13 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginUserDto loginUserDto,CancellationToken cancellationToken)
         {
-           
-
             if (ModelState.IsValid)
             {
                 var result = await _customerExpertLoginAppService.Login(loginUserDto);
                 if (result.Succeeded)
                 {
-                    var user = await _userManager.FindByEmailAsync(loginUserDto.Email);
-                    if (await _userManager.IsInRoleAsync(user, "Customer") && loginUserDto.Role == "Expert" )  
-                    {
-                        ModelState.AddModelError("Role", "شما نمی‌توانید نقش کارشناس را انتخاب کنید.");
-                        await _customerExpertLoginAppService.Logout(); 
-                        return View(loginUserDto);
-                    }
 
-                    return RedirectToAction("Index", "CustomerDashboard");
+                    return RedirectToAction("Index", "Home");
                 }
 
                 ModelState.AddModelError("", " email or password is wrong");

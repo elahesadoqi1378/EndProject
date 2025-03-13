@@ -4500,6 +4500,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\15da6f66-0702-43e3-b48a-6f712a035a03images_raheb.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\19bcabb3-c04f-4993-ba8d-44f1c1f83995asbabkeshi_ba_khavar.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/19bcabb3-c04f-4993-ba8d-44f1c1f83995asbabkeshi_ba_khavar.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6pe2ov1ciq</Fingerprint>
+      <Integrity>6rrm8JXkLoIScdmbgEkFChXgwgWDdDt528najvC03Ws=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\19bcabb3-c04f-4993-ba8d-44f1c1f83995asbabkeshi_ba_khavar.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Achareh.Endpoint.MVC</SourceId>
@@ -4518,6 +4536,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\2aa2f331-bd90-46f0-93eb-dbfd94264bbaScreenshot 2024-11-01 111824.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\3e6e1d96-da09-43d6-86a8-e65ca34ae5f2images_raheb.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/3e6e1d96-da09-43d6-86a8-e65ca34ae5f2images_raheb.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ww4v8upgiu</Fingerprint>
+      <Integrity>oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\3e6e1d96-da09-43d6-86a8-e65ca34ae5f2images_raheb.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\429709ae-b670-4440-b1ed-0328aa38ecefamozesh_zaban_khareji.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/429709ae-b670-4440-b1ed-0328aa38ecefamozesh_zaban_khareji.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z20ca58j81</Fingerprint>
+      <Integrity>a0lBcC42qxEmg7aIs+inKXnimeK3kFUfwEC4cFxIj6k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\429709ae-b670-4440-b1ed-0328aa38ecefamozesh_zaban_khareji.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Achareh.Endpoint.MVC</SourceId>
@@ -4535,6 +4589,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\5214b10d-fb5d-4c2c-855b-f77009b01e2fScreenshot 2024-12-05 091705.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\664970e5-7e1a-49f7-b88e-57a554183136images_raheb.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/664970e5-7e1a-49f7-b88e-57a554183136images_raheb.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ww4v8upgiu</Fingerprint>
+      <Integrity>oPrICbTEEPolZsKlHQkukhX1t0dT9c5Lt2UuMGOuq38=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\664970e5-7e1a-49f7-b88e-57a554183136images_raheb.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\6711ea17-c7cf-4b93-83a9-320035706d0fimages_raheb.jpg'))">
       <SourceType>Package</SourceType>
@@ -4626,6 +4698,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\8ea40774-34b4-4ff3-b08e-ab229d092369images_raheb.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\a14fa214-8355-435e-bfb1-7bcad6ffa28bbaft_moye_banovan.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/a14fa214-8355-435e-bfb1-7bcad6ffa28bbaft_moye_banovan.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l1yp1n444g</Fingerprint>
+      <Integrity>Z+pFxjJwlOmcxZzgtQ5Hxf1yvn7maK03qaN9xZBJgmI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\a14fa214-8355-435e-bfb1-7bcad6ffa28bbaft_moye_banovan.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Achareh.Endpoint.MVC</SourceId>
@@ -4643,6 +4733,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\aaa97303-c9af-4fbf-9d5e-6d2972cd6b23Screenshot 2024-11-01 111824.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\e4451ec0-95b8-48b9-8d4d-4fc88b98004dghalishoyi.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/e4451ec0-95b8-48b9-8d4d-4fc88b98004dghalishoyi.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1uwmpthgty</Fingerprint>
+      <Integrity>uawug3PuPcpan/dzIfBwFZ1MdFXyz9Jrw8hSzcprsT4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\e4451ec0-95b8-48b9-8d4d-4fc88b98004dghalishoyi.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\ff2b1e0a-27fc-4686-b57a-a027d697ebffamozesh_zaban_khareji.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/customer/ff2b1e0a-27fc-4686-b57a-a027d697ebffamozesh_zaban_khareji.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z20ca58j81</Fingerprint>
+      <Integrity>a0lBcC42qxEmg7aIs+inKXnimeK3kFUfwEC4cFxIj6k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\ff2b1e0a-27fc-4686-b57a-a027d697ebffamozesh_zaban_khareji.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\customer\ff71fb5f-c278-4f47-bf54-e97d9f15d6d9Screenshot 2024-10-20 192501.png'))">
       <SourceType>Package</SourceType>
@@ -6444,6 +6570,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\794b6c54-468b-49bc-8fd5-631b7ab5c729tamirat_mobleman.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\8051a191-ff36-49c7-93f8-a2c09e28b628tarahi_otaq_kodak.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/request/8051a191-ff36-49c7-93f8-a2c09e28b628tarahi_otaq_kodak.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0gdcznquso</Fingerprint>
+      <Integrity>8FGyeUMOt0ORMtSUT2u6C6RUczkMY5QSaLMqWuOI4y8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\8051a191-ff36-49c7-93f8-a2c09e28b628tarahi_otaq_kodak.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\8258b942-3000-46cb-9ab1-c666f60bc1abghalishoyi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Achareh.Endpoint.MVC</SourceId>
@@ -6569,6 +6713,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\965aea26-095d-4f1d-a4a6-bbd9e6b11abatarahi_otaq_kodak.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\a1c10f14-b222-4b84-b33f-592bd80b239btamirat_mobleman_edari.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/request/a1c10f14-b222-4b84-b33f-592bd80b239btamirat_mobleman_edari.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>miy9oc82ab</Fingerprint>
+      <Integrity>/t7YPDdFZz43X0EcdoHZH8Jfw2bOX3lCiw9CHM49j2Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\a1c10f14-b222-4b84-b33f-592bd80b239btamirat_mobleman_edari.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\a6ae8835-6de2-47e6-9bd8-6a108f97d1fctamirat_mobleman_edari.jpg'))">
       <SourceType>Package</SourceType>
@@ -6767,6 +6929,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\e43a0d97-714d-457e-97b3-3d1b15303c8ctamirat_mobleman_edari.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\e4ac98df-39d7-448c-aed5-84111c849dd9taviz_batri_khodro.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Achareh.Endpoint.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Achareh.Endpoint.MVC</BasePath>
+      <RelativePath>images/request/e4ac98df-39d7-448c-aed5-84111c849dd9taviz_batri_khodro.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hu5zq82l6q</Fingerprint>
+      <Integrity>px0AXf4tsse3dsXK7awxgC9xk8qh+EMalCB8RfXI0dc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\e4ac98df-39d7-448c-aed5-84111c849dd9taviz_batri_khodro.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\request\e5eb8bd9-b060-44a7-9f65-64ce661c89ectamirat_mobleman_edari.jpg'))">
       <SourceType>Package</SourceType>

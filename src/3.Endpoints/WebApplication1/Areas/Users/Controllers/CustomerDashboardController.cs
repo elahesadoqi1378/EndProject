@@ -50,7 +50,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
 
-            var paidOrderCount = await _requestAppService.GetPaidByCustomerOrderCountAsync(onlineUser.Id,cancellationToken);
+            var paidOrderCount = await _requestAppService.GetPaidByCustomerOrderCountAsync(onlineUser.Id, cancellationToken);
             ViewBag.PaidOrderCount = paidOrderCount;
 
             int userId = onlineUser.Id;

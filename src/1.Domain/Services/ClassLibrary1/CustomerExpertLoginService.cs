@@ -20,13 +20,11 @@ namespace Achareh.Domain.Services
         }
 
 
-
-      
         public async Task<SignInResult> Login(LoginUserDto loginUserDto)
         {
             var user = await _userManager.FindByEmailAsync(loginUserDto.Email);
 
-            if (user == null || !await _userManager.IsInRoleAsync(user,loginUserDto.Role))
+            if (user == null && !await _userManager.IsInRoleAsync(user, loginUserDto.Role))
             {
                 return SignInResult.Failed;
             }

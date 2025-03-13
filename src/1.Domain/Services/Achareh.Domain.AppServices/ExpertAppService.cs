@@ -1,6 +1,7 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.User;
+using AChareh.Domain.Core.Dtos.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -35,10 +36,15 @@ namespace Achareh.Domain.AppServices
 
               => await _expertService.GetByIdAsync(id, cancellationToken);
 
+        public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
+
+            => await _expertService.GetExpertByIdWithDetailsAsync(id, cancellationToken);
+
         public async Task<int> GetCount(CancellationToken cancellationToken)
 
              => await _expertService.GetCount(cancellationToken);
 
+        
         public Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken)
         {
             return _expertService.InventoryIncreaseAsync(userId, amount, cancellationToken);
@@ -50,15 +56,18 @@ namespace Achareh.Domain.AppServices
         }
         
             
+        public async Task<bool> UpdateAsync(Expert expert, List<int> selectedHomeServiceIds, CancellationToken cancellationToken)
 
-        public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
-
-             => await _expertService.UpdateAsync(expert, cancellationToken);
+             => await _expertService.UpdateAsync(expert,selectedHomeServiceIds ,cancellationToken);
 
         public Task<IdentityResult> UpdateAsync(User user)
         {
             return _expertService.UpdateAsync(user);
         }
 
+        public Task<EditExpertDto?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
+        {
+            return _expertService.GetExpertProfileByIdAsync(id, cancellationToken);
+        }
     }
 }
