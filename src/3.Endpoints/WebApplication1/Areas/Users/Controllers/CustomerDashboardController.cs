@@ -155,8 +155,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 
             int userId = int.Parse(onlineUserId);
 
-            var requests = await _requestAppService.GetCustomerRequestAsync(userId, cancellationToken); // فرض میکنیم چنین متدی در سرویس شما وجود دارد
-
+            var requests = await _requestAppService.GetCustomerRequestAsync(userId, cancellationToken); 
             return View(requests);
         }
         public async Task<IActionResult> RequestDetails(int id, CancellationToken cancellationToken)
@@ -202,10 +201,10 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             if (offerResult)
             {
 
-                var requestResult = await _requestAppService.ChangeStatus(offer.RequestId, (int)StatusEnum.WorkStarted, cancellationToken);
+                var requestResult = await _requestAppService.ChangeStatusOfRequest(StatusEnum.WorkStarted,offer.RequestId, cancellationToken);
                 if (requestResult)
                 {
-                    var winnerResult = await _requestAppService.SetWinnerForRequest(offer.RequestId, offer.Id, cancellationToken);
+                    var winnerResult = await _requestAppService.SetWinnerForRequest(offer.Id,offer.RequestId, cancellationToken);
                     TempData["ResultMessage"] = "Result was successfull and Winner request selected";
                     return RedirectToAction("RequestList");
                 }

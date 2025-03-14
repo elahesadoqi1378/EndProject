@@ -20,7 +20,7 @@ namespace Achareh.Domain.Services
         }
 
       
-        public async Task CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
+        public async Task<bool> CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
 
             => await _expertOfferRepository.CreateAsync(expertOffer,cancellationToken);
         

@@ -328,7 +328,7 @@
 												}
 											</td>
 											<td>
-												<a asp-action="OfferDetails" asp-route-id="@offer.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a>
+												<a asp-action="OfferDetails" asp-route-id="@offer.Id" class="btn btn-primary">جزئیات پیشنهاد</a>
 
 												@if (!winner&&!done && offer.OfferStatusEnum != StatusEnum.WorkPaidByCustomer &&
 																				offer.OfferStatusEnum != StatusEnum.WorkDoneByExpert &&

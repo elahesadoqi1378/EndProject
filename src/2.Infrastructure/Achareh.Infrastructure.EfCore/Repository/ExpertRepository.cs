@@ -86,7 +86,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
             .ThenInclude(x => x.SubCategory)
             .ThenInclude(x => x.Category)
             .Include(x => x.ExpertOffers)
-            .FirstOrDefaultAsync(e => e.UserId == id, cancellationToken);
+            .FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
 
 
         public async Task<EditExpertDto?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)

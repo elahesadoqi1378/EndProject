@@ -72,9 +72,9 @@ namespace Achareh.Infrastructure.EfCore.Repository
                    .Requests
                    .Include(r => r.HomeService)
                    .Include(r => r.City)
-                   .Include(r => r.RequestImages)
-                   .Include(r => r.ExpertOffers)
                    .FirstOrDefaultAsync(e => e.Id == requestId, cancellationToken);
+
+
 
         public async Task<bool> CreateAsync(Request request, CancellationToken cancellationToken)
         {
@@ -232,6 +232,9 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 _logger.LogError(ex, "Error setting winner for request.");
                 return false;
             }
+
+
+
         }
 
         public async Task<int> GetPaidByCustomerOrderCountAsync(int userId,CancellationToken cancellationToken)
@@ -240,6 +243,13 @@ namespace Achareh.Infrastructure.EfCore.Repository
                 .Where(x=>x.Customer.UserId == userId)
                 .Include(x=>x.Customer)
                 .CountAsync(r => r.RequestStatus == StatusEnum.WorkPaidByCustomer , cancellationToken);
+        }
+
+        public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds,int cityId, CancellationToken cancellationToken)
+        {
+            return await _context.Requests
+                .Where(x => homeServiceIds.Contains(x.HomeServiceId) && x.CityId==cityId && x.RequestStatus == StatusEnum.WatingExpertOffer )
+                .ToListAsync(cancellationToken);
         }
 
     }

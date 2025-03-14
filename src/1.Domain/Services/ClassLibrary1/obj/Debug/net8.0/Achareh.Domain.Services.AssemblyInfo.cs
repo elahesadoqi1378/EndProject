@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Achareh.Domain.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+359acd75eebb201c5911ace530b24150adbf84af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec602d25f2a1060a7d71eddef1f9662037ca9ef7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Achareh.Domain.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Achareh.Domain.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

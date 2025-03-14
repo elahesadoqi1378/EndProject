@@ -7,7 +7,11 @@ using Achareh.Endpoint.MVC.Areas.Users.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
+using System.Composition;
+using System.Net;
 using System.Security.Claims;
+using System.Threading;
 
 namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 {
@@ -19,16 +23,17 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         private readonly ICityAppService _cityAppService;
         private readonly IImageService _imageService;
         private readonly IHomeServiceAppService _homeServiceAppService;
+        private readonly IRequestAppService _requestAppService;
+        private readonly IExpertOfferAppService _expertOfferAppService;
 
-
-
-
-        public ExpertDashboardController(UserManager<User> userManager, IExpertAppService expertAppService,ICityAppService cityAppService, IHomeServiceAppService homeServiceAppService)
+        public ExpertDashboardController(UserManager<User> userManager, IExpertAppService expertAppService, ICityAppService cityAppService, IHomeServiceAppService homeServiceAppService, IRequestAppService requestAppService, IExpertOfferAppService expertOfferAppService)
         {
             _userManager = userManager;
             _expertAppService = expertAppService;
             _cityAppService = cityAppService;
             _homeServiceAppService = homeServiceAppService;
+            _requestAppService = requestAppService;
+            _expertOfferAppService = expertOfferAppService;
         }
 
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
@@ -46,7 +51,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             return View(userInfo);
 
         }
-       
+
         public async Task<IActionResult> EditExpertInfo(CancellationToken cancellationToken)
         {
             var cities = await _cityAppService.GetAllAsync(cancellationToken);
@@ -87,7 +92,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             return View(model);
         }
 
-  
+
 
         [HttpPost]
         public async Task<IActionResult> EditExpertInfo(EditExpertInfoViewModel model, List<int> SelectedHomeServices, CancellationToken cancellationToken)
@@ -117,15 +122,15 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
 
-           
 
-         
+
+
             if (model.ImageFile is not null)
             {
                 model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "expert", cancellationToken);
             }
 
-            onlineUser.Id = model.Id; 
+            onlineUser.Id = model.Id;
             onlineUser.FirstName = model.FirstName;
             onlineUser.LastName = model.LastName;
             onlineUser.Email = model.Email;
@@ -139,7 +144,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 
             var expert = await _expertAppService.GetByIdAsync(onlineUser.Id, cancellationToken);
 
-            var result = await _expertAppService.UpdateAsync(expert,model.Skills,cancellationToken);
+            var result = await _expertAppService.UpdateAsync(expert, model.Skills, cancellationToken);
 
             if (result)
             {
@@ -150,6 +155,101 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
 
             return RedirectToAction("EditExpertInfo");
         }
+
+        public async Task<IActionResult> ShowRequests(CancellationToken cancellationToken)
+        {
+            var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (onlineUserId is null)
+                return RedirectToAction("Login", "Account");
+
+            int userId = int.Parse(onlineUserId);
+            var expert = await _expertAppService.GetExpertByIdWithDetailsAsync(userId, cancellationToken);
+            if (expert?.HomeServices == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var expertHomeServices = expert.HomeServices.Select(x => x.Id).ToList();
+            var requests = await _requestAppService.GetRequestsByHomeServices(expertHomeServices,expert.User.CityId,cancellationToken);
+
+            return View(requests);
+
+        }
+
+        public async Task<IActionResult> SendOffer(int requestId, CancellationToken cancellationToken)
+        {
+            var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (onlineUserId is null)
+                return RedirectToAction("Login", "Account");
+
+            int userId = int.Parse(onlineUserId);
+            var expert = await _expertAppService.GetExpertByIdWithDetailsAsync(userId, cancellationToken);
+
+            if (expert == null)
+            {
+                return NotFound("Expert not found.");
+            }
+
+            var request = await _requestAppService.GetByIdAsync(requestId, cancellationToken);
+
+            if (request == null )
+            {
+                return NotFound("Request not found.");
+            }
+
+          
+
+            var model = new OfferViewModel
+            {
+                RequestId = request.Id,
+                OfferDate = DateTime.Now,
+                ExpertId = expert.Id
+            };
+
+            return View(model);
+        }
+        
+
+        [HttpPost]
+        public async Task<IActionResult> SendOffer(OfferViewModel model, CancellationToken cancellationToken)
+        {
+            var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (onlineUserId is null)
+                return RedirectToAction("Login", "Account");
+
+            int expertId = int.Parse(onlineUserId);
+
+            var newOffer = new ExpertOffer
+            {
+                ExpertId = model.ExpertId,
+                RequestId = model.RequestId,
+                SuggestedPrice = model.SuggestedPrice,
+                Description = model.Description,
+                OfferDate = model.OfferDate
+            };
+
+            var result = await _expertOfferAppService.CreateAsync(newOffer, cancellationToken);
+
+            if (!result)
+            {
+                ModelState.AddModelError("", "مشکلی در ایجاد پیشنهاد رخ داده است.");
+                return View(model);
+            }
+
+            return RedirectToAction("ShowRequests", "ExpertDashboard");
+
+        }
+
+
+        public async Task<IActionResult> RequestDetails(int id, CancellationToken cancellationToken)
+        {
+            var request = await _requestAppService.GetByIdAsync(id, cancellationToken);
+            return View(request);
+        }
+
+
     }
+
 }
+
 

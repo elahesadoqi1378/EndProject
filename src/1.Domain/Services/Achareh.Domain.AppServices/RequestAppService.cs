@@ -75,5 +75,9 @@ namespace Achareh.Domain.AppServices
         public async Task<int> GetPaidByCustomerOrderCountAsync(int userId , CancellationToken cancellationToken)
 
          => await _requestService.GetPaidByCustomerOrderCountAsync(userId,cancellationToken);
+
+        public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken)
+
+         => await _requestService.GetRequestsByHomeServices(homeServiceIds, cityId, cancellationToken);
     }
 }

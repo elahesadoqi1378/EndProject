@@ -28,12 +28,21 @@ namespace Achareh.Infrastructure.EfCore.Repository
                               .ThenInclude(x=>x.HomeService)
                               .FirstOrDefaultAsync(x => x.Id == id , cancellationToken);
 
-        public async Task CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
+        public async Task<bool> CreateAsync(ExpertOffer expertOffer , CancellationToken cancellationToken)
         {
+            try
+            {
+                await _context.ExpertOffers.AddAsync(expertOffer, cancellationToken);
+                await _context.SaveChangesAsync(cancellationToken);
+                _logger.LogInformation("expertoffer Added Succesfully");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("something is wrong in create new expertoffer", ex.Message);
+                return false;
+            }
 
-            await _context.ExpertOffers.AddAsync(expertOffer ,cancellationToken);
-            await _context.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation("expertoffer Added Succesfully");
 
         }
         public async Task UpdateAsync(ExpertOffer expertOffer,CancellationToken cancellationToken)
