@@ -26,6 +26,7 @@ namespace Achareh.Domain.Core.Contracts.Service
         Task<bool> ChangeStatusOfRequest(StatusEnum status, int orderId, CancellationToken cancellationToken);
         Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken);
         Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId,CancellationToken cancellationToken);
+        Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken);
 
     }
 }

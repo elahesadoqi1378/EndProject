@@ -1,4 +1,5 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
+using AChareh.Domain.Core.Contracts.AppService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
@@ -7,8 +8,8 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
     public class HomeServiceController : Controller
     {
         private readonly IHomeServiceAppService _homeServiceAppService;
-
-        public HomeServiceController(IHomeServiceAppService homeServiceAppService)
+        private readonly IHomeServiceDapperAppService _homeServiceDapperAppService;
+        public HomeServiceController(IHomeServiceAppService homeServiceAppService, IHomeServiceDapperAppService homeServiceDapperAppService)
         {
             _homeServiceAppService = homeServiceAppService;
         }

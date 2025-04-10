@@ -1,5 +1,6 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Service;
+using Achareh.Domain.Core.Entities.BaseEntities;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Domain.Core.Enums;
 
@@ -79,5 +80,9 @@ namespace Achareh.Domain.AppServices
         public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken)
 
          => await _requestService.GetRequestsByHomeServices(homeServiceIds, cityId, cancellationToken);
+
+        public async Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken)
+
+         => await _requestService.GetWinnerExpertIdAsync(requestId, cancellationToken);
     }
 }

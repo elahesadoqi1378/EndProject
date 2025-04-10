@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LtQnlDn+KdY9zwWrgASgRzPxHjA3wSU98WNxR+hWuGs=",
+  "Source": "Achareh.Endpoint.API",
+  "BasePath": "_content/Achareh.Endpoint.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

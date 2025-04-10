@@ -22,18 +22,18 @@ namespace Achareh.Infrastructure.EfCore.Repository
             _memoryCache = memoryCache;
         }
 
-        public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
 
-        {
-            var categories = _memoryCache.Get<List<Category>>("GetAllAsync");
-            if (categories is null)
-            {
-                categories = await _context.Categories.ToListAsync(cancellationToken);
-            }
-            _memoryCache.Set("GetAllAsync", categories, TimeSpan.FromMinutes(10));
+        //{
+        //    var categories = _memoryCache.Get<List<Category>>("GetAllAsync");
+        //    if (categories is null)
+        //    {
+        //        categories = await _context.Categories.ToListAsync(cancellationToken);
+        //    }
+        //    _memoryCache.Set("GetAllAsync", categories, TimeSpan.FromMinutes(10));
 
-            return categories;
-        }
+        //    return categories;
+        //}
 
         
               
@@ -120,11 +120,11 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
 
         public async Task<List<Category>> GetAllWithSubCategoriesAsync(CancellationToken cancellationToken)
-        
+
              => await _context.Categories
                               .Where(c => !c.IsDeleted)
-                              .Include(c => c.SubCategories.Where(s => !s.IsDeleted)) 
+                              .Include(c => c.SubCategories.Where(s => !s.IsDeleted))
                               .ToListAsync(cancellationToken);
-      
+
     }
 }

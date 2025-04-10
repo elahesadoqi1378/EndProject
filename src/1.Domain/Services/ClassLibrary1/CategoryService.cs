@@ -24,9 +24,6 @@ namespace Achareh.Domain.Services
 
             => await _categoryRepositroy.DeleteAsync(id, cancellationToken);
 
-        public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
-
-            => await _categoryRepositroy.GetAllAsync(cancellationToken);
 
         public async Task<List<Category>> GetAllCategoriesAsync(CancellationToken cancellationToken)
 

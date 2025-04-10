@@ -22,21 +22,21 @@ namespace Achareh.Infrastructure.EfCore.Repository
             _logger = logger;
             _memoryCache = memoryCache;
         }
-        public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
 
-        {
-            var subCategories = _memoryCache.Get<List<SubCategory>>("GetAllAsync");
+        //{
+        //    var subCategories = _memoryCache.Get<List<SubCategory>>("GetAllAsync");
 
-            if (subCategories is null)
-            {
-               subCategories= await _context.SubCategories.ToListAsync(cancellationToken);
-            }
+        //    if (subCategories is null)
+        //    {
+        //       subCategories= await _context.SubCategories.ToListAsync(cancellationToken);
+        //    }
 
-            _memoryCache.Set("GetAllAsync", subCategories, TimeSpan.FromMinutes(10));
+        //    _memoryCache.Set("GetAllAsync", subCategories, TimeSpan.FromMinutes(10));
 
-            return subCategories;
+        //    return subCategories;
 
-        }
+        //}
 
         public async Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken)
 

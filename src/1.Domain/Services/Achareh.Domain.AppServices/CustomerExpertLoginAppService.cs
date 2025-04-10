@@ -1,4 +1,5 @@
-﻿using AChareh.Domain.Core.Contracts.AppService;
+﻿using Achareh.Domain.Core.Entities.User;
+using AChareh.Domain.Core.Contracts.AppService;
 using AChareh.Domain.Core.Contracts.Service;
 using AChareh.Domain.Core.Dtos.User;
 using Microsoft.AspNetCore.Identity;
@@ -26,5 +27,8 @@ namespace Achareh.Domain.AppServices
         public Task Logout()
 
           => _customerExpertLoginService.Logout();
+
+        public async Task<IdentityResult> RegisterAsync(RegisterUserDto registerUserDto, CancellationToken cancellationToken)
+       => await _customerExpertLoginService.RegisterAsync(registerUserDto, cancellationToken);
     }
 }

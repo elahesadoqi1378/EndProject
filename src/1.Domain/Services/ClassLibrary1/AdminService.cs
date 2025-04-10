@@ -50,20 +50,3 @@ namespace Achareh.Domain.Services
       
     }
 }
-//var result = await _signInManager.PasswordSignInAsync(userName, pass, false, false);
-//if (result.Succeeded)
-//{
-//    // پیدا کردن یوزر با استفاده از نام کاربری
-//    var user = await _userManager.FindByNameAsync(userName);
-
-//    // چک کردن رول
-//    if (user != null && await _userManager.IsInRoleAsync(user, "Admin"))
-//    {
-//        return result; // همه‌چیز اوکیه
-//    }
-
-//    // اگر رول Admin نبود، کاربر رو لاگ‌اوت کن
-//    await _signInManager.SignOutAsync();
-//    return SignInResult.Failed; // چون رولش Admin نیست
-//}
-//return result;

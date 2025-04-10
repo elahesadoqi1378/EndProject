@@ -3,7 +3,9 @@ using Achareh.Domain.Core.Contracts.AppService;
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Domain.Core.Entities.User;
+using Achareh.Domain.Core.Enums;
 using Achareh.Endpoint.MVC.Areas.Users.Models;
+using AChareh.Domain.Core.Contracts.AppService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -23,10 +25,11 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         private readonly ICityAppService _cityAppService;
         private readonly IImageService _imageService;
         private readonly IHomeServiceAppService _homeServiceAppService;
+        private readonly IHomeServiceDapperAppService _homeServiceDapperAppService;
         private readonly IRequestAppService _requestAppService;
         private readonly IExpertOfferAppService _expertOfferAppService;
 
-        public ExpertDashboardController(UserManager<User> userManager, IExpertAppService expertAppService, ICityAppService cityAppService, IHomeServiceAppService homeServiceAppService, IRequestAppService requestAppService, IExpertOfferAppService expertOfferAppService)
+        public ExpertDashboardController(UserManager<User> userManager, IExpertAppService expertAppService, ICityAppService cityAppService, IHomeServiceAppService homeServiceAppService, IRequestAppService requestAppService, IExpertOfferAppService expertOfferAppService, IHomeServiceDapperAppService homeServiceDapperAppService, IImageService imageService)
         {
             _userManager = userManager;
             _expertAppService = expertAppService;
@@ -34,23 +37,35 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             _homeServiceAppService = homeServiceAppService;
             _requestAppService = requestAppService;
             _expertOfferAppService = expertOfferAppService;
+            _homeServiceDapperAppService = homeServiceDapperAppService;
+            _imageService = imageService;
         }
 
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
         {
 
-            var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var expert = User.FindFirstValue(ClaimTypes.NameIdentifier);                   
+            var onlineUser = await _userManager.GetUserAsync(User);
 
-            if (onlineUserId is null)
+            if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
+            int userId = int.Parse(expert);
 
-            int userId = int.Parse(onlineUserId);
+            var userInfo = await _expertAppService.GetExpertProfileByIdAsync(onlineUser.Id, cancellationToken);
 
-            var userInfo = await _expertAppService.GetExpertByIdWithDetailsAsync(userId, cancellationToken);
+
 
             return View(userInfo);
 
         }
+        public async Task<IActionResult> ExpertDetail(int expertId, CancellationToken cancellationToken)
+        {
+            var expert = await _expertAppService.GetExpertProfileByIdAsync(expertId, cancellationToken);
+            return View(expert);
+        }
+
+
+
 
         public async Task<IActionResult> EditExpertInfo(CancellationToken cancellationToken)
         {
@@ -61,7 +76,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 Text = sc.Title
             }).ToList();
 
-            var homeServices = await _homeServiceAppService.GetAllAsync(cancellationToken);
+            var homeServices = await _homeServiceDapperAppService.GetAllAsync(cancellationToken);
             ViewBag.HomeServices = homeServices.Select(sh => new SelectListItem
             {
                 Value = sh.Id.ToString(),
@@ -81,7 +96,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 LastName = onlineUser.LastName,
                 Email = onlineUser.Email,
                 Address = onlineUser.Address,
-                //ImagePath = onlineUser.ImagePath,
+                ImagePath = onlineUser.ImagePath,
                 PhoneNumber = onlineUser.PhoneNumber,
                 CityId = onlineUser.CityId,
                 UserName = onlineUser.UserName,
@@ -98,7 +113,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
         public async Task<IActionResult> EditExpertInfo(EditExpertInfoViewModel model, List<int> SelectedHomeServices, CancellationToken cancellationToken)
         {
             var cities = await _cityAppService.GetAllAsync(cancellationToken);
-            var homeServices = await _homeServiceAppService.GetAllAsync(cancellationToken);
+            var homeServices = await _homeServiceDapperAppService.GetAllAsync(cancellationToken);
 
             if (!ModelState.IsValid)
             {
@@ -118,14 +133,19 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 return View(model);
             }
 
+         
+
+
             var onlineUser = await _userManager.GetUserAsync(User);
             if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
 
 
-
-
-            if (model.ImageFile is not null)
+            if (model.ImageFile is null)
+            {
+                model.ImagePath = onlineUser.ImagePath;
+            }
+            else
             {
                 model.ImagePath = await _imageService.UploadImage(model.ImageFile!, "expert", cancellationToken);
             }
@@ -235,6 +255,12 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                 ModelState.AddModelError("", "مشکلی در ایجاد پیشنهاد رخ داده است.");
                 return View(model);
             }
+            var requestResult = await _requestAppService.ChangeStatusOfRequest(StatusEnum.WatingForCustomerToChoose, newOffer.RequestId, cancellationToken);
+            if (!requestResult)
+            {
+                ModelState.AddModelError("", "خطا رخ داده است.");
+                return View(model);
+            }
 
             return RedirectToAction("ShowRequests", "ExpertDashboard");
 
@@ -247,7 +273,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             return View(request);
         }
 
-
+     
     }
 
 }

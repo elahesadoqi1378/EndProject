@@ -4,6 +4,7 @@ using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Domain.Core.Entities.User;
 using Achareh.Endpoint.MVC.Models;
+using AChareh.Domain.Core.Contracts.AppService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -19,22 +20,26 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
         
         private readonly IHomeServiceAppService _homeServiceAppService;
         private readonly ISubCategoryAppService _subCategoryAppService;
+        private readonly IHomeServiceDapperAppService _homeServiceDapperApp;
+        private readonly ISubCategoryDapperAppService _subCategoryDapperAppService;
         private readonly IImageService _imageService;
        
 
 
-        public HomeServiceController(IHomeServiceAppService homeServiceAppService, ISubCategoryAppService subCategoryAppService, IImageService imageService)
+        public HomeServiceController(IHomeServiceAppService homeServiceAppService, ISubCategoryAppService subCategoryAppService, IImageService imageService, IHomeServiceDapperAppService homeServiceDapperApp, ISubCategoryDapperAppService subCategoryDapperAppService)
         {
             _homeServiceAppService = homeServiceAppService;
             _subCategoryAppService = subCategoryAppService;
             _imageService = imageService;
+            _homeServiceDapperApp = homeServiceDapperApp;
+            _subCategoryDapperAppService = subCategoryDapperAppService;
             
             
         }
 
         public async Task<IActionResult> HomeServiceIndex(CancellationToken cancellationToken)
         {
-            var homeServices = await _homeServiceAppService.GetAllAsync(cancellationToken);
+            var homeServices = await _homeServiceDapperApp.GetAllAsync(cancellationToken);
             return View(homeServices);
         }
         [HttpGet]
@@ -56,7 +61,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
            
             if (!ModelState.IsValid)
             {
-                ViewBag.SubCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+                ViewBag.SubCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
                 return View(model);
             }
             if (model.ImageFile is not null)
@@ -76,7 +81,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             if (!result)
             {
                 ModelState.AddModelError("", "مشکلی در ایجاد زیردسته رخ داده است.");
-                ViewBag.SubCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+                ViewBag.SubCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
                 return View(model);
             }
 
@@ -90,7 +95,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             if (homeService == null)
                 return NotFound();
 
-            var subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+            var subCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
             ViewBag.SubCategories = subCategories.Select(sc => new SelectListItem
             {
                 Value = sc.Id.ToString(),
@@ -115,7 +120,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Subcategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+                ViewBag.Subcategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
                 return View(model);
             }
 
@@ -138,7 +143,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
             if (!result)
             {
                 ModelState.AddModelError("", "مشکلی در به‌روزرسانی زیردسته رخ داده است.");
-                ViewBag.subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+                ViewBag.subCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
                 return View(model);
             }
 

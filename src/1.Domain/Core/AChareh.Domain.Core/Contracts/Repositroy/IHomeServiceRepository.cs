@@ -10,7 +10,7 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
 {
     public interface IHomeServiceRepository
     {
-        Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken);
+        //Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken);
         Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task<bool> CreateAsync(HomeService homeService, CancellationToken cancellationToken);
         Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken);

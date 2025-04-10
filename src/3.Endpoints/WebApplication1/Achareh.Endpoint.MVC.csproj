@@ -27,6 +27,7 @@
     <ProjectReference Include="..\..\1.Domain\Services\Achareh.Domain.AppServices\Achareh.Domain.AppServices.csproj" />
     <ProjectReference Include="..\..\1.Domain\Services\ClassLibrary1\Achareh.Domain.Services.csproj" />
     <ProjectReference Include="..\..\2.Infrastructure\Achareh.Infrastructure.EfCore\Achareh.Infrastructure.EfCore.csproj" />
+    <ProjectReference Include="..\..\2.Infrastructure\AcharehInfraStructure.Dapper\AcharehInfraStructure.Dapper.csproj" />
   </ItemGroup>
 
   <ItemGroup>

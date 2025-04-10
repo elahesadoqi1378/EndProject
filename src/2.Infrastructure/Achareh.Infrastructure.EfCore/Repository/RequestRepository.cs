@@ -65,6 +65,7 @@ namespace Achareh.Infrastructure.EfCore.Repository
                .Include(r => r.ExpertOffers)
                .ToListAsync(cancellationToken);
 
+       
 
         public async Task<Request?> GetByIdWithDetailsAsync(int requestId, CancellationToken cancellationToken)
 
@@ -250,6 +251,16 @@ namespace Achareh.Infrastructure.EfCore.Repository
             return await _context.Requests
                 .Where(x => homeServiceIds.Contains(x.HomeServiceId) && x.CityId==cityId && x.RequestStatus == StatusEnum.WatingExpertOffer )
                 .ToListAsync(cancellationToken);
+        }
+        public async Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken)
+        {
+            return await _context.Requests
+            .Where(r => r.Id == requestId)
+            .Select(r => r.ExpertOffers
+            .Where(s => s.Id == r.WinnerId)
+            .Select(s => (int?)s.ExpertId)
+            .FirstOrDefault())
+            .FirstOrDefaultAsync(cancellationToken);
         }
 
     }

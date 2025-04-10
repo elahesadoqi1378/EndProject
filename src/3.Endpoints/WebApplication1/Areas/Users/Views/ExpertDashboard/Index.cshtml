@@ -1,5 +1,5 @@
-﻿@using Achareh.Domain.Core.Entities.User
-@model Expert
+﻿@using AChareh.Domain.Core.Dtos.User
+@model EditExpertDto
 
 <!DOCTYPE html>
 <html lang="en">
@@ -98,62 +98,54 @@
 						</span>
 					</a>
 				</div>
-				<div class="sidebar-menu">
-					<ul class="nav nav-tabs">
-						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
+				<div class="sidebar-part">
+					<div class="sidebar-body">
+						<div class="sidebar-header">
+							<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
+								<img src="~/UsersTemplate/images/logo.png"
+									 alt="logo">
+							</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
+						</div>
+						<div class="sidebar-content">
 
-					</ul>
-					<div class="tab-pane active" id="main-menu">
-						<ul class="navbar-list">
-
-							<li class="navbar-item navbar-dropdown">
-								<a class="navbar-link" href="#">
-									<span>
-										دسته
-										بندی
-									</span><i class="fas fa-plus"></i>
-								</a>
-								<ul class="dropdown-list">
-									<li><a class="dropdown-link" href="category-list.html">تمیزکاری</a></li>
-									<li><a class="dropdown-link" href="category-list.html">ساختمان</a></li>
-									<li><a class="dropdown-link" href="category-list.html">تعمیرات اشیا</a></li>
-									<li><a class="dropdown-link" href="category-list.html">اسباب کشی و حمل بار</a></li>
-									<li><a class="dropdown-link" href="category-list.html">خودرو</a></li>
-									<li><a class="dropdown-link" href="category-list.html">سلامت و زیبایی</a></li>
-									<li><a class="dropdown-link" href="category-list.html">سازمان ها و مجتمع ها</a></li>
-									<li><a class="dropdown-link" href="category-list.html">سایر</a></li>
+							<div class="sidebar-menu">
+								<ul class="nav nav-tabs">
+									<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
 
 								</ul>
-							</li>
+								<div class="tab-pane active" id="main-menu">
+									<ul class="navbar-list">
 
+										<li class="navbar-item navbar-dropdown">
+											<a class="navbar-link" href="#">
+												<span>صفحات</span><i class="fas fa-plus"></i>
+											</a>
+											<ul class="dropdown-list">
+												<li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
+												@if (User.IsInRole("Expert"))
+												{
+													<li><a asp-controller="ExpertDashboard" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+												}
+												else
+												{
+													<li><a asp-controller="CustomerDashboard" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+												}
 
-							<li class="navbar-item navbar-dropdown">
-								<a class="navbar-link" href="#">
-									<span>صفحات</span><i class="fas fa-plus"></i>
-								</a>
-								<ul class="dropdown-list">
-									<li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
-									<li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
-									<li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
-									<li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
-									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
-									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li>
-									<li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
-								</ul>
-							</li>
-							<li class="navbar-item navbar-dropdown">
-								<a class="navbar-link" href="#">
-									<span>
-										وبلاگ
-									</span><i class="fas fa-plus"></i>
-								</a>
-								<ul class="dropdown-list">
-									<li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
-									<li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
-								</ul>
-							</li>
-							<li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
-						</ul>
+												<li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
+
+												<li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
+											</ul>
+										</li>
+
+									</ul>
+								</div>
+
+							</div>
+							<div class="sidebar-footer">
+								<p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
+								<p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="sidebar-footer">
@@ -200,24 +192,24 @@
 			<div class="row">
 				<div class="col-sm-4 col-md-3 col-lg-2">
 					
-					@if (Model.User.ImagePath == null)
+					@if (Model.PicturePath == null)
 					{
 						<p>تصویری یافت نشد</p>
 					}
 					else
 					{
-						<div class="dash-avatar"><a href="#"><img src="@Model.User.ImagePath" alt="avatar"></a></div>
+						<div class="dash-avatar"><a href="#"><img src="@Model.PicturePath" alt="avatar"></a></div>
 					}
 				</div>
 				<div class="col-sm-8 col-md-9 col-lg-3">
 					<div class="dash-intro">
-						<h4><a href="#">@($"{Model.User.FirstName} {Model.User.LastName}")</a></h4>
+						<h4><a href="#">@($"{Model.FirstName} {Model.LastName}")</a></h4>
 						<h5>فروشنده جدید</h5>
 					</div>
 					<ul class="dash-meta">
-						<li><i class="fas fa-phone-alt"></i><span>@Model.User.PhoneNumber</span></li>
-						<li><i class="fas fa-envelope"></i><span>@Model.User.Email</span></li>
-						<li><i class="fas fa-map-marker-alt"></i><span>@Model.User.City.Title</span></li>
+						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
+						<li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>
+						<li><i class="fas fa-map-marker-alt"></i><span>@Model.CityTitle</span></li>
 					</ul>
 				</div>
 				<div class="col-lg-7">
@@ -247,9 +239,9 @@
 				<div class="col-lg-12">
 					<div class="dash-menu-list">
 						<ul>
-							<li class="navbar-item"><a asp-controller="Profile" asp-action="Index" class="navbar-link active">پروفایل</a></li>
-							<li class="navbar-item"><a asp-controller="Profile" asp-action="RequestList" class="navbar-link">سفارشات من</a></li>
-							<li class="navbar-item"><a class="navbar-link" asp-controller="Profile" asp-action="UpdateCustomerProfile">ویرایش مشخصات </a></li>
+							<li class="navbar-item"><a asp-controller="ExpertDashboard" asp-action="Index" class="navbar-link active">پروفایل</a></li>
+							<li class="navbar-item"><a asp-controller="ExpertDashboard" asp-action="ShowRequests" class="navbar-link">سفارشات من</a></li>
+							<li class="navbar-item"><a class="navbar-link" asp-controller="ExpertDashboard" asp-action="EditExpertInfo">ویرایش مشخصات </a></li>
 							<li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
 						</ul>
 					</div>
@@ -267,9 +259,9 @@
 						</div>
 						<div class="profile-intro">
 							<div class="profile-author">
-								<a href="#"><img src="@Model.User.ImagePath" alt="avatar"></a>
-								<h4>@($"{Model.User.FirstName} {Model.User.LastName}")</h4>
-								<p><span>عضو شده:</span>@Model.User.CreatedAt</p>
+								<a href="#"><img src="@Model.PicturePath" alt="avatar"></a>
+								<h4>@($"{Model.FirstName} {Model.LastName}")</h4>
+								<p><span>عضو شده:</span>@Model.RegisterDate</p>
 							</div>
 							<ul class="account-list">
 								<li>
@@ -279,7 +271,7 @@
 
 								<li>
 									<h6>موجودی:</h6>
-									<p>@Model.User.Inventory</p>
+									<p>@Model.Balance</p>
 								</li>
 
 							</ul>
@@ -295,22 +287,22 @@
 
 							<li>
 								<h6>استان:</h6>
-								<p>@Model.User.City.Title</p>
+								<p>@Model.CityTitle</p>
 							</li>
 
 							<li>
 								<h6>آدرس:</h6>
-								<p>@Model.User.Address</p>
+								<p>@Model.Address</p>
 							</li>
 
 
 							<li>
 								<h6>ایمیل:</h6>
-								<p>@Model.User.Email</p>
+								<p>@Model.Email</p>
 							</li>
 							<li>
 								<h6>تلفن:</h6>
-								<p>@Model.User.PhoneNumber</p>
+								<p>@Model.PhoneNumber</p>
 							</li>
 
 						</ul>

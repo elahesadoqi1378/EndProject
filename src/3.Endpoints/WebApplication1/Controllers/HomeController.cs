@@ -15,8 +15,7 @@ namespace Achareh.Endpoint.MVC.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogInformation("About page visited at {Time} by User {UserId}", DateTime.UtcNow.ToLongTimeString(), 5);
-            return View();
+            return RedirectToAction("Register", "Account", new { area = "Users" });
         }
 
         public IActionResult Privacy()

@@ -2,6 +2,7 @@
 using Achareh.Domain.Core.Contracts.Service;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Endpoint.MVC.Models;
+using AChareh.Domain.Core.Contracts.AppService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -16,13 +17,15 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
 
         private readonly ICategoryAppService _categoryAppService;
         private readonly ISubCategoryAppService _subCategoryAppService;
+        private readonly ISubCategoryDapperAppService _subCategoryDapperApp;
         private readonly IImageService _imageService;
 
-        public SubCategoryController(ISubCategoryAppService subCategoryAppService, ICategoryAppService categoryAppService, IImageService imageService)
+        public SubCategoryController(ISubCategoryAppService subCategoryAppService, ICategoryAppService categoryAppService, IImageService imageService, ISubCategoryDapperAppService subCategoryDapperApp)
         {
             _categoryAppService = categoryAppService;
             _subCategoryAppService = subCategoryAppService;
             _imageService = imageService;
+            _subCategoryDapperApp = subCategoryDapperApp;
         }
 
         public async Task<IActionResult> SubCategoryIndex(CancellationToken cancellationToken)
@@ -35,7 +38,7 @@ namespace Achareh.Endpoint.MVC.Areas.Admin.Controllers
                 Text = c.Title
             }).ToList();
 
-            var subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+            var subCategories = await _subCategoryDapperApp.GetAllAsync(cancellationToken);
 
             return View(subCategories);
 

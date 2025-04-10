@@ -10,7 +10,7 @@ namespace Achareh.Domain.Core.Contracts.Service
 {
     public interface IHomeServiceService
     {
-        Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken);
+        //Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken);
         Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task<bool> CreateAsync(HomeService homeService, CancellationToken cancellationToken);
         

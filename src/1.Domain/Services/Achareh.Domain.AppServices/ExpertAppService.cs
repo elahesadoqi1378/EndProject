@@ -69,5 +69,10 @@ namespace Achareh.Domain.AppServices
         {
             return _expertService.GetExpertProfileByIdAsync(id, cancellationToken);
         }
+
+        public Task<Expert?> GetExpertByExpertIdAsync(int expertId, CancellationToken cancellationToken)
+        {
+            return _expertService.GetExpertByExpertIdAsync(expertId, cancellationToken);
+        }
     }
 }

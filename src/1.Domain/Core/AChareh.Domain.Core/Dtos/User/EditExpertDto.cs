@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Achareh.Domain.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,7 @@ namespace AChareh.Domain.Core.Dtos.User
     public class ServiceDto
     {
         public int Id { get; set; }
+        public string PicturePath { get; set; } = string.Empty;
         public string Title { get; set; } = string.Empty;
     
     }
@@ -36,14 +38,17 @@ namespace AChareh.Domain.Core.Dtos.User
     {
         public int Id { get; set; }
         public string Description { get; set; } = string.Empty;
-        public string Status { get; set; } = string.Empty;
-        public decimal Price { get; set; }
+        public double Price { get; set; }
+        public StatusEnum SuggestionStatus { get; set; }
     }
 
     public class RatingDto
     {
-        public int Id { get; set; }
-        public int Score { get; set; }
+        public double Rate { get; set; }
+        public string Title { get; set; }
+        public string CustomerPicturePath { get; set; }
+        public DateTime RegisterDate { get; set; }
+        public string CustomerUserName { get; set; }
         public string Comment { get; set; } = string.Empty;
     }
 }

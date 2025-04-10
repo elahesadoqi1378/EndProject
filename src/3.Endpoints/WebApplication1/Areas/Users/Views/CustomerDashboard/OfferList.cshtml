@@ -309,7 +309,7 @@
 									{
 										<tr>
 											<td>@offer.Id</td>
-											<td>@offer.Expert.User.FirstName @offer.Expert.User.LastName </td>
+											<td><a asp-controller="ExpertDashboard" asp-action="ExpertDetail" asp-route-expertId=@offer.Expert.User.Id>@offer.Expert.User.FirstName @offer.Expert.User.LastName </a></td>
 											<td>@offer.SuggestedPrice</td>
 											<td>@offer.CreatedAt</td>
 											<td>@offer.OfferDate</td>

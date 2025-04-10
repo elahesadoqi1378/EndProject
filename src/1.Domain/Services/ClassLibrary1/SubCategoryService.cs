@@ -27,9 +27,9 @@ namespace Achareh.Domain.Services
 
             => await _subCategoryRepository.DeleteAsync(id, cancellationToken);
 
-        public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
 
-           => await _subCategoryRepository.GetAllAsync(cancellationToken);
+        //   => await _subCategoryRepository.GetAllAsync(cancellationToken);
 
         public async Task<List<SubCategory>> GetAllSubCategoriesAsync(CancellationToken cancellationToken)
 

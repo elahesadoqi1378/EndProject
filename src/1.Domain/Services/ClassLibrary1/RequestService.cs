@@ -2,8 +2,10 @@
 
 using Achareh.Domain.Core.Contracts.Repositroy;
 using Achareh.Domain.Core.Contracts.Service;
+using Achareh.Domain.Core.Entities.BaseEntities;
 using Achareh.Domain.Core.Entities.Request;
 using Achareh.Domain.Core.Enums;
+using System.Threading;
 
 namespace Achareh.Domain.Services
 {
@@ -79,5 +81,9 @@ namespace Achareh.Domain.Services
         public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken)
 
          => await _requestRepository.GetRequestsByHomeServices(homeServiceIds,cityId, cancellationToken);
+
+        public async Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken)
+
+        => await _requestRepository.GetWinnerExpertIdAsync(requestId,cancellationToken); 
     }
 }

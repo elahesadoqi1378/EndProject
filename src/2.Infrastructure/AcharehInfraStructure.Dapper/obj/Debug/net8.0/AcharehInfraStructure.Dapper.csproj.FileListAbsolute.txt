@@ -1,0 +1,16 @@
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\bin\Debug\net8.0\AcharehInfraStructure.Dapper.deps.json
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\bin\Debug\net8.0\AcharehInfraStructure.Dapper.dll
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\bin\Debug\net8.0\AcharehInfraStructure.Dapper.pdb
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\bin\Debug\net8.0\AChareh.Domain.Core.dll
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\bin\Debug\net8.0\AChareh.Domain.Core.pdb
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.csproj.AssemblyReference.cache
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.AssemblyInfoInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.AssemblyInfo.cs
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.sourcelink.json
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehI.437C41F4.Up2Date
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.dll
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\refint\AcharehInfraStructure.Dapper.dll
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\AcharehInfraStructure.Dapper.pdb
+C:\Users\ARYA\source\repos\EndProject\src\2.Infrastructure\AcharehInfraStructure.Dapper\obj\Debug\net8.0\ref\AcharehInfraStructure.Dapper.dll

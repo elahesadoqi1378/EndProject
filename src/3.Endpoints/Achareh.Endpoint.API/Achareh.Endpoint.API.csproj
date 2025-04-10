@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\0.Framework\ClassLibrary1\Framework.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Core\AChareh.Domain.Core\AChareh.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Services\Achareh.Domain.AppServices\Achareh.Domain.AppServices.csproj" />
+    <ProjectReference Include="..\..\1.Domain\Services\ClassLibrary1\Achareh.Domain.Services.csproj" />
+    <ProjectReference Include="..\..\2.Infrastructure\Achareh.Infrastructure.EfCore\Achareh.Infrastructure.EfCore.csproj" />
+    <ProjectReference Include="..\..\2.Infrastructure\AcharehInfraStructure.Dapper\AcharehInfraStructure.Dapper.csproj" />
+  </ItemGroup>
+
+</Project>

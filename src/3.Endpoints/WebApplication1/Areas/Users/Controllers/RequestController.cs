@@ -75,7 +75,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             var onlineUser = await _userManager.GetUserAsync(User);
             if (onlineUser == null)
             {
-                ModelState.AddModelError("", "مشتری یافت نشد.");   //beporsim
+                ModelState.AddModelError("", "مشتری یافت نشد.");   
                 return View(model);
             }
 

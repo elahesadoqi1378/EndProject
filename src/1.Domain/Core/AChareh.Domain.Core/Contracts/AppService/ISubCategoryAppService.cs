@@ -6,7 +6,7 @@ namespace Achareh.Domain.Core.Contracts.AppService
 {
     public interface ISubCategoryAppService
     {
-        Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken);
+        //Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken);
         Task<List<SubCategory>> GetAllSubCategoriesAsync(CancellationToken cancellationToken);
         Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken);

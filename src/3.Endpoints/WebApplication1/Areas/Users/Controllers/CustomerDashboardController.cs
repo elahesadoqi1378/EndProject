@@ -272,7 +272,7 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                         var suggestion = await _expertOfferAppService.GetByIdAsync(SuggestionId, cancellationToken);
                         if (suggestion != null)
                         {
-                            var expert = await _expertAppService.GetByIdAsync(suggestion.ExpertId, cancellationToken);
+                            var expert = await _expertAppService.GetExpertByExpertIdAsync(suggestion.ExpertId, cancellationToken);
                             if (expert != null)
                             {
                                 double expertShare = price * 0.7;
@@ -281,7 +281,8 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
                                 var expertIncreaseResult = await _expertAppService.InventoryIncreaseAsync(expert.Id.ToString(), expertShare, cancellationToken);
                                 if (expertIncreaseResult)
                                 {
-                                    var adminIncreaseResult = await _adminAppService.InventoryIncreaseAsync("1", adminShare, cancellationToken);
+                                    double remainingAdminShare = price - expertShare;
+                                    var adminIncreaseResult = await _adminAppService.InventoryIncreaseAsync("1", remainingAdminShare, cancellationToken);
                                     if (adminIncreaseResult)
                                     {
                                         TempData["ResultMessage"] = "پرداخت وجه موفقیت آمیز بود";
@@ -319,26 +320,33 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             TempData["PaymentResult"] = "خطا در پرداخت وجه: تغییر وضعیت پیشنهاد صورت نگرفت";
             return RedirectToAction("RequestList");
         }
-        public async Task<IActionResult> SetReview(int requestId, int expertId)
+     
+        public async Task<IActionResult> SetReview(int requestId, int winnerId, CancellationToken cancellationToken)
         {
             var onlineUser = await _userManager.GetUserAsync(User);
 
             if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
 
+            var expertId = await _requestAppService.GetWinnerExpertIdAsync(requestId, cancellationToken);
+
+
             var model = new CreateReviewDto
             {
                 RequestId = requestId,
-                ExpertId = expertId
+                ExpertId = expertId ?? 0
             };
 
             ViewBag.UserName = $"{onlineUser.FirstName} {onlineUser.LastName}";
 
             return View(model);
+
+           
         }
         [HttpPost]
         public async Task<IActionResult> SetReview(CreateReviewDto model, CancellationToken cancellationToken)
         {
+
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -349,27 +357,27 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
             if (onlineUser is null)
                 return RedirectToAction("Login", "Account");
 
-            var customer = await _customerAppService.GetrByIdAsync(onlineUser.Id, cancellationToken);
+            var customer = await _customerAppService.GetCustomerByIdAsync(onlineUser.Id, cancellationToken);
 
             if (customer == null)
             {
-               
-                ModelState.AddModelError(string.Empty, "customer with this property didnot found.");
+
+                ModelState.AddModelError(string.Empty, "مشتری یافت نشد.");
                 return View(model);
             }
+
+
 
             model.CustomerId = customer.Id;
 
             await _reviewAppService.CreateAsync(model, cancellationToken);
 
-           
-            var request = await _requestAppService.GetByIdAsync(model.RequestId, cancellationToken); 
+            var request = await _requestAppService.GetRequestByIdAsync(model.RequestId, cancellationToken);
             if (request != null)
             {
                 request.IsReviewd = true;
-                await _requestAppService.UpdateAsync(request, cancellationToken); 
+                await _requestAppService.UpdateAsync(request, cancellationToken);
             }
-
             TempData["ResultMessage"] = "your comment succefully registerd.";
             return RedirectToAction("RequestList");
         }

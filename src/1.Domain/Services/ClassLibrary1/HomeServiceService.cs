@@ -22,9 +22,9 @@ namespace Achareh.Domain.Services
 
             => await _homeServiceRepository.DeleteAsync(id, cancellationToken);
 
-        public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
 
-           => await _homeServiceRepository.GetAllAsync(cancellationToken);
+        //   => await _homeServiceRepository.GetAllAsync(cancellationToken);
 
       
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)

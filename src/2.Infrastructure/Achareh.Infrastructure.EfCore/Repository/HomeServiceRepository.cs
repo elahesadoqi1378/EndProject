@@ -21,12 +21,12 @@ namespace Achareh.Infrastructure.EfCore.Repository
             _logger = logger;
         }
 
-        public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
         
-              =>  await _context.HomeServices
-                //.Include(x => x.SubCategory)
-                //.Where(x => x.IsDeleted == false)
-                .ToListAsync(cancellationToken);
+        //      =>  await _context.HomeServices
+        //        //.Include(x => x.SubCategory)
+        //        //.Where(x => x.IsDeleted == false)
+        //        .ToListAsync(cancellationToken);
 
            
         
@@ -106,8 +106,8 @@ namespace Achareh.Infrastructure.EfCore.Repository
         public async Task<List<HomeService>> GetAllWithSubCategoryId(int subCategoryId, CancellationToken cancellationToken)
 
           => await _context.HomeServices
-                           .Include(x=>x.SubCategory)
-                           .ThenInclude(x=>x.Category)
+                           .Include(x => x.SubCategory)
+                           .ThenInclude(x => x.Category)
                            .Where(x => x.SubCategoryId == subCategoryId)
                            .ToListAsync(cancellationToken);
     }

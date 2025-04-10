@@ -22,6 +22,7 @@ namespace Achareh.Domain.Core.Contracts.AppService
         Task<IdentityResult> UpdateAsync(User user);
         Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken);
         Task<EditExpertDto?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken);
+        Task<Expert?> GetExpertByExpertIdAsync(int expertId, CancellationToken cancellationToken);
 
 
 

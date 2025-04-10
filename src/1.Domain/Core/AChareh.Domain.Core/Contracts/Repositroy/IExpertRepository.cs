@@ -19,6 +19,7 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
         Task<bool> UpdateAsync(Expert expert, List<int> selectedHomeServiceIds, CancellationToken cancellationToken);
         Task<bool> InventoryIncreaseAsync(string userId, double amount, CancellationToken cancellationToken);
         Task<EditExpertDto?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken);
+        Task<Expert?> GetExpertByExpertIdAsync(int expertId, CancellationToken cancellationToken);
 
 
 

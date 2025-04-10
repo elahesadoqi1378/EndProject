@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Achareh.Domain.AppServices"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AChareh.Domain.Core", "src\1.Domain\Core\AChareh.Domain.Core\AChareh.Domain.Core.csproj", "{266D9D93-735C-4DEE-9FEA-6F95C7165B86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcharehInfraStructure.Dapper", "src\2.Infrastructure\AcharehInfraStructure.Dapper\AcharehInfraStructure.Dapper.csproj", "{8AEEAC21-1122-4AE3-A437-D95496A472A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Achareh.Endpoint.API", "src\3.Endpoints\Achareh.Endpoint.API\Achareh.Endpoint.API.csproj", "{B6732969-0678-4261-BEA3-602EA8CF2030}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,14 @@ Global
 		{266D9D93-735C-4DEE-9FEA-6F95C7165B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{266D9D93-735C-4DEE-9FEA-6F95C7165B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{266D9D93-735C-4DEE-9FEA-6F95C7165B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AEEAC21-1122-4AE3-A437-D95496A472A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AEEAC21-1122-4AE3-A437-D95496A472A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AEEAC21-1122-4AE3-A437-D95496A472A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AEEAC21-1122-4AE3-A437-D95496A472A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6732969-0678-4261-BEA3-602EA8CF2030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6732969-0678-4261-BEA3-602EA8CF2030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6732969-0678-4261-BEA3-602EA8CF2030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6732969-0678-4261-BEA3-602EA8CF2030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +88,7 @@ Global
 		{EB96789F-FCB0-496D-BC9B-177232484303} = {547B28D7-13C3-45D8-B0B0-0D66900AC89F}
 		{B5D5431A-74B4-4D15-9C99-CBB3673542A9} = {547B28D7-13C3-45D8-B0B0-0D66900AC89F}
 		{266D9D93-735C-4DEE-9FEA-6F95C7165B86} = {E7EB5944-8F8A-4F4D-B60A-0327C0C443D6}
+		{8AEEAC21-1122-4AE3-A437-D95496A472A9} = {BA24A936-5258-4FBC-9C03-9ABE4691C49A}
+		{B6732969-0678-4261-BEA3-602EA8CF2030} = {AFC90840-AD3C-49EC-B599-A6DE2F05ABD7}
 	EndGlobalSection
 EndGlobal

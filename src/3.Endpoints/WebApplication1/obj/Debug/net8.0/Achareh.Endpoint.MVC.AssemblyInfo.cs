@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Achareh.Endpoint.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec602d25f2a1060a7d71eddef1f9662037ca9ef7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42619bc664e06802854293f520364bb128e3680c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Achareh.Endpoint.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Achareh.Endpoint.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

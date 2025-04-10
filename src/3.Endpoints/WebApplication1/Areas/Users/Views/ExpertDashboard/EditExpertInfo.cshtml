@@ -1,6 +1,7 @@
 ﻿@using Achareh.Endpoint.MVC.Areas.Users.Models
 @model EditExpertInfoViewModel
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,15 +26,34 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 <body>
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>جزئیات نوار راست</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item"><a href="leftbar-list.html">لیست نوار راست</a></li>
+							<li class="breadcrumb-item active" aria-current="page">جزئیات نوار راست</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="dash-header-part">
 		<div class="container">
 			<div class="row">
-				<div class="circular-image">
-					<img src="@Model.ImagePath" alt="avatar">
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<div class="dash-avatar">
+						<a href="#"><img src="@(!string.IsNullOrEmpty(Model.ImagePath) ? Model.ImagePath : "/images/default.png")" alt="avatar"></a>
+					</div>
 				</div>
 				<div class="col-sm-8 col-md-9 col-lg-3">
 					<div class="dash-intro">
-						<h4><a href="#">@Model.FirstName @Model.LastName</a></h4>
+						<h4><a href="#">@($"{Model.FirstName} {Model.LastName}")</a></h4>
+						<h5>فروشنده جدید</h5>
 					</div>
 					<ul class="dash-meta">
 						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
@@ -41,13 +61,48 @@
 						<li><i class="fas fa-map-marker-alt"></i><span>@Model.Address</span></li>
 					</ul>
 				</div>
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-list">
+								@* <h2>@(Model.Suggestions?.Count() ?? 0)</h2> *@
+								<p>تعداد درخواست ها</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-book">
+								@* <h2>@(Model.Suggestions?.Where(r => r.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count() ?? 0)</h2> *@
+								<p>درخواست‌های انجام شده</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-rev">
+								@* <h2>@(Model.Ratings?.Count() ?? 0)</h2> *@
+								<p>مجموع نظرات</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="dash-menu-list">
+						<ul>
+							<li class="navbar-item"><a asp-controller="ExpertDashBoard" asp-action="Index" class="navbar-link active">پروفایل</a></li>
+							<li class="navbar-item"><a asp-controller="ExpertDashBoard" asp-action="ShowRequests" class="navbar-link">سفارشات من</a></li>
+							<li class="navbar-item"><a asp-controller="ExpertDashBoard" asp-action="EditExpertInfo" class="navbar-link">ویرایش مشخصات </a></li>
+							<li class="navbar-item"><a asp-controller="Account" asp-action="Logout" class="navbar-link">خروج</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
+
 	<div class="setting-part">
 		<div class="container">
-			<form class="setting-form" asp-controller="ExpertDashboard" asp-action="EditExpertInfo" method="post" enctype="multipart/form-data">
+			<form class="setting-form" asp-controller="ExpertDashBoard" asp-action="EditExpertInfo" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<input asp-for="Id" type="hidden">
 
@@ -132,11 +187,18 @@
 							<input asp-for="Price" type="number" step="100000" class="form-control" placeholder="@Model.Price">
 						</div>
 					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label class="form-label">آپلود عکس جدید</label>
+							<input type="file" asp-for="ImageFile" class="form-control" />
 
+						</div>
+						<span asp-validation-for="ImageFile" class="text-danger"></span>
+					</div>
 					<div class="col-lg-12">
 						<div class="form-group text-center mt-5">
 							<button class="btn btn-inline">
-								<i class="fas fa-user-check"></i><span>بروز رسانی اطلاعات</span>
+								<i class="fas fa-user-check"></i><span>ثبت اطلاعات</span>
 							</button>
 						</div>
 					</div>

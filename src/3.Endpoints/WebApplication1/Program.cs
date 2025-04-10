@@ -14,6 +14,10 @@ using Achareh.Domain.Core.Contracts.Repositroy;
 using Microsoft.AspNetCore.Http.Features;
 using AChareh.Domain.Core.Contracts.AppService;
 using AChareh.Domain.Core.Contracts.Service;
+using AChareh.Domain.Core.Contracts.Repositroy;
+using AcharehInfraStructure.Dapper.DapperRepositories;
+using AcharehInfraStructure.Dapper.Common;
+
 
 
 
@@ -46,7 +50,7 @@ Log.Logger = new LoggerConfiguration()
 .CreateLogger();
 
 
-
+builder.Services.AddSingleton<DapperAppDbContext>();
 
 builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<ICategoryRepositroy, CategoryRepository>();
@@ -58,6 +62,11 @@ builder.Services.AddScoped<IHomeServiceRepository, HomeServiceRepository>();
 builder.Services.AddScoped<IRequestRepository, RequestRepository>();
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
+builder.Services.AddScoped<ICityDapperRepository, CityDapperRepository>();
+builder.Services.AddScoped<ICategoryDapperRepository, CategoryDapperRepository>();
+builder.Services.AddScoped<ISubCategoryDapperRepository, SubCategoryDapperRepository>();
+builder.Services.AddScoped<IHomeServiceDapperRepository, HomeServiceDapperRepository>();
+
 
 
 ;
@@ -74,6 +83,10 @@ builder.Services.AddScoped<IExpertOfferService, ExpertOfferService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<ICustomerExpertLoginService, CustomerExpertLoginService>();
+builder.Services.AddScoped<IHomeServiceDapperService, HomeServiceDapperService>();
+builder.Services.AddScoped<ISubCategoryDapperService, SubCategoryDapperService>();
+builder.Services.AddScoped<ICategoryDapperService, CategoryDapperService>();
+
 
 
 
@@ -89,6 +102,9 @@ builder.Services.AddScoped<IExpertOfferAppService, ExpertOfferAppService>();
 builder.Services.AddScoped<IRequestAppService, RequestAppService>();
 builder.Services.AddScoped<IReviewAppService, ReviewAppService>();
 builder.Services.AddScoped<ICustomerExpertLoginAppService, CustomerExpertLoginAppService>();
+builder.Services.AddScoped<IHomeServiceDapperAppService, HomeServiceDapperAppService>();
+builder.Services.AddScoped<ISubCategoryDapperAppService, SubCategoryDapperAppService>();
+builder.Services.AddScoped<ICategoryDapperAppService, CategoryDapperAppService>();
 
 
 

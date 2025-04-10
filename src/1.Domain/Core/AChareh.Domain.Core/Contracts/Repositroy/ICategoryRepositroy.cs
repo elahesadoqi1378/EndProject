@@ -10,7 +10,7 @@ namespace Achareh.Domain.Core.Contracts.Repositroy
 {
     public interface ICategoryRepositroy
     {
-        Task<List<Category>> GetAllAsync(CancellationToken cancellationToken);
+        //Task<List<Category>> GetAllAsync(CancellationToken cancellationToken);
         Task<List<Category>> GetAllCategoriesAsync(CancellationToken cancellationToken);
         Task<Category> GetByIdAsync(int id,CancellationToken cancellationToken );
         Task<Category> GetByIdWithDetailsAsync(int id, CancellationToken cancellationToken);

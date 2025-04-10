@@ -74,6 +74,10 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
           => await _context.Experts.Include(x => x.User).FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
 
+        public async Task<Expert?> GetExpertByExpertIdAsync(int expertId, CancellationToken cancellationToken)
+
+          => await _context.Experts.Include(x => x.User)
+                             .FirstOrDefaultAsync(x => x.Id == expertId, cancellationToken);
 
 
         public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
@@ -91,41 +95,53 @@ namespace Achareh.Infrastructure.EfCore.Repository
 
         public async Task<EditExpertDto?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
         {
-            //var expert = await _appDbContext
-            // .Experts
-            // .Include(e => e.User)
-            // .ThenInclude(c => c.City)
-            // .Include(e => e.HomeServices)
-            // .ThenInclude(e => e.SubCategory)
-            // .ThenInclude(e => e.Category)
-            // .Include(e => e.Suggestions)
-            // .FirstOrDefaultAsync(e => e.UserId == id, cancellationToken);
-
-            //if (expert == null)
-            // return null;
             var expert = await _context.Experts
-            .Where(e => e.UserId == id)
-            .Select(e => new EditExpertDto
-            {
-                Id = e.Id,
-                FirstName = e.User.FirstName,
-                LastName = e.User.LastName,
-                UserName = e.User.UserName,
-                Email = e.User.Email,
-                PhoneNumber = e.User.PhoneNumber,
-                Address = e.User.Address,
-                PicturePath = e.User.ImagePath,
-                CityTitle = e.User.City.Title,
-                Balance = e.User.Inventory,
-                RegisterDate = e.User.CreatedAt,
-                HomeServices = e.HomeServices.Select(hs => new ServiceDto
-                {
-                    Id = hs.Id,
-                    Title = hs.SubCategory.Title,
+           .Where(e => e.UserId == id)
+           .Include(e => e.User)
+           .Include(e => e.HomeServices)
+           .Include(e => e.ExpertOffers)
+           .Include(e => e.Reviews)
+           .ThenInclude(r => r.Customer)
+           .ThenInclude(c => c.User)
+           .Select(e => new EditExpertDto
+           {
+               Id = e.Id,
+               FirstName = e.User.FirstName,
+               LastName = e.User.LastName,
+               Email = e.User.Email,
+               PhoneNumber = e.User.PhoneNumber,
+               Address = e.User.Address,
+               PicturePath = e.User.ImagePath ?? "/images/default.png",
+               CityTitle = e.User.City.Title,
+               Balance = e.User.Inventory,
+               RegisterDate = e.User.CreatedAt,
 
-                }).ToList()
-            })
-            .FirstOrDefaultAsync(cancellationToken);
+               HomeServices = e.HomeServices != null ? e.HomeServices.Select(hs => new ServiceDto
+               {
+                   Id = hs.Id,
+                   Title = hs.Title,
+                   PicturePath = hs.ImagePath ?? "/images/no-image.png"
+               }).ToList() : new List<ServiceDto>(),
+
+               Suggestions = e.ExpertOffers.Select(s => new SuggestionDto
+               {
+                   Id = s.Id,
+                   Description = s.Description,
+                   Price = s.SuggestedPrice,
+                   SuggestionStatus = s.OfferStatusEnum
+               }).ToList(),
+
+               Ratings = e.Reviews.Select(r => new RatingDto
+               {
+                   Rate = r.Rating,
+                   Title = r.Title,
+                   CustomerUserName = r.Customer.User.UserName,
+                   CustomerPicturePath = r.Customer.User.ImagePath ?? "/images/default-avatar.png",
+                   Comment = r.Comment,
+                   RegisterDate = r.CreatedAt
+               }).ToList()
+           })
+           .FirstOrDefaultAsync(cancellationToken);
 
             return expert;
         }

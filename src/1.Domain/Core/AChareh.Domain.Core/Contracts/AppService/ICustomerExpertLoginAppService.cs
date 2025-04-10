@@ -1,4 +1,5 @@
-﻿using AChareh.Domain.Core.Dtos.User;
+﻿using Achareh.Domain.Core.Entities.User;
+using AChareh.Domain.Core.Dtos.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,6 @@ namespace AChareh.Domain.Core.Contracts.AppService
     {
         Task<SignInResult> Login(LoginUserDto loginUserDto);
         Task Logout();
+        Task<IdentityResult> RegisterAsync(RegisterUserDto registerUserDto, CancellationToken cancellationToken);
     }
 }

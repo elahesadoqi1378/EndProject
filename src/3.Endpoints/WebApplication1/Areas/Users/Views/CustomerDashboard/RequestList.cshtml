@@ -177,7 +177,7 @@
 												{
 													if (request.RequestStatus == StatusEnum.WorkPaidByCustomer && !request.IsReviewd)
 													{
-														<a asp-action="SetReview" asp-controller="CustomerDashboard" asp-route-requestId="@request.Id" asp-route-expertId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
+														<a asp-action="SetReview" asp-controller="CustomerDashboard" asp-route-requestId="@request.Id" asp-route-WinnerId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
 													}
 												
 												}

@@ -1,4 +1,5 @@
 ﻿using Achareh.Domain.Core.Contracts.AppService;
+using AChareh.Domain.Core.Contracts.AppService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
@@ -7,10 +8,11 @@ namespace Achareh.Endpoint.MVC.Areas.Users.Controllers
     public class HomeController : Controller
     {
         private readonly ICategoryAppService _categoryAppService;
-
-        public HomeController(ICategoryAppService categoryAppService)
+        private readonly ICategoryDapperAppService _categoryDapperAppService;
+        public HomeController(ICategoryAppService categoryAppService, ICategoryDapperAppService categoryDapperAppService)
         {
             _categoryAppService = categoryAppService;
+            _categoryDapperAppService = categoryDapperAppService;
         }
         public async Task<IActionResult> Index(CancellationToken cancellationToken)
         {

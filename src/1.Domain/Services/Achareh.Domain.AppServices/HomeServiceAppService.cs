@@ -25,9 +25,9 @@ namespace Achareh.Domain.AppServices
 
            => await _homeServiceService.DeleteAsync(id, cancellationToken);
 
-        public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
 
-           => await _homeServiceService.GetAllAsync(cancellationToken);
+        //   => await _homeServiceService.GetAllAsync(cancellationToken);
 
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
 

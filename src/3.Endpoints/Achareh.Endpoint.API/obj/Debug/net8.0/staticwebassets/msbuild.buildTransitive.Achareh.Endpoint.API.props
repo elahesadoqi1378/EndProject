@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Achareh.Endpoint.API.props" />
+</Project>
